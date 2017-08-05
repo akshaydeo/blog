@@ -18,13 +18,13 @@ We are gonna use a special class loader from Android system called [PathClassLoa
 
 ### Chaining the ClassLoaders
 
-{% img alignnone size-large wp-image-450 /public/images/classloading.jpg 600 400 %}[3]
+![](/public/images/classloading.jpg)[3]
 
 So we can create a hierarchy of classloaders that can share the definition of the classes without any duplication. So in this case, classloader A has already loaded class A, so `loaderB.loadClass('A')` will delegate the request to `loaderA` instead of reloading it. This feature comes handy for our purpose. 
 
 ### Application lifecycle on Android OS
 
-{% img alignnone size-large wp-image-450 /public/images/app_launch.jpg 600 400 %}[4]
+![](/public/images/app_launch.jpg)[4]
 
 When a user clicks on the app icon, a new application thread is started which contains a new instance of the dalvik vm. This dalvik vm has a classloader that loads the dex file (APK file) and kicks off the lifecycle of the app.
 
@@ -32,7 +32,7 @@ When a user clicks on the app icon, a new application thread is started which co
 Consider the AAR file that we ship, contains one more DEX file which is loaded by the AAR at the time of initialization. This will allow us to change the functionality without having to force update the AAR on the devices.
 
 ### Structure of the project
-{% img alignnone size-large wp-image-450 /public/images/project_structure_for_injection.png 200 64 %}
+![](/public/images/project_structure_for_injection.png)
 
 **app** : Host app where you will integrate the SDK
 {% highlight groovy %}

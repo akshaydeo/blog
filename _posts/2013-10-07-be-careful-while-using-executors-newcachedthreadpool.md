@@ -25,14 +25,14 @@ I am currently writing a scalable backend server for <a href="http://appsurfer.c
 We at [AppSurfer][1] solve a very tricky problem on our technology side. Our servers need to respond almost real time with minimilstic load on the server as it might affect other sessions. For better scaling we shifted onto [netty][2] (i.e nio) from standard io. It really helped us to improve overall response time as well as efficient usage of resources. But during shift we faced one critical issue related to 100% CPU usage. Some initial googling introduced me to this [JVM issue][3]. But this issue was tackled very well in netty3x as well as netty 4x. Then I started digging into this issue more.
 
 CPU usage shown by HTOP command \[4\] :  
-{% img alignnone size-large wp-image-450 /public/images/Screenshot-from-2013-09-28-210624-1024x110.png 600 64 %}  
+![](/public/images/Screenshot-from-2013-09-28-210624-1024x110.png)
 CPU usage shown by TOP command \[5\] : 
-{% img alignnone size-large wp-image-450 /public/images/Screenshot-from-2013-09-28-211248.png %}
+![](/public/images/Screenshot-from-2013-09-28-211248.png)
 
 I was clueless about what was going wrong after adding all the fixed related to nio. Then yourkit output indicated one strange thing related to garbage collection. There was a lot of garbage collection happening during session runs. Then digging into it more revealed that the main issue was related with Executors.newCachedThreadPool(). 
 
 Garbage collection output \[6\]: 
-{% img alignnone size-large wp-image-450 /public/images/Screenshot-from-2013-10-06-233615-1024x231.png %} 
+![](/public/images/Screenshot-from-2013-10-06-233615-1024x231.png)
 
 What I read about newCachedThreadPool in **Java documentation** was:
 

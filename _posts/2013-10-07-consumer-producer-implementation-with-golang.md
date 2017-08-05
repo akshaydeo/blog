@@ -14,7 +14,7 @@ categories:
 Today I invested my whole day in evaluating GoLang for one of our component implementations. Since the first document, I got impressed by it'&#8217;'s construct. Till I reached the ultimate problem solution for our case, I fell in love with this new language. It gives you the power of OS level constructs keeping a lot of overheads hidden from you. I was playing with a lot of simple problems while reading the documentation and here I am sharing one of those implementation and will discuss how simple it is to implement pretty complex problems with [GoLang][1].
 
 **Classic Consumer-Producer problem**  
-{% img //4.bp.blogspot.com/-9UpZKfJbugY/UFYe4MpX7II/AAAAAAAAAIw/57jLbqLQn6c/s1600/producer_consumer.png %} 
+![](//4.bp.blogspot.com/-9UpZKfJbugY/UFYe4MpX7II/AAAAAAAAAIw/57jLbqLQn6c/s1600/producer_consumer.png)
 
 You can find some classic implemetations [here][2].
 

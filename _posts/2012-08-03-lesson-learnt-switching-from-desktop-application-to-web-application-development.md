@@ -36,9 +36,9 @@ One of the thing I did was, I removed unnecessary modules from my web applicatio
 
 Consider marked points, as snapshot is from production and other is from staging server.(Using new relic analytics)  
 **Before my changes overall db response time**  
-{% img aligncenter size-full /public/images/main21-e1343984465378.png %}\[2\]  
+![](/public/images/main21-e1343984465378.png)\[2\]  
 **After my changes overall db response time**  
-{% img aligncenter size-full /public/images/pre21-e1343984580321.png %}\[3\]
+![](/public/images/pre21-e1343984580321.png)\[3\]
 
 Hope you will find this post useful.  
 Thanks and keep coding :)

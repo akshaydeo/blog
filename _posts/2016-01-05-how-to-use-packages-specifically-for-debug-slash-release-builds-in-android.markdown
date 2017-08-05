@@ -33,7 +33,8 @@ dependencies {
 I changed the way gradle compiles instabug dependency. Now it's done during debug builds only. Release builds will not consider this dependency.
 
 ### How to use this conditional dependency in code?
-{% img left /public/images/1.png %}{% img /public/images/2.png 300 %} 
+![](/public/images/1.png)
+![](/public/images/2.png)
 
 Create debug and release folders inside the src folder of your app. Create the exact same package structure (same as main folder) in both of these folders. Create a class with overriding nature i.e. same name and methods. Now write add instabug initialization inside the debug flavour, while release flavour won't have this bit. Update your main Application class to include the initialization of this newly created class.
 
