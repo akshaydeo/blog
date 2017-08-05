@@ -4,18 +4,18 @@ highlighter:      pygments
 
 # Permalinks
 permalink:        pretty
-relative_permalinks: true
+#relative_permalinks: true
 
 # Setup
-title:            Hyde
-tagline:          'A Jekyll theme'
-description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-url:              http://hyde.getpoole.com
+title:            amd
+tagline:          'code for life'
+description:      'Tech Lead @ media.net.<br>Creator of AppSurfer<br>Ex Co-Founder of RainingCloud, Betacraft <a href="https://twitter.com/akshay_deo" target="_blank">@akshay_deo</a>.'
+url:              http://akshaydeo.com
 baseurl:          /
 
 author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
+  name:           'Akshay Deo'
+  url:            https://twitter.com/akshay_deo
 
 paginate:         5
 
@@ -23,4 +23,6 @@ paginate:         5
 version:          2.1.0
 
 github:
-  repo:           https://github.com/poole/hyde
+  repo:           https://github.com/akshaydeo
+
+gems: [jekyll-paginate, jekyll-gist, octopress-image-tag]
