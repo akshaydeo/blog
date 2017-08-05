@@ -17,7 +17,7 @@ Recently I was working with a piece of code where I had to convert a JSON into a
 I have a struct called *User*, which has fields. There were no issues with primary data types, but when it came to time.Time, it started fucking me. 
 
 
-``` go User model
+{% highlight go %}
   Id      int    `json:"user_id"`
   AuthKey string `json:"-" sql:"not null;unique"`
   
@@ -30,26 +30,26 @@ I have a struct called *User*, which has fields. There were no issues with prima
   CreatedAt time.Time `json:"created_at"`
   UpdatedAt time.Time `json:"updated_at"`
   DeletedAt time.Time `json:"deleted_at"`
-```
+{% endhighlight %}
 
-A bit of googling landed me onto this repo : http://github.com/ottemo/mapstructure. This had everything I wanted. *(Prefer this repo over https://github.com/mitchellh/mapstructure as ottemo/mapstructure has an AdvancedDecodeHook that helps a bit in this situation)*
+A bit of googling landed me onto [http://github.com/ottemo/mapstructure](http://github.com/ottemo/mapstructure). This had everything I wanted. *(Prefer [https://github.com/mitchellh/mapstructure](https://github.com/mitchellh/mapstructure) repo over as ottemo/mapstructure has an AdvancedDecodeHook that helps a bit in this situation)*
 
 ## Solution
 
 Suppose that *body* has the entire JSON. It has some fields along with *User* struct with *user* as key.
 
 - First we will convert the JSON into a map[string]interface{}
-``` go JSON to map[string]interface{}
+{% highlight go %}
   var data map[string]interface{}
   err = json.Unmarshal(body, &data)
   if err != nil {
     return nil, err
   }
-```
+{% endhighlight %}
 
 - Okay so data contains our JSON, now as we have a custom fields *time.Time* we will have to write our own decoder, which means create on AdvancedDecodeHook func and pass it to the DecoderConfig
 
-``` go AdvancedDecodeHook
+{% highlight go %}
 func myDecoder(val *reflect.Value, data interface{}) (interface{}, error) {
   if val.Type().String() == "time.Time" {    
     value, err := time.Parse(time.RFC3339Nano, data.(string))
@@ -58,7 +58,7 @@ func myDecoder(val *reflect.Value, data interface{}) (interface{}, error) {
   }
   return data, nil
 } 
-```
+{% endhighlight %}
 So lets understand the structure of this hook -
 You get two parameters:
 
@@ -69,7 +69,7 @@ This function returns an interface and an error. Now this *AdvancedDecodeHook* w
 
 - And now just write a function to return the decoder with our custom configuration
 
-```go DecoderFactory
+{% highlight go %}
 func getDecoder(result interface{}) (*mapstructure.Decoder, error) {
   return mapstructure.NewDecoder(&mapstructure.DecoderConfig{
     AdvancedDecodeHook: myDecoder,
@@ -77,12 +77,12 @@ func getDecoder(result interface{}) (*mapstructure.Decoder, error) {
     Result:             result,
     WeaklyTypedInput:   false})
 }
-```
+{% endhighlight %}
 The parameter that we pass in is the result type we expect. This has to be the pointer to the struct.
 
 - And finally call it from your routine
 
-```go Decode the JSON
+{% highlight go %}
   decoder, err := getDecoder(&user)
   if err != nil {
     return nil, err
@@ -91,7 +91,7 @@ The parameter that we pass in is the result type we expect. This has to be the p
   if err != nil {
     return nil, err
   }
-```
+{% endhighlight %}
 
 - And you are done.
 
@@ -99,7 +99,7 @@ The parameter that we pass in is the result type we expect. This has to be the p
 
 So the final code looks like this
 
-```go Converting JSON to Struct
+{% highlight go %}
 
 func myDecoder(val *reflect.Value, data interface{}) (interface{}, error) {
   if val.Type().String() == "time.Time" {    
@@ -134,6 +134,6 @@ func GetUserFromJSON(jsonUser string) (*User,error){
   }
   return &user,nil
 }
-```
+{% endhighlight %}
 Thank you guys, keep coding :)
 

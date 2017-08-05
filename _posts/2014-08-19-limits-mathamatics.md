@@ -20,10 +20,10 @@ Limit of function
 
 Mathematical Representation:
 
-`<br />
-lim  ƒ(x) = L<br />
-x->c<br />
-`
+{% highlight math %}
+lim  ƒ(x) = L
+x->c
+{% endhighlight %}
 
 This says that L is the value of function ƒ(x) when x reaches to value c.
 
@@ -36,10 +36,10 @@ I found this amazing <a href="http://math.stackexchange.com/questions/365770/wha
 
 The reading of your speedometer (e.g., 85 km/h) is a limit in the real world. Maybe you think speed is speed, why not 85 km/h. But in fact your speed is changing continuously during time, and the only &#8220;solid&#8221;, i.e., &#8220;limitless&#8221; data you have is that it took you exactly 2 hours to drive the 150 km from A to B. The figure your speedometer gives you is at each instant t0 of your travel the limit
 
-`<br />
-     v(t0):= lim    (t0)−s(t0−Δt)/Δt<br />
-            Δt→0s<br />
-`
+{% highlight math %}
+     v(t0):= lim    (t0)−s(t0−Δt)/Δt
+            Δt→0s
+{% endhighlight %}
 
 where s(t) denotes the distance travelled up to time t.
 
@@ -57,7 +57,7 @@ Mathematical representation of the question is
 P(N) = (1/2)^N find N for which P(N) = 0
 
 and Answer to the given question is  
-`<br />
-lim  P(N)<br />
-N->∞<br />
-`
+{% highlight math %}
+lim  P(N)
+N->∞
+{% endhighlight %}

@@ -13,9 +13,9 @@ categories:
 This is gonna be a quick post. I spent like last 45 mins solving a very dumb issue, related to setOnItemClickListener of a custom class extending GridView. 
 
 Layout of GridView item:
-
-<pre class="theme:classic font:monaco lang:xml decode:true"><?xml version="1.0" encoding="utf-8"?>
-&lt;RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+{% highlight xml %}
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="@dimen/fragment_application_grid_item_width"
                 android:layout_height="@dimen/fragment_application_grid_item_height"
                 android:background="@drawable/fragment_application_list_item_background_drawable"
@@ -25,14 +25,14 @@ Layout of GridView item:
 
 <!-- Some Elements -->
 
-        &lt;View
+        <View
             android:id="@+id/application_price_indicator"
             android:layout_width="0dp"
             android:layout_height="fill_parent"
             android:layout_weight="0.05"
             android:background="@drawable/fragment_application_grid_item_free_indicator"/>
 
-        &lt;ImageButton
+        <ImageButton
             android:id="@+id/add_to_list_menu"
             android:layout_width="0dp"
             android:layout_height="@dimen/fragment_application_grid_item_menu_dimen"
@@ -40,7 +40,7 @@ Layout of GridView item:
             android:background="@android:color/transparent"
             android:src="@drawable/fragment_application_grid_item_add_to_list_icon"/>
 
-        &lt;ImageButton
+        <ImageButton
             android:id="@+id/install_app_icon"
             android:layout_width="0dp"
             android:layout_height="@dimen/fragment_application_grid_item_menu_dimen"
@@ -48,18 +48,16 @@ Layout of GridView item:
             android:layout_weight="1"
             android:src="@drawable/fragment_application_grid_item_install_icon"/>
 
-        &lt;ImageButton
+        <ImageButton
             android:id="@+id/share_app_icon"
             android:layout_width="0dp"
             android:layout_height="@dimen/fragment_application_grid_item_menu_dimen"
             android:background="@android:color/transparent"
             android:layout_weight="1"
             android:src="@drawable/fragment_application_grid_item_share_icon"/>
-
-    &lt;/LinearLayout>
-
-&lt;/RelativeLayout>
-</pre>
+        </LinearLayout>
+    </RelativeLayout>
+{% endhighlight %}
 
 The issue here is, ImageButton is the part of this view. So whenever onClick event happens, Android system will try to find onClickListener related to ImageButtons in the view. So There are only two solutions to this :
 

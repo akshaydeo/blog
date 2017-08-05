@@ -20,22 +20,20 @@ I work on Andorid source code which specifically needs sun-jdk-6 for building th
 
 After a lot of failed attempts I found this solution (It works well with my env : Ubuntu 12.04 64bit desktop)
 
-  1. Download jre/jdk source from [oracle website][1]
-  2. Extract files to jdk/jvm_version
-<pre>chmod +x jdk-&lt;build>-linux-x64.bin&lt;/br>
-./jdk-&lt;build>-linux-x64.bin</pre>
+* Download jre/jdk source from [oracle website][1]
+* Extract files to jdk/jvm_version
+{% highlight bash %}chmod +x jdk-&lt;build>-linux-x64.bin&lt;/br>
+./jdk-&lt;build>-linux-x64.bin{% endhighlight %}
+* Move this folder to /usr/lib/jvm/
+{% highlight bash %}sudo mv jdk1.6.0_32/ /usr/lib/jvm/jdk1.6.0{% endhighlight %}
+ * And let your system know that you have a new java alternative
+{% highlight bash %}sudo update-alternatives --install /usr/bin/javac javac /usr/lib/jvm/jdk1.6.0_32//bin/javac 1
 
-  3. Move this folder to /usr/lib/jvm/
-<pre>sudo mv jdk1.6.0_32/ /usr/lib/jvm/jdk1.6.0</pre>
-
-  4. And let your system know that you have a new java alternative
-<pre>sudo update-alternatives --install /usr/bin/javac javac /usr/lib/jvm/jdk1.6.0_32//bin/javac 1
-
-sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/jdk1.6.0_32/bin/java 1</pre>
+sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/jdk1.6.0_32/bin/java 1{% endhighlight %}
 
 And then update your default javac and java
 
-<pre>akshay@akshay-Inspiron-N4010 ~/Downloads &gt; sudo update-alternatives --config javac
+{% highlight bash %}akshay@akshay-Inspiron-N4010 ~/Downloads &gt; sudo update-alternatives --config javac
 There are 2 choices for the alternative javac (providing /usr/bin/javac).
 
 Selection Path Priority Status
@@ -60,6 +58,6 @@ update-alternatives: using /usr/lib/jvm/jdk1.6.0_32/bin/java to provide /usr/bin
 akshay@akshay-Inspiron-N4010 ~/Downloads &gt; java -version
 java version "1.6.0_32"
 Java(TM) SE Runtime Environment (build 1.6.0_32-b05)
-Java HotSpot(TM) 64-Bit Server VM (build 20.7-b02, mixed mode)</pre>
+Java HotSpot(TM) 64-Bit Server VM (build 20.7-b02, mixed mode){% endhighlight %}
 
  [1]: http://www.oracle.com/technetwork/java/javase/overview/index.html

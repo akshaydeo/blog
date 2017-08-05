@@ -23,12 +23,11 @@ The first thing I searched when I read about Kotlin was, about Android support. 
 
   * Install Kotlin plugin available in Preferences for Android Studio.
   * Add following classpath to the gradle script 
-    <pre>classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:0.9.206"
-</pre>
+  {% highlight groovy %}classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:0.9.206"{% endhighlight %}
 
   * And add the dependency in the application gradle script 
-    <pre>compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-</pre>
+{% highlight groovy %}compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+{% endhighlight %}
 
 **The Application**
 
@@ -36,12 +35,12 @@ I started with writing a HackerNews listing app. But then restricted it to simul
 
 **Code**
 
-Let&#8217;s dive into some code.
+Let's dive into some code.
 
 **Home**
 
-It&#8217;s the main activity (launcher) of the application.
-```java Home Activity
+It's the main activity (launcher) of the application.
+{% highlight java %}
 open class Home(): ActionBarActivity(){
 
     val logTag = "###Home###"
@@ -54,7 +53,7 @@ open class Home(): ActionBarActivity(){
         transaction.commit()
     }
 }
-```
+{% endhighlight %}
 
 **Things I loved**
 
@@ -65,7 +64,7 @@ open class Home(): ActionBarActivity(){
 
 This is the fragment that contains list of posts. It&#8217;s a DialogFragment, so as to make it available to be used as a dialog as well.
 
-``` java Post List Fragment
+{% highlight java %}
 open class PostListFragment() : DialogFragment() {
     val logTag = "###PostListFragment###"
     var postList: ListView? = null
@@ -99,7 +98,7 @@ open class PostListFragment() : DialogFragment() {
         }
     }
 }
-```
+{% endhighlight %}
 
 **Things I loved**
 
@@ -113,7 +112,7 @@ open class PostListFragment() : DialogFragment() {
 **Post**  
 This is the model class containing info related with each post.
 
-``` java Post Model
+{% highlight java %}
 data class Post(val id: Long, val post: String, val by: String, val postedAt: Date) {
     object Maker {
         fun GetList(onSuccess: (posts: List) -&gt; Unit) {
@@ -125,7 +124,7 @@ data class Post(val id: Long, val post: String, val by: String, val postedAt: Da
         }
     }
 }
-```
+{% endhighlight %}
 
 **Things I loved**
 
@@ -137,57 +136,57 @@ data class Post(val id: Long, val post: String, val by: String, val postedAt: Da
 
 This is the list adapter for post list view.
 
-```java List Adapter
+{% highlight java %}
 open class PostListAdapter(val context:Context,val listView: AbsListView): BaseAdapter(){
 
-    private val logTag: String = "###PostListAdapter###"
-    var postList = ArrayList()
+  private val logTag: String = "###PostListAdapter###"
+  var postList = ArrayList()
 
-    override fun getCount(): Int {
-        return postList.size
-    }
+  override fun getCount(): Int {
+      return postList.size
+  }
 
-    override fun getItem(position: Int): Any? {
-        if(position &gt;= postList.size)
-            return null
-        return postList.get(position)
-    }
+  override fun getItem(position: Int): Any? {
+      if(position &gt;= postList.size)
+          return null
+      return postList.get(position)
+  }
 
-    override fun getItemId(p0: Int): Long {
-        if(p0 &gt;= postList.size)
-            return -1
-        return postList.get(p0).id
-    }
+  override fun getItemId(p0: Int): Long {
+      if(p0 &gt;= postList.size)
+          return -1
+      return postList.get(p0).id
+  }
 
-    override fun getView(position: Int, view: View?, parent: ViewGroup): View? {
-        var cachedItem: ItemCache?
-        var contentView: View ? = view
-        when (contentView) {
-            null -&gt; {
-                contentView = LayoutInflater.from(context).inflate(R.layout.layout_post_item, parent, false)
-                cachedItem = ItemCache(textView = contentView?.findViewById(R.id.post) as TextView)
-                contentView?.setTag(cachedItem)
-            }
-            else -&gt; {
-                cachedItem = contentView?.getTag() as ItemCache
-            }
-        }
-        val currentPost = getItem(position) as Post
-        cachedItem?.textView?.setText(currentPost.post)
-        return contentView
-    }
+  override fun getView(position: Int, view: View?, parent: ViewGroup): View? {
+      var cachedItem: ItemCache?
+      var contentView: View ? = view
+      when (contentView) {
+          null -&gt; {
+              contentView = LayoutInflater.from(context).inflate(R.layout.layout_post_item, parent, false)
+              cachedItem = ItemCache(textView = contentView?.findViewById(R.id.post) as TextView)
+              contentView?.setTag(cachedItem)
+          }
+          else -&gt; {
+              cachedItem = contentView?.getTag() as ItemCache
+          }
+      }
+      val currentPost = getItem(position) as Post
+      cachedItem?.textView?.setText(currentPost.post)
+      return contentView
+  }
 
-    class ItemCache(val textView: TextView?)
+  class ItemCache(val textView: TextView?)
 }
-```
+{% endhighlight %}
 
 This all works well. The source code is available at <https://github.com/akshaydeo/kotlin_android>.
 
 **Some analysis of APK**
 
   * The very very important thing to look at is, <span style="text-decoration: underline;">the number of classes inside your APK</span>. Don&#8217;t worry, its gonna be huge that the APK you will create with same functionality using JAVA. <span style="text-decoration: underline;">For example the application that I have created contains <strong>3561</strong> classes</span>. (I am planning to write the same app using Java and compare the results with Kotlin app). <span style="text-decoration: underline;">So running proguard during the debug builds is very essential in this case</span>.
-  * Also I faced gradle crashing problem because of the default VM params. So you will have to change them using preferences. I changed them to <pre class="">-XX:MaxPermSize=1024m -XX:MaxHeapSize=256m -Xmx256m
-</pre>
+  * Also I faced gradle crashing problem because of the default VM params. So you will have to change them using preferences. I changed them to {% highlight groovy %}-XX:MaxPermSize=1024m -XX:MaxHeapSize=256m -Xmx256m
+{% endhighlight %}
 
 **Important Links for Kotlin**
 

@@ -18,13 +18,13 @@ My web application is based on slightly customised version of [Gin](https://gith
 
 ## First thing first, Install boot2docker
 As you will first test everything locally, you will need [boot2docker](http://docs.docker.com/installation/). And just initialise it with following commands
-```bash Initializing boot2docker
+{% highlight bash %}
 boot2docker init
 boot2docker start
-```
+{% endhighlight %}
 
 ## Creating a Dockerfile
-```bash Dockerfile
+{% highlight conf %}
 # Using wheezy from the official golang docker repo
 FROM golang:1.4.1-wheezy
 
@@ -48,7 +48,7 @@ ENV ENV dev
 EXPOSE 8080
 EXPOSE
 ENTRYPOINT ["/go/bin/<project>"]
-```
+{% endhighlight %}
 
 Most of the things in this Dockerfile are self explanatory ([List of commands](https://docs.docker.com/reference/builder/)).
 
@@ -59,39 +59,39 @@ So in my DEV environment I had a postgres instance running locally. I struggled 
 
 ## Building the repository
 So we have a Dockerfile, now the next step is to build the repository for the container and running it. Your working directory is the root of your project.
-```bash Building Repository
+{% highlight bash %}
 docker build -t <project_name> .
-```
-You will see all of the commands that we have added in the Docker file will start executing one by one. At the end if everything goes well you shall see <code>Successfully built ID</code>.
+{% endhighlight %}
+You will see all of the commands that we have added in the Docker file will start executing one by one. At the end if everything goes well you shall see `Successfully built <ID>`
 
 If you see this message then we are all set to deploy project on the cloud. For testing you can publish the repository with following command and test it from local browser
 
-```bash Running built repository
+{% highlight bash %}
 docker run --publish 3000:8080 --name <tag-name> --rm <project-name>
-```
+{% endhighlight %}
 
 Check your docker container ip address using following command
-```bash Check container IP address
+{% highlight bash %}
 boot2docker ip
-```
+{% endhighlight %}
 And now go to your browser and enter address as http://ip_address:3000 and everything should work.
 
 ## Setting up continous integration
 I went through a couple of CI tools supporting Golang web apps and settled down onto <a href="http://codeship.com" target="_blank">Codeship</a>. (I am evaluating <a href="http://shppable.com" target="_blank">Shippable</a>).
 
 For my Go projects, I don't keep up with the regular naming conventions i.e. github.com/rainingclouds/project_name. So I had to work a bit on the test scripts as Codeship assumes you are following the naming conventions. (The reason I don't follow it because, the project is not supposed to be reused as it is by anyone else :))
-```bash Codeship Script
+{% highlight bash %}
 mv ../distribute ${HOME}/src/distribute
 cd ${HOME}/src/distribute
 go get github.com/tools/godep
 godep restore
 go get
-```
+{% endhighlight %}
 And then you can put your testing commands. I am not using any framework for writing tests. Default testing package is more than enough for me at this stage.
 
-```bash Codeship Test Script
+{% highlight bash %}
 go test <module_to_test> -v
-```
+{% endhighlight %}
 
 ## Setting up the deployment hook
 Codeship comes up with Elastic beanstalk deployment hook. For that you have to configure a few things before you can use it.

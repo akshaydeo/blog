@@ -18,13 +18,13 @@ We are gonna use a special class loader from Android system called [PathClassLoa
 
 ### Chaining the ClassLoaders
 
-<img src="/public/images/classloading.jpg" alt="Class loader hierarchy" width="600" height="400" class="alignnone size-large wp-image-450"/>[3]
+{% img alignnone size-large wp-image-450 /public/images/classloading.jpg 600 400 %}[3]
 
 So we can create a hierarchy of classloaders that can share the definition of the classes without any duplication. So in this case, classloader A has already loaded class A, so `loaderB.loadClass('A')` will delegate the request to `loaderA` instead of reloading it. This feature comes handy for our purpose. 
 
 ### Application lifecycle on Android OS
 
-<img src="/public/images/app_launch.jpg" alt="App Launch Process" width="600" height="400" class="alignnone size-large wp-image-450" />[4]
+{% img alignnone size-large wp-image-450 /public/images/app_launch.jpg 600 400 %}[4]
 
 When a user clicks on the app icon, a new application thread is started which contains a new instance of the dalvik vm. This dalvik vm has a classloader that loads the dex file (APK file) and kicks off the lifecycle of the app.
 
@@ -32,16 +32,16 @@ When a user clicks on the app icon, a new application thread is started which co
 Consider the AAR file that we ship, contains one more DEX file which is loaded by the AAR at the time of initialization. This will allow us to change the functionality without having to force update the AAR on the devices.
 
 ### Structure of the project
-<img src="/public/images/project_structure_for_injection.png" alt="Project structure" width="200" height="64" class="alignnone size-large wp-image-450" />
+{% img alignnone size-large wp-image-450 /public/images/project_structure_for_injection.png 200 64 %}
 
 **app** : Host app where you will integrate the SDK
-<pre>
+{% highlight groovy %}
 dependencies {
   ...
   compile project(":lib")
   ...
 }
-</pre>
+{% endhighlight %}
 **lib** : Our static SDK code that ships with the app. This has the secret sauce of loading the functionality runtime.
 
 **dynamiclib** : SDK that does the implementation of the dynamic functionality of the SDK.
@@ -52,18 +52,18 @@ Let's divide our tasks and decode one by one.
 
 To bring in the dynamic features, I am going with an interface approach. So our dynamic lib and lib will share one common interface. 
 
-<pre lang="java" title="IMethods.java ">
+{% highlight java %}
     public interface IMethods {
         String getVersion();
         void log(String message);
     }
-</pre>
+{% endhighlight %}
 
 > Make sure that the package name for this interface will be the exactly same in both `lib` and `dynamiclib` module.
 
 This `IMethods` is implemented by a class called `MethodsImpl` in dynamic lib.
 
-<pre>
+{% highlight java %}
 public class MethodsImpl implements IMethods {
   private static final String TAG = "##MethodsImpl##";
 
@@ -75,12 +75,12 @@ public class MethodsImpl implements IMethods {
     Log.d(TAG, message);
   }
 }
-</pre>
+{% endhighlight %}
 
 Now build this dynamiclib to an APK (as we need a dex file), and host it. I use SimpleHttpServer. 
-<pre>
+{% highlight bash %}
 python -m SimpleHTTPServer 8000
-</pre>
+{% endhighlight %}
 This makes dynamic lib available on a link.
 
 Let's build the last leg of the solution, downloading the APK and loading the classes using a PathClassLoader. 
@@ -92,7 +92,7 @@ Use any way to download the APK, I have used an AsyncTask
 `context.getFilesDir()` gives the path to the internal sandboxed storage for the package. Store the downloaded APK in this folder. 
 
 ##### Load the downloaded APK and cast it to the IMethods
-<pre>
+{% highlight java %}
 // INTERNAL_DEX_PATH = context.getFilesDir() + FILE_NAME this is path to the file we have downloaded
 private static void loadSdk(Context context) {    
     PathClassLoader pathClassLoader =
@@ -109,10 +109,10 @@ private static void loadSdk(Context context) {
       e.printStackTrace();
     }
   }
-</pre>
+{% endhighlight %}
 
 Logs when you run the app is
-<pre>
+{% highlight log %}
 12-22 17:16:29.036 10926-10926/net.media.injector D/## Injector ##: load()
 12-22 17:16:29.131 10926-10926/net.media.injector W/gralloc_ranchu: Gralloc pipe failed
                                                                     
@@ -128,7 +128,7 @@ Logs when you run the app is
 12-22 17:16:30.065 10926-10926/net.media.injector D/## Injector ##: /data/user/0/net.media.injector/files/lib.apk
 12-22 17:16:30.170 10926-10926/net.media.injector D/## Injector ##: loading sdk class
 12-22 17:16:30.171 10926-10926/net.media.injector D/##MethodsImpl##: testing this
-</pre>
+{% endhighlight %}
 
 > This approach will allow you to update the functionality with a strong interface defined between shipped code and dynamic part of the SDK. This is the case where host app keeps interacting with your SDK using a set of functions. If your SDK is, initialize once and forget, then you can keep entire logic in dynamic part of the SDK.
 
