@@ -21,5 +21,5 @@ Media.net is a leading AdTech company in the world. At Media.net, I am leading t
 - Managing Android SDK integrations for merchants.
 - Maintaining code hygienes for Golang microservices and Android codebase.
 
-Creator of [AppSurfer](http://www.akshaydeo.com/appsurfer/), [Twist](http://www.akshaydeo.com/twist/).
+<h2>Creator of [AppSurfer](http://www.akshaydeo.com/appsurfer/), [Twist](http://www.akshaydeo.com/twist/).</h2>
 
