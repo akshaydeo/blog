@@ -4,22 +4,21 @@ title: Home
 ---
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> 
 <div class="posts">  
-  {% for post in paginator.posts %}      
-  <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1641833920610368"
-     data-ad-slot="1546658931"
-     data-ad-format="auto"></ins>
-     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-  <br>  
+  {% for post in paginator.posts %}        
   <div class="post">
     <h1 class="post-title">
       <a href="{{ post.url }}">
         {{ post.title }}
       </a>
     </h1>
-
     <span class="post-date">{{ post.date | date_to_string }}</span>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1641833920610368"
+     data-ad-slot="1546658931"
+     data-ad-format="auto"></ins>
+     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    <hr>  
 
     {{ post.content }}
   </div>
