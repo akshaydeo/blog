@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: Open Source
 ---
 
 **<a href="https://github.com/RainingClouds/transporter" target="_blank">Transporter</a>**
