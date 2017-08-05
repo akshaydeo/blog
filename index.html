@@ -2,7 +2,6 @@
 layout: default
 title: Home
 ---
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> 
 <div class="posts">  
   {% for post in paginator.posts %}        
   <div class="post">
@@ -12,6 +11,7 @@ title: Home
       </a>
     </h1>
     <span class="post-date">{{ post.date | date_to_string }}</span>
+    <hr>
     <ins class="adsbygoogle"
      style="display:block"
      data-ad-client="ca-pub-1641833920610368"
