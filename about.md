@@ -21,6 +21,10 @@ Media.net is a leading AdTech company in the world. At Media.net, I am leading t
 - Managing Android SDK integrations for merchants.
 - Maintaining code hygienes for Golang microservices and Android codebase.
 
-Creator of AppSurfer
+**Co-Founder and CTO @Betacraft**
 
-Ex Co-Founder of RainingClouds, Betacraft 
+Expert consultancy services for web and mobile focused on Golang and Android. Along with the services work, we had built a product called Twist. Twist allows users to play their favorite Android games on TV using any mobile as a remote. More info @ http://www.gettwist.tv/
+
+
+Creator of [AppSurfer](http://www.akshaydeo.com/appsurfer/), [Twist](http://www.akshaydeo.com/twist/).
+
