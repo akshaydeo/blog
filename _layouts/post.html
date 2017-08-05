@@ -7,7 +7,12 @@ layout: default
   <span class="post-date">{{ page.date | date_to_string }}</span>
   {{ content }}
 </div>
-
+<div>
+<section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite">{% include disqus.html %}</div>
+</section>
+</div>
 <div class="related">
   <h2>Related Posts</h2>
   <ul class="related-posts">

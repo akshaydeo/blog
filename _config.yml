@@ -3,7 +3,7 @@ markdown:         redcarpet
 highlighter:      pygments
 
 # Permalinks
-permalink:        pretty
+permalink: /blog/:year/:month/:day/:title/
 #relative_permalinks: true
 
 # Setup
@@ -24,3 +24,10 @@ version:          2.1.0
 
 github:
   repo:           https://github.com/akshaydeo
+
+# Disqus
+disqus_short_name: rashcoder
+disqus_show_comment_count: false
+
+# Google Analytics
+google_analytics_tracking_id: UA-56560447-1
