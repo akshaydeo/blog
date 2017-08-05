@@ -9,7 +9,7 @@ permalink: /blog/:year/:month/:day/:title/
 # Setup
 title:            amd
 tagline:          'code for life'
-description:      'Tech Lead @ media.net.<br>Creator of AppSurfer<br>Ex Co-Founder of RainingCloud, Betacraft <a href="https://twitter.com/akshay_deo" target="_blank">@akshay_deo</a>.'
+description:      ''
 url:              http://akshaydeo.com
 baseurl:          /
 
