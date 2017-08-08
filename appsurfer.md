@@ -12,6 +12,9 @@ This is the first product I have built @ RainingClouds.
 - Built Android app, Android SDK, Flash client and JS client for AppSurfer
 - Built Golang based web app for #InstantApps
 
+**AppSurfer bids adieu**
+[http://blog.appsurfer.com/post/145253504285/appsurfer-bids-adieu](http://blog.appsurfer.com/post/145253504285/appsurfer-bids-adieu)
+
 **Teaser**
 <iframe width="640" height="350" src="https://www.youtube.com/embed/5hUU-nV_OvA" frameborder="0" allowfullscreen></iframe>
 
