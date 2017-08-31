@@ -3,6 +3,10 @@ layout: page
 title: Open Source
 ---
 
+**<a href="https://github.com/betacraft/yaag" target="_blank">YAAG (Yet Another API doc Generator) for Golang</a>**
+
+Golang is awesome for developing web apps. And people have created a bunch of awesome Web-Frameworks, Web helper libraries. If we consider the entire ecosystem of web apps in Golang everything except API documentation seems to be in place. So we have created the first API doc generator for Golang based web apps and calling it Yet another.
+
 **<a href="https://github.com/RainingClouds/transporter" target="_blank">Transporter</a>**
 
   * It’s a wrapper for writing socket servers with keeping your business logic separated from the underlying technology for sockets.
