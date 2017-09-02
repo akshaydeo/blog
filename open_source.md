@@ -7,29 +7,33 @@ title: Open Source
 
 **<a href="https://github.com/betacraft/yaag" target="_blank">YAAG (Yet Another API doc Generator) for Golang</a>**
 
-Golang is awesome for developing web apps. And people have created a bunch of awesome Web-Frameworks, Web helper libraries. If we consider the entire ecosystem of web apps in Golang everything except API documentation seems to be in place. So we have created the first API doc generator for Golang based web apps and calling it Yet another.
+* Golang is awesome for developing web apps. And people have created a bunch of awesome Web-Frameworks, Web helper libraries. If we consider the entire ecosystem of web apps in Golang everything except API documentation seems to be in place. So we have created the first API doc generator for Golang based web apps and calling it Yet another.
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/dQWXxJn6_iE" frameborder="0" allowfullscreen></iframe>
 
 **<a href="https://github.com/betacraft/autobindings" target="_blank">Autobinding fieldMap generator</a>**
 
-FieldMap function generator for https://github.com/mholt/binding
+* FieldMap function generator for https://github.com/mholt/binding
 Autobindings is a simple extention to the amazing library Binding. So binding is a reflectionless data binding for Go's net/http. For that developer has to write a FieldMap function which is used by this library to map the incoming JSON from the request to the struct fields.
 
 **<a href="https://github.com/betacraft/scraper" target="_blank">Scraper</a>**
 
-Scraper for parsing app information from Google Play Store. 
-Supported sites 
-- Google Play Store 
-- AndroidDrawer
+* Scraper for parsing app information from Google Play Store. 
+* Supported sites 
+    - Google Play Store 
+    - AndroidDrawer
 
 **<a href="https://github.com/betacraft/slack" target="_blank">Slack client for Golang</a>**
 
-This library allows you to send data into slack group/channel using a Incoming Webhook url.
+* This library allows you to send data into slack group/channel using a Incoming Webhook url.
 
 **<a href="https://github.com/betacraft/circleci" target="_blank">Circle client for Golang</a>**
 
-Golang client library to interact with CircleCI 1.0.
+* Golang client library to interact with CircleCI 1.0.
+
+**<a href="https://github.com/betacraft/parse-sdk" target="_blank">Parse SDK client in Golang</a>**
+
+* Currently has only push notifications implemented based on the object Id and one generalized function for the custom query based targetting.
 
 **<a href="https://github.com/RainingClouds/transporter" target="_blank">Transporter</a>**
 
