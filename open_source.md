@@ -3,6 +3,8 @@ layout: page
 title: Open Source
 ---
 
+<p><a class="github-button" href="https://github.com/akshaydeo" data-size="large" aria-label="Follow @akshaydeo on GitHub">Follow @akshaydeo</a></p>
+
 **<a href="https://github.com/betacraft/yaag" target="_blank">YAAG (Yet Another API doc Generator) for Golang</a>**
 
 Golang is awesome for developing web apps. And people have created a bunch of awesome Web-Frameworks, Web helper libraries. If we consider the entire ecosystem of web apps in Golang everything except API documentation seems to be in place. So we have created the first API doc generator for Golang based web apps and calling it Yet another.
