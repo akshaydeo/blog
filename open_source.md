@@ -9,6 +9,26 @@ Golang is awesome for developing web apps. And people have created a bunch of aw
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/dQWXxJn6_iE" frameborder="0" allowfullscreen></iframe>
 
+**<a href="https://github.com/betacraft/autobindings" target="_blank">Autobinding fieldMap generator</a>**
+
+FieldMap function generator for https://github.com/mholt/binding
+Autobindings is a simple extention to the amazing library Binding. So binding is a reflectionless data binding for Go's net/http. For that developer has to write a FieldMap function which is used by this library to map the incoming JSON from the request to the struct fields.
+
+**<a href="https://github.com/betacraft/scraper" target="_blank">Scraper</a>**
+
+Scraper for parsing app information from Google Play Store. 
+Supported sites 
+- Google Play Store 
+- AndroidDrawer
+
+**<a href="https://github.com/betacraft/slack" target="_blank">Slack client for Golang</a>**
+
+This library allows you to send data into slack group/channel using a Incoming Webhook url.
+
+**<a href="https://github.com/betacraft/circleci" target="_blank">Circle client for Golang</a>**
+
+Golang client library to interact with CircleCI 1.0.
+
 **<a href="https://github.com/RainingClouds/transporter" target="_blank">Transporter</a>**
 
   * It’s a wrapper for writing socket servers with keeping your business logic separated from the underlying technology for sockets.
