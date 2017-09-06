@@ -20,6 +20,10 @@ Media.net is a leading AdTech company in the world. At Media.net, I am leading t
 - Built Go microservices supporting high loads (~50k/sec) using Golang, Redis, Postgres.
 - Managing Android SDK integrations for merchants.
 - Maintaining code hygienes for Golang microservices and Android codebase.
+- Built Simpl Android app single handedly.
+    - https://play.google.com/store/apps/details?id=com.simpl.android
+    - 100,000 - 500,000 downloads with 4.4 stars.
+    - 99% of the users are always crash free as reported by Fabric.
 
 **Creator of [AppSurfer](http://www.akshaydeo.com/appsurfer/), [Twist](http://www.akshaydeo.com/twist/).**
 
