@@ -10,7 +10,7 @@ Usually in Golang, it is recommended that, while propagating errors outside, jus
 
 **Basic example is:**
 
-Consider your web app is talking to another gRPC server for getting location information through a function called, `getLocationFor(user)`. Now there could be long enough function call tree that lands us onto this function. So if something goes wrong with gRPC connection, and if we return the error as is, technically we have lost the context.
+Consider your web app is talking to another gRPC server for getting location information through a function called, `GetLocationFor(user)`. Now there could be long enough function call tree that lands us onto this function. So if something goes wrong with gRPC connection, and if we return the error as is, technically we have lost the context.
 
 {% highlight golang %}
 func GetLocationFor(u *User) (*Location,error){
@@ -64,4 +64,5 @@ func GetLocationFor(u *User) (*Location,error){
 {% endhighlight %}
 
 This keeps the context of the error very specific and makes it easier to pinpoint the exact issue.
+
 Happy coding \m/
