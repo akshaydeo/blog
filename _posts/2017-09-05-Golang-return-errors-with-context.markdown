@@ -25,9 +25,7 @@ func GetLocationFor(u *User) (*Location,error){
 
 So there is one better way to just return the error (without logging it) and keeping the context:
 
-Consider following supporting method for creating errors
-
-> Consider our package errors/err.go
+Consider following supporting method for creating error objects
 
 {% highlight golang %}
 func New(args ...interface{}) error {
