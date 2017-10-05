@@ -63,6 +63,8 @@ func GetLocationFor(u *User) (*Location,error){
 }
 {% endhighlight %}
 
+After this, whenver you log the error it will be something like `while getting location from grpc client in GetLocatioFor [error => <original_error_message_from_grpc_client>]`
+
 This keeps the context of the error very specific and makes it easier to pinpoint the exact issue.
 
 Happy coding \m/
