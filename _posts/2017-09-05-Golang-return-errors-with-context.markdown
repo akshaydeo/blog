@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Golang: Returning errors with context"
-date: 2017-10-5 11:55:46 +0530
+date: 2017-09-5 11:55:46 +0530
 comments: true
 categories: Golang Notes Errors
 ---
