@@ -8,7 +8,7 @@ categories: Golang Notes Errors
 
 Usually in Golang, it is recommended that, while propagating errors outside, just return the error do not log it. [This](https://dave.cheney.net/2015/11/05/lets-talk-about-logging) blog by Dave Cheney talks in length about how shall we handle logging and errors. But while returning/propagating errors, somtimes it becomes necessary to add the context of the error along with the actual error.
 
-Basic example is: 
+**Basic example is:**
 
 Consider your web app is talking to another gRPC server for getting location information through a function called, `getLocationFor(user)`. Now there could be long enough function call tree that lands us onto this function. So if something goes wrong with gRPC connection, and if we return the error as is, technically we have lost the context.
 
