@@ -6,6 +6,8 @@ comments: true
 categories:
 ---
 
+> This post is pretty old, and I no longer use any of the tech mentioned in this post and won't recommend anyone to use.
+
 A lot of things in one title right :D. We are coming up with a small tool for developers that is going to help them to distribute mobile application releases easily, and mainly during development phase. Initially we were using the free dyno provided by Heroku, as staging environment. But as the date of release is approaching, it was time to move onto more scalable (heroku is scalable but becomes a bit costly when you start using it for production purpose) and cheaper infrastructure.
 ## Golang web application structure
 
