@@ -31,3 +31,7 @@ disqus_show_comment_count: false
 
 # Google Analytics
 google_analytics_tracking_id: UA-56560447-1
+
+# gems
+gems:
+  - jemoji
