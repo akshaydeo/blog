@@ -6,6 +6,8 @@ comments: true
 categories: Android SDK Dex Classloader Dexloader
 ---
 
+> As per the new Play store guidelines, this method is categorized as an illegal way of executing any functionality on user's device. I personally won't recommend this method anymore.
+
 If your product depends upon a mobile SDK, then you must be knowing the real pain of shipping the latest version of your SDK onto the live devices through host apps. There is a way to tackle this issue with an interesting approach.
 
 We are going to use dynamic class loading using classloaders provided by Android system.
