@@ -6,7 +6,7 @@ comments: true
 categories: Golang sync.Pool Concurrency Performance
 ---
 
-We @media.net write superfast backends with at max 30-40ms turn-around time from web-service. We continuously try to reduce money spent per request. This blog enlists a few of our findings and how did we go about it.
+We @media.net write superfast backends with at max 30-40ms turn-around time from web-service. We continuously try to reduce money spent per request. This blog enlists a few of our findings.
 
 > Precautionary warning: It's a long post with a lot of code. Comment if I am unclear, abstract or vague at any point.
 
@@ -16,7 +16,7 @@ sync.Pool \[1\] comes really handy when one wants to reduce the number of alloca
 
 ## How to use `sync.Pool`?
 
-Consider the following basic coding example:
+Consider the following example:
 
 ```go
 import (
