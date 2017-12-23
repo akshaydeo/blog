@@ -117,9 +117,7 @@ Refer the following diagram showing the flow:
 
 This is a pickle, once you put back the object, it's ready for reuse. So before you putting back the object inside the pool, you have to be sure that nothing else is using the same object for any other operation.
 
-### Consider following example which we can run on playground which depicts the exact same scenario.
-
-See it on [play.golang.org](https://play.golang.org/p/64SoX7W-x1H)
+Click here to see a simulated version of the same problem - [play.golang.org](https://play.golang.org/p/64SoX7W-x1H)
 
 ### Solution
 The only solution to it is manual reference counting for the pooled objects. When I started googling about the solution, I came across a nicely written blog here[4].
