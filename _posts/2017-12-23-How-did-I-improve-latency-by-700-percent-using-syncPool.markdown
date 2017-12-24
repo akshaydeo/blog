@@ -339,7 +339,7 @@ defer e.DecrementReferenceCount()
 ## Conclusion
 This entire method seems a bit of an overhead, and requires a lot more precision while coding. You miss Reference counting at one place and it could result in a lot of unwanted results. But this works like a charm (see the benchmarks) once you get it right.
 
-Let me know of your opinions, doubts, arguments here or at akshaymdeo[at]gmail.com. Happy coding \m/
+Let me know your opinions, doubts, arguments here or at akshaymdeo[at]gmail.com. Happy coding \m/
 
 ## References
 
