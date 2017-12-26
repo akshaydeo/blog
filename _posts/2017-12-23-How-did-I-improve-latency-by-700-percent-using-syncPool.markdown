@@ -150,7 +150,7 @@ type ReferenceCountable interface {
 - IncrementReferenceCount to increase the reference count of the current object
 - DecrementReferenceCount to decrease the reference count of the current object
 
---
+----
 We will write a struct that implements this interface, which can be embedded in our own structs.
 
 ```go
@@ -189,7 +189,7 @@ func (r ReferenceCounter) DecrementReferenceCount(notes ...string) {
 - Reference counter specifically does the job of thread safe reference counting
 - Along with that, it puts back the instance associated with the counter into the pool as soon as the reference count becomes zero
 
---
+----
 
 And finally the pool, Reference coutable pool
 
@@ -266,7 +266,7 @@ func (p *referenceCountedPool) Stats() map[string]interface{} {
 	- Technically the resulting struct should have First as "", Third as 0. But as we are using pooled objects, First will be "one" and Third will be 1.
 	- Hence we use a `Reset` function that reset all the members of the object before puting it back in the pool.
  
---
+----
 
 Now start using the ReferenceCoutedPool as following:
 
