@@ -123,6 +123,7 @@ Refer the following diagram showing the flow:
 
 ![img2](https://raw.githubusercontent.com/akshaydeo/blog/master/public/images/go_pooling_image_2.png)
 
+**The issue here is**, what if Async Call 1 takes more time and before it completes it's functionality, your controller has written the response, and object is put back into the pool!
 
 ### Solution
 The only solution to it is manual reference counting for the pooled objects. When I started googling about the solution, I came across a nicely written blog here[4].
