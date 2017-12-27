@@ -101,7 +101,7 @@ Status Codes  [code:count]             200:100
 ![img1](https://raw.githubusercontent.com/akshaydeo/blog/master/public/images/go_pooling_image1.jpg)
 
 
-### What if async call 1 or async call 2 takes some more time, and in-between you Put back the object inside pool ?
+### What if you pass a pooled object to a go-routine and submit it back to the pool before go-routine yet to complete the execution?
 
 This is a pickle, once you put back the object, it's ready for reuse. So before you putting back the object inside the pool, you have to be sure that nothing else is using the same object for any other operation.
 
