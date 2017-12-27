@@ -100,6 +100,16 @@ Status Codes  [code:count]             200:100
 
 ![img1](https://raw.githubusercontent.com/akshaydeo/blog/master/public/images/go_pooling_image1.jpg)
 
+
+### What if async call 1 or async call 2 takes some more time, and in-between you Put back the object inside pool ?
+
+This is a pickle, once you put back the object, it's ready for reuse. So before you putting back the object inside the pool, you have to be sure that nothing else is using the same object for any other operation.
+
+Example code - [play.golang.org](https://play.golang.org/p/64SoX7W-x1H)
+
+
+### Let's consider this flow in a more practical use case
+
 Here is the typical flow for a Web-Service API. 
 
 > Let's assume that our controller is using pooled struct to read body of the incoming request.
@@ -113,11 +123,6 @@ Refer the following diagram showing the flow:
 
 ![img2](https://raw.githubusercontent.com/akshaydeo/blog/master/public/images/go_pooling_image_2.png)
 
-## What if async call 1 or async call 2 takes some more time, and in-between you Put back the object inside pool ?
-
-This is a pickle, once you put back the object, it's ready for reuse. So before you putting back the object inside the pool, you have to be sure that nothing else is using the same object for any other operation.
-
-Click here to see a simulated version of the same problem - [play.golang.org](https://play.golang.org/p/64SoX7W-x1H)
 
 ### Solution
 The only solution to it is manual reference counting for the pooled objects. When I started googling about the solution, I came across a nicely written blog here[4].
