@@ -93,7 +93,7 @@ Status Codes  [code:count]             200:100
 
 ### Observations
 
-- **For 95 percentile, we get almost 700x performance boost.**
+- **We get almost 700x performance boost. (95th percentile)**
 - For most of the objects, the ratio of allocation to reuse was almost 10-15 times. Which means the object was allocated probably 5 times and being used almost 50-70 times, during the course of this benchmark.
 
 ## Precautions to be taken while using sync.Pool
