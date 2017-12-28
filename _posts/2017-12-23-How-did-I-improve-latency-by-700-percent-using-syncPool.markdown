@@ -241,7 +241,7 @@ func (p *referenceCountedPool) Stats() map[string]interface{} {
 	return map[string]interface{}{"allocated": p.allocated, "referenced": p.referenced, "returned": p.returned}
 }
 ```
-- `ReferenceCountedPool` expects a factory method that returns `ReferenceCoutable` instance with `ReferenceCounter` embedded in it.
+- `ReferenceCountedPool` expects a factory method that returns `ReferenceCoutable` instance i.e. an object implementing `ReferenceCountable`. Here in this example we will be embedding `ReferenceCounter` which will suffice this condition.
 - Reset function ideally resets all the members of the instance of an object.
 - This is necessary in most of the practical use case
 	- Consider the following struct 
