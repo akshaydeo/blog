@@ -66,7 +66,7 @@ I picked one of the most commonly used API from our web-service which
 
 I ran a load test of 10-rps on my local machine for 10 seconds first on pooled-flow and then on non-pooled flow.
 
-> These latencies are higher because this service was running in Pune office and communicating with other microservices running in Oregon :).
+> These latencies are higher because this service was running in Pune (India) office and communicating with other microservices running in Oregon (United States) :).
 
 ### For pooled version
 ```
