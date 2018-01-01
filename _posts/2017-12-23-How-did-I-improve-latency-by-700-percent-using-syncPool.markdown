@@ -195,7 +195,7 @@ func (r ReferenceCounter) DecrementReferenceCount() {
 - Reference counter specifically does the job of thread safe reference counting
 - Along with that, it puts back the instance associated with the counter into the pool as soon as the reference count becomes zero
 - Reset function ideally resets all the members of the instance of an object.
-- This is necessary in most of the practical use case
+- This is necessary in most of the practical use cases
 	- Consider the following struct 
 	
 	```go
