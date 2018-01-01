@@ -173,13 +173,13 @@ type ReferenceCounter struct {
 }
 
 // Method to increment a reference
-func (r ReferenceCounter) IncrementReferenceCount(notes ...string) {
+func (r ReferenceCounter) IncrementReferenceCount() {
 	atomic.AddUint32(r.count, 1)
 }
 
 // Method to decrement a reference
 // If the reference count goes to zero, the object is put back inside the pool
-func (r ReferenceCounter) DecrementReferenceCount(notes ...string) {
+func (r ReferenceCounter) DecrementReferenceCount() {
 	if atomic.LoadUint32(r.count) == 0 {
 		panic("this should not happen =>" + reflect.TypeOf(r.Instance).String())
 	}
@@ -194,6 +194,36 @@ func (r ReferenceCounter) DecrementReferenceCount(notes ...string) {
 ```
 - Reference counter specifically does the job of thread safe reference counting
 - Along with that, it puts back the instance associated with the counter into the pool as soon as the reference count becomes zero
+- Reset function ideally resets all the members of the instance of an object.
+- This is necessary in most of the practical use case
+	- Consider the following struct 
+	
+	```go
+	type A struct{
+		First string `json:"f"`
+		Second string `json:"s"`
+		Third int `json:"t"`
+	}
+	```
+	- Suppose that while using for the first time we got a JSON like following
+	
+	```json
+	{
+		"f" : "one",
+		"t" : 1,
+	}
+	```
+	- We do the processing and put back the object inside the pool.
+	- Now we got the second request with following JSON 
+	
+	```json
+	{
+		"s" : "second",
+	}
+	```
+	- Technically the resulting struct should have First as "", Third as 0. But as we are using pooled objects, First will be "one" and Third will be 1.
+	- Hence we use a `Reset` function that reset all the members of the object before puting it back in the pool.
+ 
 
 ----
 
@@ -242,36 +272,7 @@ func (p *referenceCountedPool) Stats() map[string]interface{} {
 }
 ```
 - `ReferenceCountedPool` expects a factory method that returns `ReferenceCoutable` instance i.e. an object implementing `ReferenceCountable`. Here in this example we will be embedding `ReferenceCounter` which will suffice this condition.
-- Reset function ideally resets all the members of the instance of an object.
-- This is necessary in most of the practical use case
-	- Consider the following struct 
-	
-	```go
-	type A struct{
-		First string `json:"f"`
-		Second string `json:"s"`
-		Third int `json:"t"`
-	}
-	```
-	- Suppose that while using for the first time we got a JSON like following
-	
-	```json
-	{
-		"f" : "one",
-		"t" : 1,
-	}
-	```
-	- We do the processing and put back the object inside the pool.
-	- Now we got the second request with following JSON 
-	
-	```json
-	{
-		"s" : "second",
-	}
-	```
-	- Technically the resulting struct should have First as "", Third as 0. But as we are using pooled objects, First will be "one" and Third will be 1.
-	- Hence we use a `Reset` function that reset all the members of the object before puting it back in the pool.
- 
+
 ----
 
 Now start using the ReferenceCoutedPool as following:
