@@ -3,6 +3,8 @@ layout: page
 title: About
 ---
 
+**[LinkedIn](https://www.linkedin.com/in/akshaymdeo/)**
+
 **Tech Lead @[media.net](https://media.net)**
 
 Media.net is a leading AdTech company in the world. At Media.net, I am leading the next generation mobile solutions for our Advertising business.
