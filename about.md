@@ -14,6 +14,8 @@ Media.net is a leading AdTech company in the world. At Media.net, I am leading t
 <h2> Past </h2>
 <hr>
 
+**Creator of [AppSurfer](http://www.akshaydeo.com/appsurfer/), [Twist](http://www.akshaydeo.com/twist/).**
+
 **Technical Consultant (Android framework) @[Simpl](https://getsimpl.com)**
 
 - Built Android SDK and Android App for Simpl
@@ -25,5 +27,4 @@ Media.net is a leading AdTech company in the world. At Media.net, I am leading t
     - 100,000 - 500,000 downloads with 4.4 stars.
     - 99% of the users are always crash free as reported by Fabric.
 
-**Creator of [AppSurfer](http://www.akshaydeo.com/appsurfer/), [Twist](http://www.akshaydeo.com/twist/).**
 
