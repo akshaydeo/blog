@@ -14,10 +14,11 @@ layout: default
     <hr>  
   {{ content }}
   <hr/>
+  <div id="social">{% include share_page.html %}</div>
+  <hr/>
 </div>
 <div>
 <section>
-    <div id="social">{% include share_page.html %}</div>
     <h1>Comments</h1>
     <div id="disqus_thread" aria-live="polite">{% include disqus.html %}</div>
 </section>
