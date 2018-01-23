@@ -96,6 +96,15 @@ Status Codes  [code:count]             200:100
 - **We get almost 700x performance boost. (95th percentile)**
 - For most of the objects, the ratio of allocation to reuse was almost 10-15 times. Which means the object was allocated probably 5 times and being used almost 50-70 times, during the course of this benchmark.
 
+
+### Here are some of the outcomes of one of our services
+
+- Almost 78% of the objects were reused in course of a load test
+- During the distributed load, this number will improve a lot
+
+![img4](https://raw.githubusercontent.com/akshaydeo/blog/master/public/images/stats_1.png)
+![img5](https://raw.githubusercontent.com/akshaydeo/blog/master/public/images/stats_2.png)
+
 ## Precautions to be taken while using sync.Pool
 
 ![img1](https://raw.githubusercontent.com/akshaydeo/blog/master/public/images/go_pooling_image1.jpg)
