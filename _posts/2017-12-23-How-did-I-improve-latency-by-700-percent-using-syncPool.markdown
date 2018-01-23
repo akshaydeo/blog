@@ -147,6 +147,8 @@ We will have an interface to have a blueprint of how a Reference Coutable object
 // We have provided inbuilt embeddable implementation of the reference countable pool
 // This interface just provides the extensibility for the implementation
 type ReferenceCountable interface {
+	// Method to set the current instance
+	SetInstance(i interface{})
 	// Method to increment the reference count
 	IncrementReferenceCount()
 	// Method to decrement reference count
@@ -189,7 +191,13 @@ func (r ReferenceCounter) DecrementReferenceCount() {
 			panic("error while resetting an instance => " + err.Error())
 		}
 		r.destination.Put(r.Instance)
+		r.instance = nil
 	}
+}
+
+// Method to set the current instance
+func (r *ReferenceCounter) SetInstance(i interface{}) {
+	r.instance = i
 }
 ```
 - Reference counter specifically does the job of thread safe reference counting
@@ -261,6 +269,7 @@ func NewReferenceCountedPool(factory func(referenceCounter ReferenceCounter) Ref
 // Method to get new object
 func (p *referenceCountedPool) Get() ReferenceCountable {
 	c := p.pool.Get().(ReferenceCountable)
+	c.SetInstance(c)
 	atomic.AddUint32(&p.referenced, 1)
 	c.IncrementReferenceCount()
 	return c
@@ -326,7 +335,6 @@ var eventPool = pool.NewReferenceCountedPool(
 	func(counter pool.ReferenceCounter) pool.ReferenceCountable {
 		br := new(Event)
 		br.ReferenceCounter = counter
-		br.Instance= br
 		return br
 	}, ResetEvent)
 
