@@ -17,7 +17,7 @@ tags:
 ---
 When I read about Kotlin, I thought of it as a functional port of Java which is (<span style="text-decoration: underline;"><em>100% interoperable with Java</em></span>). I have been playing with Scala for a bit. The biggest trouble I had with Scala is wide range of semantic alternatives. But it seems like, Kotlin has a decisive approach towards making Java more functional and more compact for developers.
 
-Kotlin does support  Androi and they do have a very verbose documentation about Android support</span>, So I went ahead and tried one simple list app with an adapter and a fragment, just to simulate a simple part of general Android application.
+<span>Kotlin does support  Androi and they do have a very verbose documentation about Android support</span>, So I went ahead and tried one simple list app with an adapter and a fragment, just to simulate a simple part of general Android application.
 
 **Setup**
 
