@@ -15,9 +15,9 @@ tags:
   - Android
   - Kotlin
 ---
-When I read the description about kotlin, I thought of it as a very beautiful port of Java (<span style="text-decoration: underline;"><em>as its a JVM based language and 100% interoperable with Java</em></span>). I have been trying to like Scala for a lot time now, but hell lot of options for everything, complex semantics makes the code unreadable and confusing (<span style="text-decoration: underline;"><em>for me</em></span>). But kotlin, according to me is a decisive approach towards making Java more functional and more compact for developers.
+When I read about Kotlin, I thought of it as a functional port of Java which is (<span style="text-decoration: underline;"><em>100% interoperable with Java</em></span>). I have been playing with Scala for a bit. The biggest trouble I had with Scala is wide range of semantic alternatives. But it seems like, Kotlin has a decisive approach towards making Java more functional and more compact for developers.
 
-The first thing I searched when I read about Kotlin was, about Android support. <a title="Scaloid" href="https://github.com/pocorall/scaloid/" target="_blank">Scaloid</a> being more and more popular and I being completely not in love with Scala, this was going to be an interesting thing for me. <span style="text-decoration: underline;">Kotlin does have support for Android and they do have amazing documentation about both language as well as Android support</span>, So I went ahead and tried one simple list app with an adapter and a fragment, just to simulate a simple part of general Android application.
+Kotlin does support  Androi and they do have a very verbose documentation about Android support</span>, So I went ahead and tried one simple list app with an adapter and a fragment, just to simulate a simple part of general Android application.
 
 **Setup**
 
@@ -31,7 +31,7 @@ The first thing I searched when I read about Kotlin was, about Android support. 
 
 **The Application**
 
-I started with writing a HackerNews listing app. But then restricted it to simulating the API call with a stub so as to focus onto the Kotlin more than the actual functionality of the application.
+I started with writing a HackerNews listing app with simulated API calls (had to do it quickly).
 
 **Code**
 
@@ -57,12 +57,12 @@ open class Home(): ActionBarActivity(){
 
 **Things I loved**
 
-  * Kotlin has val, var keywords to separate out the final and variables (if we compare it with Java). I personally feel that val and var are the best ways to indicate that if a member is final or not.
-  * Nullable is always appended with a &#8216;?&#8217;. So this is again a very informative way of indicating the possible exceptions that can happen when you are working with a particular member or parameter.
+  * Kotlin has val, var keywords to separate out the final and variables. 
+  * Nullable is always appended with a &#8216;?&#8217;. That hints the compulsions around null checks and method calls. Helps to avoid null pointers :-)
 
 **PostListFragment**
 
-This is the fragment that contains list of posts. It&#8217;s a DialogFragment, so as to make it available to be used as a dialog as well.
+This is the fragment that contains list of posts.
 
 {% highlight java %}
 open class PostListFragment() : DialogFragment() {
@@ -102,12 +102,8 @@ open class PostListFragment() : DialogFragment() {
 
 **Things I loved**
 
-  * <span style="text-decoration: underline;">The biggest advantage Kotlin gives you is passing functions as parameter (Functions are first class citizens)</span>.<span style="text-decoration: underline;"> And this helps us to remove all those interfaces we end up creating to circumvent this problem in Java. (Look at the Post.Maker.GetList)</span>
+  * <span style="text-decoration: underline;">Functions are first class citizens</span>.<span style="text-decoration: underline;"> And this helps us to remove all those interfaces we end up creating to circumvent this problem in Java.</span>
   * In Kotlin, you have to write all the static methods separately inside an object. Most of the times the static methods are factory methods, and this helped me to make the code more readable. So I call each of the object inside the class as Maker, and write different factory method inside it. This is completely possible with Java by writing inner classes, but this being the semantics of the language, forces us to write the factory methods like this.
-
-**Things I hated**
-
-  * <span style="text-decoration: underline;">&#8216;?&#8217; comes really handy to avoid null pointer exceptions. But I feel that also is a problematic.</span> In most of the cases during development, null pointer exceptions help us to fix issues quickly. Now as this was a small skit, I never faced any null pointer exception but while writing some complex code this could make a few things really tricky.
 
 **Post**  
 This is the model class containing info related with each post.
@@ -128,9 +124,8 @@ data class Post(val id: Long, val post: String, val by: String, val postedAt: Da
 
 **Things I loved**
 
-  * Making class as a data class makes it easy to debug. Using instance of this class in logs prints the values of each of the field of the class in readable format. I feel this is one of the best thing. This can be done in Java by overriding toString() method.
-  * The way you define members of the class, is much much compact and better. Now my model classes will just have the Maker which will have the factory methods.
-  * <span style="text-decoration: underline;"><strong>Functions are first class citizens!</strong></span> Look at the way GetList is coded. It accepts a function, that takes up List of Post as param and returns nothing. (Unit in Kotlin means nothing). So forget all the interfaces we used to write for circumventing the problem of passing functions as arguments.
+  * Data classes have amazing inherent toString support. Great for logging
+  * Compact, more readable declarations for model classes.
 
 **PostListAdapter**
 
@@ -184,8 +179,8 @@ This all works well. The source code is available at <https://github.com/akshayd
 
 **Some analysis of APK**
 
-  * The very very important thing to look at is, <span style="text-decoration: underline;">the number of classes inside your APK</span>. Don&#8217;t worry, its gonna be huge that the APK you will create with same functionality using JAVA. <span style="text-decoration: underline;">For example the application that I have created contains <strong>3561</strong> classes</span>. (I am planning to write the same app using Java and compare the results with Kotlin app). <span style="text-decoration: underline;">So running proguard during the debug builds is very essential in this case</span>.
-  * Also I faced gradle crashing problem because of the default VM params. So you will have to change them using preferences. I changed them to {% highlight groovy %}-XX:MaxPermSize=1024m -XX:MaxHeapSize=256m -Xmx256m
+  * The very important thing to look at is, <span style="text-decoration: underline;">the number of classes inside your APK</span>. Compared to Java based app, its gonna be huge. <span style="text-decoration: underline;">For example the application that I have created contains <strong>3561</strong> classes</span>.<span style="text-decoration: underline;">Running proguard to strip out the unused classes is a must before creting a release build</span>.
+  * Huge memory requirements during the builds. So you will have to change the VM preferences before using Kotlin as your Android development laguage. Mine were: {% highlight groovy %}-XX:MaxPermSize=1024m -XX:MaxHeapSize=256m -Xmx256m
 {% endhighlight %}
 
 **Important Links for Kotlin**
