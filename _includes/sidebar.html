@@ -1,32 +1,32 @@
 <div class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="container">
     <div class="sidebar-about">
-      <h1>
-        <a href="/" style="font-family: 'Press Start 2P', cursive;">
-          {{ site.title }}
-        </a>
-      </h1>
-      <p class="lead">{{ site.description }}</p>
     </div>
-
     <nav class="sidebar-nav">
+
       <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="/">Home</a>
 
       {% comment %}
-        The code below dynamically generates a sidebar nav of pages with
-        `layout: page` in the front-matter. See readme for usage.
+      The code below dynamically generates a sidebar nav of pages with
+      `layout: page` in the front-matter. See readme for usage.
       {% endcomment %}
 
       {% assign pages_list = site.pages %}
       {% for node in pages_list %}
-        {% if node.title != null %}
-          {% if node.layout == "page" %}
-            <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
-          {% endif %}
-        {% endif %}
-      {% endfor %}      
-    </nav>  
-    <p><a href="https://twitter.com/akshay_deo" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @akshay_deo</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
-    <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
+      {% if node.title != null %}
+      {% if node.layout == "page" %}
+      <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
+      {% endif %}
+      {% endif %}
+      {% endfor %}
+    </nav>
+    <div class="container sidebar-sticky">
+      <img class="lead" style="margin:auto;display:block;margin-bottom: 20px;"  src="/public/images/icon.png" width="152px" />
+      <p style="width:100%;margin:auto;display:block;margin-bottom: 10px;"><a href="https://twitter.com/akshay_deo" class="twitter-follow-button" data-size="large" data-show-count="true">Follow
+          @akshay_deo</a>
+        <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </p>
+      <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
+    </div>
   </div>
 </div>
