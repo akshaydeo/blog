@@ -3,10 +3,10 @@ permalink: /blog/:year/:month/:day/:title/
 #relative_permalinks: true
 
 # Setup
-title:            amd
-tagline:          'code for life'
+title:            akshay deo
+tagline:          ''
 description:      ''
-url:              http://akshaydeo.com
+url:              https://www.akshaydeo.com
 baseurl:          /
 
 author:
