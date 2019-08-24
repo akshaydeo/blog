@@ -5,6 +5,13 @@ title: About
 
 **[LinkedIn](https://www.linkedin.com/in/akshaymdeo/)**
 
+**Staff Engineer @[Slack](https://slack.com)**
+
+<h2> Past </h2>
+<hr>
+
+**Creator of [AppSurfer](http://www.akshaydeo.com/appsurfer/), [Twist](http://www.akshaydeo.com/twist/).**
+
 **Tech Lead @[media.net](https://media.net)**
 
 Media.net is a leading AdTech company in the world. At Media.net, I am leading the next generation mobile solutions for our Advertising business.
@@ -12,11 +19,6 @@ Media.net is a leading AdTech company in the world. At Media.net, I am leading t
 - Building backend infrastructure for mobile ads
 - Building high throughput, real-time data pipelines for data flow inside backend system
 - Architecting Mobile (iOS/Android) SDKs for size and resource consumption optimization
-
-<h2> Past </h2>
-<hr>
-
-**Creator of [AppSurfer](http://www.akshaydeo.com/appsurfer/), [Twist](http://www.akshaydeo.com/twist/).**
 
 **Technical Consultant (Android framework) @[Simpl](https://getsimpl.com)**
 
