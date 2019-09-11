@@ -49,4 +49,4 @@ But we were running on a very thin runway, and couldn't launch it into the marke
 
 ## Joining forces with Media.Net
 
-When Google announced Instant Apps for Android, we decided to shut down AppSurfer with a detailed [blog post](https://blog.appsurfer.com/post/145253504285/appsurfer-bids-adieu). [Vaibhav Arya](https://www.linkedin.com/in/vaibhavarya/), then CTO and now CEO of the Media.net, read this blog post and offered us to join the forces with Media.Net. I started working as a Tech Lead on InApp products 📱.
+When Google announced Instant Apps for Android, we decided to shut down AppSurfer with a detailed [blog post](https://blog.appsurfer.com/post/145253504285/appsurfer-bids-adieu). [Vaibhav Arya](https://www.linkedin.com/in/vaibhavarya/), then CTO and now CEO of the Media.net, read this blog post and offered us to join the forces with Media.Net. I worked there for 3 years as (Senior) Tech Lead on InApp (Mobile) Products.
