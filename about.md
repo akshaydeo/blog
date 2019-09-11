@@ -3,7 +3,12 @@ layout: page
 title: About
 ---
 
-👋, I am Akshay Deo. I am a Computer Engineer from Pune,India. I wrote my first computer program when I was in 10th grade for my dad's construction company. Since then I have 👨‍💻 softwares. I have been successfully migrated from VBScript, ActionScript 2.0 (even Flex), LAMP, C#, Django (flask in 1 or 2 projects), Play framework (plain Netty in a couple of projects) to Go, NodeJS + Typescript, Hack (in Slack) 🤓.
+👋, I am Akshay Deo. I am a Computer Engineer from Pune,India. I am currently working with [Slack](https://slack.com) as Staff Engineer (Backend).  
+
+
+## Background
+
+I wrote my first computer program when I was in 10th grade for my dad's construction company. Since then I have 👨‍💻 softwares. I have been successfully migrated from VBScript, ActionScript 2.0 (even Flex), LAMP, C#, Django (flask in 1 or 2 projects), Play framework (plain Netty in a couple of projects) to Go, NodeJS + Typescript, Hack (in Slack) 🤓.
 
 ## Startup life
 
@@ -45,4 +50,3 @@ But we were running on a very thin runway, and couldn't launch it into the marke
 ## Joining forces with Media.Net
 
 When Google announced Instant Apps for Android, we decided to shut down AppSurfer with a detailed [blog post](https://blog.appsurfer.com/post/145253504285/appsurfer-bids-adieu). [Vaibhav Arya](https://www.linkedin.com/in/vaibhavarya/), then CTO and now CEO of the Media.net, read this blog post and offered us to join the forces with Media.Net. I started working as a Tech Lead on InApp products 📱.
-
