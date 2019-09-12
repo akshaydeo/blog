@@ -8,7 +8,7 @@ title: About
 
 ## Background
 
-I wrote my first computer program when I was in 10th grade for my dad's construction company. Since then I have 👨‍💻 softwares. I have been successfully migrated from VBScript, ActionScript 2.0 (even Flex), LAMP, C#, Django (flask in 1 or 2 projects), Play framework (plain Netty in a couple of projects) to Go, NodeJS + Typescript, Hack (in Slack) 🤓.
+I wrote my first computer program when I was in 10th grade for my dad's construction company. Since then I have 👨‍💻 softwares. I have worked on a wide range of tech stacks including VBScript, ActionScript 2.0 (even Flex), LAMP, C#, Django (flask in 1 or 2 projects), Play framework (plain Netty in a couple of projects) to Go, NodeJS + Typescript, ReactJS, Hack (in Slack) 🤓.
 
 ## Startup life
 
