@@ -14,7 +14,7 @@ I wrote my first computer program when I was in 10th grade for my dad's construc
 
 In 2012, at the age of 23, I founded a company called **RainingClouds** along with 3 other co-founders. We built a product, AppSurfer, which in breif, runs Android on cloud and can stream on any platform. We got a lot of 🗞 on [TechCrunch](https://techcrunch.com/2012/10/11/appsurfer-takes-android-apps-to-the-browser-lets-you-embed-them-anywhere/), again on [TechCrunch](https://techcrunch.com/2013/03/21/try-before-you-buy-app-demo-platform-appsurfer-lets-you-test-apps-on-facebook-debuts-an-android-app-of-its-own/), [TheNextWeb](https://thenextweb.com/apps/2012/11/27/try-before-you-buy-appsurfer-lets-d/#.tnw_lJ48mLih) and [VentureBeat](https://venturebeat.com/2013/01/21/appsurfer-adds-tablet-apps-to-web-based-try-before-you-buy-android-app-demos/) to name a few.
 
-<div class="container">
+<div class="video-container">
 <br/>
 <iframe style="display:block;margin:auto;" width="600" height="320" src="https://www.youtube.com/embed/JqryuQDXge8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br/>
@@ -22,7 +22,7 @@ In 2012, at the age of 23, I founded a company called **RainingClouds** along wi
 
 We successfully raised 1 crore INR (~200K 💰) as seed funding from One97 Mobility fund run by [Vijay Shekhar Sharma](https://en.wikipedia.org/wiki/Vijay_Shekhar_Sharma).
 
-<div class="container">
+<div class="video-container">
 <br/>
 <iframe style="display:block;margin:auto;" width="600" height="320" src="https://www.youtube.com/embed/BYfpWyvj-r0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <p style="text-align:center;">One of the first few public demos of AppSurfer. This event was hosted by PuneTech.</p>
@@ -40,7 +40,7 @@ After AppSurfer, we breifly worked on a hardware product called [Twist](https://
 
 We took this idea a little further, by converting phones into a game controller as well.
 
-<div class="container">
+<div class="video-container">
 <br/>
 <iframe style="display:block;margin:auto;" width="600" height="320" src="https://www.youtube.com/embed/yuCPw8l_kts" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br/><br/>
 </div>
