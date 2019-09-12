@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 
-👋, I am Akshay Deo. I am a Computer Engineer from Pune (India). I currently work with [Slack](https://slack.com) as Staff Engineer (Backend). You can get in touch with me at [akshay@akshaydeo.com](mailto://akshay@akshaydeo.com).
+👋, I am Akshay Deo, a Computer Engineer from Pune (India). I currently work with [Slack](https://slack.com) as Staff Engineer (Backend). You can get in touch with me at [akshay@akshaydeo.com](mailto://akshay@akshaydeo.com).
 
 
 ## Background
