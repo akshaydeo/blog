@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Integrating Push notifications inside your Android app using FCM in 4 simple steps"
+title: "Integrating Push notifications inside your Android app using FCM in 5 simple steps"
 date: 2019-09-21 18:30:46 +0530
 comments: true
 categories: [Android,FCM,Firebase,Push Notifications,Kotlin]
@@ -21,6 +21,11 @@ buildscript {
         google()     
         ...   
     }
+    dependencies {
+        ...
+        // Add this line
+        classpath 'com.google.gms:google-services:4.3.2'
+    }
     ...
 }
 
@@ -37,6 +42,12 @@ allprojects {
 - Then goto your `app/build.gradle` and add following dependency
 ```
 implementation 'com.google.firebase:firebase-messaging:${latestVersion}'
+```
+
+- And add this plugin at the bottom of the same gradle file
+
+```
+apply plugin: 'com.google.gms.google-services'
 ```
 
 ## Step 2: Updating the manifest file
@@ -89,16 +100,32 @@ class FCMHandler : FirebaseMessagingService() {
 }
 ```
 
-# How to test this? 🤔
-
-## Long way 🤯 but we will have to do it before shipping this feature.
+## Step 5: Add firebase config to the app
 
 1. Setup Firebase account for this app. 
-2. Refer: https://firebase.google.com/docs/android/setup?authuser=0
+2. Goto https://console.firebase.google.com
+3. Create a new project, if you haven't already created.
+4. Add a new Android app.
+5. Fill up the following form
+
+![img1](https://raw.githubusercontent.com/akshaydeo/blog/master/public/images/firebase_form_add_app.png)
+
+6. Download the config file and save inside `app` folder of the project.
+7. Rerun the app and you have successfully 
+
+# How to test this? 🤔
+
+## Long way 🤯
+
+- Configure a server / API endpoint that will trigger a push notification into your device. 
 
 
 ## But there is one more way to test these push notifications independently! 😲
 
-- I have built a Android dev tool for helping Android developers. One of it's features is **Testing Push Potifications without Server Side integration**
+- I have built an Android development tool for helping Android developers. One of it's features is **Testing Push Potifications without Server Side integration** 
+
+![img2](https://raw.githubusercontent.com/akshaydeo/blog/master/public/images/viwr_introduction.png)
+
+
 
 ### Tell me more
