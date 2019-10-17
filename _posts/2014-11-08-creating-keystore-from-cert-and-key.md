@@ -12,7 +12,8 @@ categories:
   - Java
   - keystore
 ---
-A quick not for creating .keystore using a set of certificates including root, intermediate and domain certs.
+
+> A quick note for creating .keystore using a set of certificates including root, intermediate and domain certs.
 
 First create a .p12 using private key and domain certificate.  
 {% highlight bash %}openssl pkcs12 -export -in <domain_cert> -inkey

@@ -1,5 +1,5 @@
 ---
-title: 'setOnItemClickListener() is not working&#8230;and its&#8217; because your layout structure is wrong'
+title: 'SetOnItemClickListener() is not working&#8230;and its&#8217; because your layout structure is wrong'
 author: Deo Akshay
 layout: post
 permalink: /setonitemclicklistener-is-not-working-and-its-because-your-layout-structure-is-wrong/
@@ -10,6 +10,7 @@ dsq_thread_id:
 categories:
   - Android
 ---
+
 This is gonna be a quick post. I spent like last 45 mins solving a very dumb issue, related to setOnItemClickListener of a custom class extending GridView. 
 
 Layout of GridView item:

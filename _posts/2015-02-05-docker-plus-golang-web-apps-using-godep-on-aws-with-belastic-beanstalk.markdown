@@ -9,6 +9,7 @@ categories:
 > This post is pretty old, and I no longer use any of the tech mentioned in this post and won't recommend anyone to use. (Except Go, which I still love the most, probably more)
 
 A lot of things in one title right :D. We are coming up with a small tool for developers that is going to help them to distribute mobile application releases easily, and mainly during development phase. Initially we were using the free dyno provided by Heroku, as staging environment. But as the date of release is approaching, it was time to move onto more scalable (heroku is scalable but becomes a bit costly when you start using it for production purpose) and cheaper infrastructure.
+
 ## Golang web application structure
 
 My web application is based on slightly customised version of [Gin](https://github.com/go-go/gin) + PostgreSQL at the backend, AngularJS + Bootstrap 3 + Custom CSS for front end. I have been using [Godep](https://github.com/tools/godep) for dependency management on Heroku. And I feel, this is one of the better ways than creating a bash script with all the go get.

@@ -3,12 +3,12 @@ layout: post
 title: "Integrating Push notifications inside your Android app using FCM in 5 simple steps"
 date: 2019-09-21 18:30:46 +0530
 comments: true
-categories: [Android,FCM,Firebase,Push Notifications,Kotlin]
+categories: [Android, FCM, Firebase, Push Notifications, Kotlin]
 ---
 
 Push notifications is the inherent part of any Android app. I assume that everybody understands what are [Push Notifications](https://www.airship.com/resources/explainer/push-notifications-explained/?utm_source=googleplus_sumo_share&utm_medium=website&utm_campaign=ua_web) and [How FCM Works](https://firebase.google.com/docs/cloud-messaging). Lets start 👨‍💻.
 
-## Step 1: Integrate Firebase with your Android app 
+## Step 1: Integrate Firebase with your Android app
 
 - Goto project level `build.gradle`.
 - And update the file to have following entries
@@ -18,8 +18,8 @@ Push notifications is the inherent part of any Android app. I assume that everyb
 buildscript {
     repositories {
         ...
-        google()     
-        ...   
+        google()
+        ...
     }
     dependencies {
         ...
@@ -34,12 +34,13 @@ allprojects {
         ...
         google()
         ...
-        
+
     }
 }
 ```
 
 - Then goto your `app/build.gradle` and add following dependency
+
 ```
 implementation 'com.google.firebase:firebase-messaging:${latestVersion}'
 ```
@@ -66,10 +67,11 @@ apply plugin: 'com.google.gms.google-services'
 ```
 
 ## Step 3: Monitoring changes to FCM token
+
 - FCM creates a unique token for each device to identify it independently.
 - This ID is important to be attached with the user profile on your server side.
 - Use following code to track the changes to the FCM device id.
-  
+
 > Keep this code in either Application Class or in an activity which is shown every time the app is opened (for example: Splash screen).
 
 ```kotlin
@@ -89,6 +91,7 @@ FirebaseInstanceId.getInstance().instanceId
 ```
 
 ## Step 4: Add `FCMHandlerService` as mentioned in the manifest file in Step 2
+
 - We use this service to detect new device id (token) generated for your device and send it to the server.
 
 ```kotlin
@@ -102,7 +105,7 @@ class FCMHandler : FirebaseMessagingService() {
 
 ## Step 5: Add firebase config to the app
 
-1. Setup Firebase account for this app. 
+1. Setup Firebase account for this app.
 2. Goto https://console.firebase.google.com
 3. Create a new project, if you haven't already created.
 4. Add a new Android app.
@@ -111,21 +114,16 @@ class FCMHandler : FirebaseMessagingService() {
 ![img1](https://raw.githubusercontent.com/akshaydeo/blog/master/public/images/firebase_form_add_app.png)
 
 6. Download the config file and save inside `app` folder of the project.
-7. Rerun the app and you have successfully 
+7. Rerun the app and you have successfully
 
 # How to test this? 🤔
 
-## Long way 🤯
+- Configure a server / API endpoint that will trigger a push notification into your device.
 
-- Configure a server / API endpoint that will trigger a push notification into your device. 
+## There is one more option 🎟
 
+- I have built an Android development tool for helping Android developers. One of it's features is **Testing Push Potifications without Server Side integration**
+- Know more about it here [Viwr](https://www.viwr.app)
 
-## But there is one more way to test these push notifications independently! 😲
+### How it works?
 
-- I have built an Android development tool for helping Android developers. One of it's features is **Testing Push Potifications without Server Side integration** 
-
-![img2](https://raw.githubusercontent.com/akshaydeo/blog/master/public/images/viwr_introduction.png)
-
-
-
-### Tell me more

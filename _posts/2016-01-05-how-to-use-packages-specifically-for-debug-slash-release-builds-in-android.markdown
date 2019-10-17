@@ -12,7 +12,6 @@ categories:
 ---
 
 ## Preface
-
 Currently I am working on an Android app for one of the most interesting startups in Fintech. I have been really choosy about the packages that are getting shipped with this app, simply because it involves a lot of money related functionalties. During the development, I came across a requirement that debug builds should have instabug integrated for reporting UI issues easily. APK size matters a lot, so I wanted to achieve this without shipping Instabug SDK in production builds. 
 
 ## How to do this?
