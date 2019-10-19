@@ -11,6 +11,7 @@ title: Books
       flex-wrap: wrap;
       flex-direction: row;
       align-items: center;
+      
     
 }
 
@@ -19,6 +20,9 @@ title: Books
     width: 98px;
     height: 160px;    
     overflow: hidden;
+      margin: 3px !important;
+  border: 1px solid darkgray;
+  border-radius: 3px;
 }
 
 .gr_grid_branding{
