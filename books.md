@@ -21,6 +21,9 @@ title: Books
     overflow: hidden;
 }
 
+.gr_grid_branding{
+    display:none;
+}
 
 
 img{
