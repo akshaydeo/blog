@@ -74,7 +74,8 @@ We are doing this, thinking What if we attach a bulk purchase to these discounts
 
 <img width="100%" style="max-width:700px;margin:auto;" src="/public/images/distribit_error_tracker.png"/>
 
-When [Fabric Beta](http://fabric.io/) was not around, Distribit was the system I had built to shared beta / alpha APKs and ipas for closed alpha and beta testing. 
+When [Fabric Beta](http://fabric.io/) was not around, Distribit was the system I had built to share beta / alpha APKs and ipas among registered users.
+
 - Auto updating the app as soon as it's uploaded to Distribit.
 - Error tracking.
 - Feedback collection
