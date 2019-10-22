@@ -8,6 +8,7 @@ categories:
   - json
   - json parsing
   - json to struct 
+image: https://blog.golang.org/go-brand/Go-BB_cover.jpg
 ---
 
 Recently I was working with a piece of code where I had to convert a JSON into a Golang struct. I faced hell lot of issues, and waster a bit of time in achieving that, so thought of documenting it.

@@ -4,6 +4,7 @@ title: "Docker + Golang web apps using Godep on AWS with Elastic Beanstalk using
 date: 2015-02-05 17:29:29 +0530
 comments: true
 categories:
+image: https://blog.golang.org/go-brand/Go-BB_cover.jpg
 ---
 
 > This post is pretty old, and I no longer use any of the tech mentioned in this post and won't recommend anyone to use. (Except Go, which I still love the most, probably more)

@@ -9,6 +9,7 @@ categories:
   - Android Studio
   - Build
   - Android build flavors
+image: /public/images/2.png
 ---
 
 ## Preface

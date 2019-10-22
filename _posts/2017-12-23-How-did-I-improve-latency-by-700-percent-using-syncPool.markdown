@@ -4,9 +4,11 @@ title: "How did I improve latency by 700% using sync.Pool"
 date: 2017-12-23 18:55:46 +0530
 comments: true
 categories: Golang sync.Pool Concurrency Performance
+image: https://raw.githubusercontent.com/akshaydeo/blog/master/public/images/stats_1.png
 ---
 
 We @media.net write superfast backends with at max 30-40ms turn-around time from web-service. We continuously try to reduce money spent per request. This blog enlists a few of our findings.
+
 > Precautionary warning: It's a long post with a lot of code. Comment if I am unclear, abstract or vague at any point.
 
 ## Why to use `sync.Pool`?

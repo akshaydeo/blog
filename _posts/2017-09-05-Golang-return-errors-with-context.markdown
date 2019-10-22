@@ -3,6 +3,7 @@ layout: post
 title: "Golang: Returning errors with context"
 date: 2017-09-5 11:55:46 +0530
 comments: true
+image: https://blog.golang.org/go-brand/Go-BB_cover.jpg
 categories: Golang Notes Errors
 ---
 

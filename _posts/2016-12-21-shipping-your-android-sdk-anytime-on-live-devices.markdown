@@ -4,6 +4,7 @@ title: "Shipping your Android SDK anytime on live devices"
 date: 2016-12-21 11:55:46 +0530
 comments: true
 categories: Android SDK Dex Classloader Dexloader
+image: https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/APK_format_icon.png/480px-APK_format_icon.png
 ---
 
 > As per the new Play store guidelines, this method is categorized as an illegal way of executing any functionality on user's device. I personally won't recommend this method anymore.
