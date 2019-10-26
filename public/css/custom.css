@@ -53,3 +53,9 @@
   color: darkgray;
   font-size: 16px;
 }
+
+.top-black-bar {
+  width: 100vw;
+  height: 10px;
+  background-color: #000;
+}
