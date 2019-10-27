@@ -3,13 +3,22 @@ layout: page
 title: About
 ---
 
-👋, I am Akshay Deo, a Computer Engineer from Pune (India). I am currently working as a Staff Engineer (Backend/Android) at Slack. You can get in touch with me at [akshay@akshaydeo.com](mailto://akshay@akshaydeo.com).
-
-## Background
-
-I wrote my first computer program when I was in 10th grade for my dad’s construction company. Since then I have been writing software 👨‍💻.
-
-I have worked on a wide range of tech stacks including VBScript, ActionScript 2.0, LAMP, C#, Django, Play framework, Netty, Go, NodeJS + Typescript, ReactJS, Hack 🤓.
+<div class="container-fluid" style="padding:0;">
+<div class="row">
+<div class="col-sm-12 col-md-4" style="margin-bottom:10px;">
+<img src="/public/images/photo.png" style="margin:auto;" class="img-fluid" alt="Responsive image">
+</div>
+<div class="col-sm-12 col-md-8">
+👋, I am Akshay Deo, a Computer Engineer from Pune 🇮🇳. I have co-founded 3 startups, out of 1 failed, 1 couldn't launch and 1 got acqui-hired. I have been facinated by 💻 since childhood. Seeing my dad working on a 286 with MsDos 2.1, was an awe-inspiring 😲 moment for me. Later this transpired into a life-long hobby/profession for me.
+<br/>
+<br/>
+I wrote my first computer program when I was in 10th grade for my dad’s construction company, using VB Script 6.0 and MS Access DB. I am hands-on fullstack developer (Android, iOS, ReactJS, Java, Go, NodeJS, Php/Hack) and experienced engineering manager. 
+<br/>
+<br/>
+<p>I currently work as a Staff Engineer at <a style="font-weight:bold;" href="https://slack.com">Slack</a>. Before Slack, I have worked as a Senior Technical Lead / Engineering Manager at <a style="font-weight:bold;" href="https://media.net">Media.Net</a> on Ad products.</p>
+</div>
+</div>
+</div>
 
 ## Startup life
 
