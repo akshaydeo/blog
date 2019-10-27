@@ -15,6 +15,7 @@ Viwr has different features like screen mirroring, location mocking, battery moc
 ### For Android Testers
 Viwr helps to create different analysis reports like [this](https://reports.viwr.app/?id=483ee408-a6b5-446d-a756-3e6b5577fde1), which are one click sharable with developers/clients giving a clear picture about how the app is performing.
 
+<hr/>
 
 # Droidcast
 
@@ -36,6 +37,8 @@ Simplest screen sharing app for Android.
 <br/>
 </div>
 
+<hr/>
+
 # GroupUp
 
 ### Result: Failed 💔
@@ -52,6 +55,7 @@ GroupUp was a reverse GroupOn for purchasing goods in a group. People create/joi
 - E-commerce players like Flipkart, Amazon.in, Snapdeal are coming up with huge discount sales.
 We are doing this, thinking What if we attach a bulk purchase to these discounts ?
 
+<hr/>
 
 # Keen
 
@@ -68,6 +72,8 @@ We are doing this, thinking What if we attach a bulk purchase to these discounts
 
 <img width="100%" style="max-width:700px;margin:auto;" src="/public/images/keen_spec.png"/>
 
+<hr/>
+
 # Distribit
 
 ### Result: Never came out of beta 💔
@@ -82,6 +88,8 @@ When [Fabric Beta](http://fabric.io/) was not around, Distribit was the system I
 - Slack notifications
 
 <img width="100%" style="max-width:700px;margin:auto;" src="/public/images/distribit_slack.png"/>
+
+<hr/>
 
 # Project Zero
 

@@ -106,10 +106,9 @@ Status Codes  [code:count]             200:100
 ![img4](https://raw.githubusercontent.com/akshaydeo/blog/master/public/images/stats_1.png)
 ![img5](https://raw.githubusercontent.com/akshaydeo/blog/master/public/images/stats_2.png)
 
-## Precautions to be taken while using sync.Pool
+----
 
-![img1](https://raw.githubusercontent.com/akshaydeo/blog/master/public/images/go_pooling_image1.jpg)
-
+# Precautions to be taken while using sync.Pool
 
 ### What if you pass a pooled object to a go-routine and submit it back to the pool before go-routine yet to complete the execution?
 

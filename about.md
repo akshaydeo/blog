@@ -5,28 +5,33 @@ title: About
 
 👋, I am Akshay Deo, a Computer Engineer from Pune (India). I am currently working as a Staff Engineer (Backend/Android) at Slack. You can get in touch with me at [akshay@akshaydeo.com](mailto://akshay@akshaydeo.com).
 
-
 ## Background
 
-I wrote my first computer program when I was in 10th grade for my dad’s construction company. Since then I have been writing software  👨‍💻. I have worked on a wide range of tech stacks including VBScript, ActionScript 2.0 (even Flex), LAMP, C#, Django (flask in 1 or 2 projects), Play framework (plain Netty in a couple of projects) to Go, NodeJS + Typescript, ReactJS, Hack (in Slack) 🤓.
+I wrote my first computer program when I was in 10th grade for my dad’s construction company. Since then I have been writing software 👨‍💻.
+
+I have worked on a wide range of tech stacks including VBScript, ActionScript 2.0, LAMP, C#, Django, Play framework, Netty, Go, NodeJS + Typescript, ReactJS, Hack 🤓.
 
 ## Startup life
 
 In 2012, at the age of 23, I founded a company called RainingClouds along with 3 other co-founders. We built a product, AppSurfer, which in brief, runs Android on the cloud and can stream on any platform. We got a lot of 🗞 on [TechCrunch](https://techcrunch.com/2012/10/11/appsurfer-takes-android-apps-to-the-browser-lets-you-embed-them-anywhere/), again on [TechCrunch](https://techcrunch.com/2013/03/21/try-before-you-buy-app-demo-platform-appsurfer-lets-you-test-apps-on-facebook-debuts-an-android-app-of-its-own/), [TheNextWeb](https://thenextweb.com/apps/2012/11/27/try-before-you-buy-appsurfer-lets-d/#.tnw_lJ48mLih) and [VentureBeat](https://venturebeat.com/2013/01/21/appsurfer-adds-tablet-apps-to-web-based-try-before-you-buy-android-app-demos/) to name a few.
 
-<div class="video-container">
-<br/>
-<iframe style="display:block;margin:auto;" width="600" height="320" src="https://www.youtube.com/embed/JqryuQDXge8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<br/>
+<div class="container">
+<div class="row">
+<div class="col-sm-12 col-md-6">
+<div class="">
+<iframe style="display:block;margin:auto;min-height:250px;padding:5px;" width="100%"  src="https://www.youtube.com/embed/JqryuQDXge8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
+</div>
+<div class="col-sm-12 col-md-6">
+<div class="">
+<iframe style="display:block;margin:auto;min-height:250px;padding:5px;" width="100%"  src="https://www.youtube.com/embed/BYfpWyvj-r0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</div>
+</div>
+</div>
+<br/>
 
 We successfully raised 1 crore INR (~200K 💰) as seed funding from One97 Mobility fund run by [Vijay Shekhar Sharma](https://en.wikipedia.org/wiki/Vijay_Shekhar_Sharma).
-
-<div class="video-container">
-<br/>
-<iframe style="display:block;margin:auto;" width="600" height="320" src="https://www.youtube.com/embed/BYfpWyvj-r0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<p style="text-align:center;">One of the first few public demos of AppSurfer. This event was hosted by PuneTech.</p>
-</div>
 
 For the next couple of years, we tried multiple use cases around this tech but sooner or later the economics of running the business and revenue did not match to convert this into a profitable business 😞. Eventually, most of the products we had built were built by [Google](https://google.com). We have detailed out these product comparisons [here](https://blog.appsurfer.com/post/145253504285/appsurfer-bids-adieu).
 
