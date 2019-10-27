@@ -3,28 +3,25 @@ layout: page
 title: About
 ---
 
-<div class="container-fluid" style="padding:0;">
-<div class="row">
-<div class="col-sm-12 col-md-4" style="margin-bottom:10px;">
-<img src="/public/images/photo.png" style="margin:auto;" class="img-fluid" alt="Responsive image">
-<br/>
+<div class="container" style="padding:0;">
+    <div class="row">
+        <div class="col-sm-12 col-md-4" style="margin-bottom:10px;">
+            <img src="/public/images/akshay.png" class="img-fluid" width="100%"/>
+        </div>
+        <div class="col-sm-12 col-md-8">
+            👋, I am Akshay Deo, a Computer Engineer from Pune 🇮🇳. <em>I have co-founded 3 startups, out of them 1 failed, 1 we couldn't launch and 1 got acqui-hired.</em> 
+            <br/><br/>                        
+            I have been facinated by 💻 since childhood. Seeing my dad working on a 286 with MSDos 3.1, was always awe-inspiring 😲 for me. Later this transpired into a life-long hobby/profession for me 💼.
+            <br/><br/>                        
+            I wrote my first computer program when I was in 10th grade for my dad’s construction company, using VB Script 6.0 and MS Access DB. I am hands-on fullstack developer (Android, iOS, ReactJS, Java, Go, NodeJS, Php/Hack) and experienced engineering manager. 
+            <br/><br/>            
+            I currently work as a Staff Engineer at <a style="font-weight:bold;" href="https://slack.com">Slack</a>. Before Slack, I have worked as a Senior Technical Lead / Engineering Manager (TLM) at <a style="font-weight:bold;" href="https://media.net">Media.Net</a> on Mobile Ad products.
+        </div>
+    </div>
 </div>
-<div class="col-sm-12 col-md-8">
-👋, I am Akshay Deo, a Computer Engineer from Pune 🇮🇳. <em>I have co-founded 3 startups, out of them 1 failed, 1 we couldn't launch and 1 got acqui-hired.</em> 
-<br/>
-<br/>
-I have been facinated by 💻 since childhood. Seeing my dad working on a 286 with MSDos 3.1, was always awe-inspiring 😲 for me. Later this transpired into a life-long hobby/profession for me 💼.
-<br/>
-<br/>
-I wrote my first computer program when I was in 10th grade for my dad’s construction company, using VB Script 6.0 and MS Access DB. I am hands-on fullstack developer (Android, iOS, ReactJS, Java, Go, NodeJS, Php/Hack) and experienced engineering manager. 
-<br/>
-<br/>
-<p>I currently work as a Staff Engineer at <a style="font-weight:bold;" href="https://slack.com">Slack</a>. Before Slack, I have worked as a Senior Technical Lead / Engineering Manager (TLM) at <a style="font-weight:bold;" href="https://media.net">Media.Net</a> on Mobile Ad products.</p>
-</div>
-</div>
-</div>
-
-<a href="https://yourstory.com/2015/12/techie-tuesdays-akshay-deo" target="_blank"><img class="img-thumbnail rounded mx-auto d-block" src="/public/images/yourstory.svg" height="80px" /></a>
+<br/>            
+<a href="https://yourstory.com/2015/12/techie-tuesdays-akshay-deo" target="_blank"><img class="rounded mx-auto d-block" src="/public/images/yourstory.svg" height="80px" /></a>
+<br/>            
 
 ## Startup life
 
