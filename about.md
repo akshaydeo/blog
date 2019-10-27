@@ -7,18 +7,24 @@ title: About
 <div class="row">
 <div class="col-sm-12 col-md-4" style="margin-bottom:10px;">
 <img src="/public/images/photo.png" style="margin:auto;" class="img-fluid" alt="Responsive image">
+<br/>
 </div>
 <div class="col-sm-12 col-md-8">
-👋, I am Akshay Deo, a Computer Engineer from Pune 🇮🇳. I have co-founded 3 startups, out of 1 failed, 1 couldn't launch and 1 got acqui-hired. I have been facinated by 💻 since childhood. Seeing my dad working on a 286 with MsDos 2.1, was an awe-inspiring 😲 moment for me. Later this transpired into a life-long hobby/profession for me.
+👋, I am Akshay Deo, a Computer Engineer from Pune 🇮🇳. <em>I have co-founded 3 startups, out of them 1 failed, 1 we couldn't launch and 1 got acqui-hired.</em> 
+<br/>
+<br/>
+I have been facinated by 💻 since childhood. Seeing my dad working on a 286 with MSDos 3.1, was always awe-inspiring 😲 for me. Later this transpired into a life-long hobby/profession for me 💼.
 <br/>
 <br/>
 I wrote my first computer program when I was in 10th grade for my dad’s construction company, using VB Script 6.0 and MS Access DB. I am hands-on fullstack developer (Android, iOS, ReactJS, Java, Go, NodeJS, Php/Hack) and experienced engineering manager. 
 <br/>
 <br/>
-<p>I currently work as a Staff Engineer at <a style="font-weight:bold;" href="https://slack.com">Slack</a>. Before Slack, I have worked as a Senior Technical Lead / Engineering Manager at <a style="font-weight:bold;" href="https://media.net">Media.Net</a> on Ad products.</p>
+<p>I currently work as a Staff Engineer at <a style="font-weight:bold;" href="https://slack.com">Slack</a>. Before Slack, I have worked as a Senior Technical Lead / Engineering Manager (TLM) at <a style="font-weight:bold;" href="https://media.net">Media.Net</a> on Mobile Ad products.</p>
 </div>
 </div>
 </div>
+
+<a href="https://yourstory.com/2015/12/techie-tuesdays-akshay-deo" target="_blank"><img class="img-thumbnail rounded mx-auto d-block" src="/public/images/yourstory.svg" height="80px" /></a>
 
 ## Startup life
 
@@ -54,13 +60,20 @@ After AppSurfer, we briefly worked on a hardware product called [Twist](https://
 
 We took this idea a little further, by converting phones into a game controller as well.
 
-<div class="video-container">
+<div class="container">
+<div class="row">
+<div class="col-sm-12 col-md-6">
+<iframe style="display:block;margin:auto;min-height:250px;" width="100%" src="https://www.youtube.com/embed/yuCPw8l_kts" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div class="col-sm-12 col-md-6">
+<iframe width="100%" style="display:block;margin:auto;min-height:250px;"  src="https://www.youtube.com/embed/rRIiOL4-Fho" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</div>
 <br/>
-<iframe style="display:block;margin:auto;" width="600" height="320" src="https://www.youtube.com/embed/yuCPw8l_kts" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br/><br/>
 </div>
 
 But we were running on a very thin runway, and couldn't launch it into the market.
 
 ## Joining forces with Media.Net
 
-When Google announced Instant Apps for Android, we decided to shut down AppSurfer with a detailed [blog post](https://blog.appsurfer.com/post/145253504285/appsurfer-bids-adieu). [Vaibhav Arya](https://www.linkedin.com/in/vaibhavarya/), then CTO and now CEO of the Media.net, read this blog post and offered us to join the forces with Media.Net. I worked there for 3 years as (Senior) Tech Lead on InApp (Mobile) Products.
+When Google announced Instant Apps for Android, we decided to shut down AppSurfer with a detailed [blog post](https://blog.appsurfer.com/post/145253504285/appsurfer-bids-adieu). [Vaibhav Arya](https://www.linkedin.com/in/vaibhavarya/), then CTO and now CEO of the Media.net, read this blog post and offered us to join the forces with Media.Net.
