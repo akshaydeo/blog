@@ -6,7 +6,7 @@ title: About
 <div class="container" style="padding:0;">
     <div class="row">
         <div class="col-sm-12 col-md-4" style="margin-bottom:10px;">
-            <img src="/public/images/akshay.png" class="img-fluid" width="100%"/>
+            <img src="/public/images/akshay.jpg" class="img-fluid" width="100%"/>
         </div>
         <div class="col-sm-12 col-md-8">
             👋, I am Akshay Deo, a Computer Engineer from Pune 🇮🇳. <em>I have co-founded 3 startups, out of them 1 failed, 1 we couldn't launch and 1 got acqui-hired.</em> 
@@ -60,10 +60,10 @@ We took this idea a little further, by converting phones into a game controller 
 <div class="container">
 <div class="row">
 <div class="col-sm-12 col-md-6">
-<iframe style="display:block;margin:auto;min-height:250px;" width="100%" src="https://www.youtube.com/embed/yuCPw8l_kts" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe style="display:block;margin:auto;min-height:250px;padding:5px;" width="100%" src="https://www.youtube.com/embed/yuCPw8l_kts" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 <div class="col-sm-12 col-md-6">
-<iframe width="100%" style="display:block;margin:auto;min-height:250px;"  src="https://www.youtube.com/embed/rRIiOL4-Fho" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" style="display:block;margin:auto;min-height:250px;padding:5px;"  src="https://www.youtube.com/embed/rRIiOL4-Fho" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 </div>
 <br/>
