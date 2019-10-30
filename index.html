@@ -12,11 +12,17 @@ title: Blog
       </a>
     </h1>
     <div class="row" style="margin-top: -0.5rem;">
-      <div class="col-12" style="margin-top:0.5rem;">
+      <div class="col-12">
+        {% for item in post.categories %}
+    
+          <span class="text-center tag">#{{ item }}</span>
+        {% endfor %}
+      </div>
+      <div class="col-12" style="margin-top:1rem;">
         <span class="post-date">
           {{ post.date | date_to_string }}
         </span>
-      </div>
+      </div>      
     </div>
     <div class="row">
       <!-- <div class="d-flex col-md-3 col-sm-12 align-items-center" style="padding-bottom:10px;">
