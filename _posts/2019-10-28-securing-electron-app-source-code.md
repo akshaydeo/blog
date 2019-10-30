@@ -63,6 +63,7 @@ Create React App Configuration Override (CRACO) is an easy and comprehensible co
 
 Get all the benefits of create-react-app and customization without using 'eject' by adding a single craco.config.js file at the root of your application and customize your eslint, babel, postcss configurations and many more.
 
+<div class="container text-center" style="margin-bottom:-5px;"><code>craco.config.js</code></div>
 ```javascript
 module.exports = {
   webpack: {
@@ -97,6 +98,7 @@ This script
 
 An all in one tool for bundling any javascript project. I used a webpack script for merging all my electron main thread codebase into one single object.
 
+<div class="container text-center" style="margin-bottom:-5px;"><code>webpack.config.js</code></div>
 ```javascript
 const path = require("path");
 const fs = require("fs");
