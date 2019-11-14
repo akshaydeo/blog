@@ -10,10 +10,11 @@ title: About
         </div>
         <div class="col-sm-12 col-md-8">
             👋, I am Akshay Deo, a Computer Engineer from Pune 🇮🇳.<br/>Co-founder of 3 startups out of which
+            <ul>
             <li>1 failed 😞</li> 
             <li>1 we couldn't launch 😐</li> 
             <li>1 got acqui-hired 🙌</li> 
-            <br/>                        
+            </ul>                                              
             I have been fascinated by 💻  since childhood. Seeing my father work on a 286 with MSDos 3.1, was awe-inspiring 😲 for me and has continued to be since. Later this transpired into a life-long hobby/profession for me 💼.
             <br/><br/>                        
             I wrote my first computer program when I was 14, using VB Script 6.0 and MS Access DB, for my father's construction company. Since then have been keen on learning programming languages. Now, I am a hands-on full-stack developer (Android, iOS, ReactJS, Java, Go, NodeJS, Php/Hack) and an experienced engineering manager.
@@ -26,6 +27,7 @@ I currently work as a Staff Engineer at <a style="font-weight:bold;" href="https
 <a href="https://yourstory.com/2015/12/techie-tuesdays-akshay-deo" target="_blank"><img class="rounded mx-auto d-block" src="/public/images/yourstory.svg" height="80px" /></a>
 
 ## College
+
 I have completed my computer engineering from [PICT](https://en.wikipedia.org/wiki/Pune_Institute_of_Computer_Technology). As a final year project, we built world's first Remote Desktop Client (RDP) for Android device, called Omnidesk. We had released this app in two versions, the free version with limited functionality which got around 50-100k downloads and the paid one costing between 2.5$-5$ which got around 10-50k downloads in 2009.
 
 <div class="container">
@@ -95,3 +97,12 @@ But we were on a very thin runway, and couldn't launch it into the market 💔.
 ## Joining forces with Media.Net
 
 When Google announced Instant Apps for Android, we decided to shut down AppSurfer with a detailed [blog post](https://blog.appsurfer.com/post/145253504285/appsurfer-bids-adieu). [Vaibhav Arya](https://www.linkedin.com/in/vaibhavarya/), then CTO and now CEO of Media.net, read this blog post and offered us to join forces with Media.Net. I worked with Media.Net for 3 years as a TLM.
+
+<hr/>
+<!-- Calendly link widget begin -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+<div class="col-12 text-center">
+<a class="schedule" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/akshay-deo/hello'});return false;">👋 Schedule time with Me</a>
+</div>
+<!-- Calendly link widget end -->

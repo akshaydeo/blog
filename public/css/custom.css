@@ -71,3 +71,16 @@
   font-size: 16px;
   line-height: 35px;
 }
+
+.schedule {
+  border: 1px solid #e6e6e6;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-radius: 10px;
+  color: #999b9e;
+  font-size: 20px;
+  cursor: pointer;
+  line-height: 50px;
+}
