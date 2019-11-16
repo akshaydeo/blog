@@ -15,9 +15,9 @@ title: About
             <li>1 we couldn't launch 😐</li> 
             <li>1 got acqui-hired 🙌</li> 
             </ul>                                              
-            I have been fascinated by 💻  since childhood. Seeing my father work on a 286 with MSDos 3.1, was awe-inspiring 😲 for me and has continued to be since. Later this transpired into a life-long hobby/profession for me 💼.
+            I have been fascinated by 💻  since childhood. Seeing my father work on a 286 was awe-inspiring 😲 for me and has continued to be since. Later this transpired into a life-long hobby/profession for me 💼.
             <br/><br/>                        
-            I wrote my first computer program when I was 14, using VB Script 6.0 and MS Access DB, for my father's construction company. Since then have been keen on learning programming languages. Now, I am a hands-on full-stack developer (Android, iOS, ReactJS, Java, Go, NodeJS, Php/Hack) and an experienced engineering manager.
+            I wrote my first computer program when I was 14, using VB Script 6.0 and MS Access DB, for my father's construction company. Since then have been keen on learning programming languages.
             <br/><br/>                        
         </div>
     </div>
