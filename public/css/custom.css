@@ -26,13 +26,15 @@
 }
 
 .content {
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .topbar {
-  margin-top: 30px;
+  padding-top: 30px;
   text-align: center;
+  background-color: #F1F4F6;
+  padding-bottom: 20px;  
 }
 
 .topbar-nav-item {
@@ -84,3 +86,4 @@
   cursor: pointer;
   line-height: 50px;
 }
+
