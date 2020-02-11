@@ -7,14 +7,13 @@ title: Blog
   {% for post in paginator.posts %}
   <div class="post">
     <h1 class="post-title">
-      <a href="{{ post.url }}">
+      <a href="{{ post.url }}" style="color: #3d608d;">
         {{ post.title }}
       </a>
     </h1>
     <div class="row" style="margin-top: 0rem;">
       <div class="col-12">
-        {% for item in post.categories %}
-    
+        {% for item in post.categories %}    
           <span class="text-center tag">#{{ item }}</span>
         {% endfor %}
       </div>

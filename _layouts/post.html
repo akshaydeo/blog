@@ -4,16 +4,15 @@ layout: default
 
 <div class="post">
   <h1 class="post-title" style="text-align: center;">{{ page.title }}</h1>
-  <span class="post-date" style="text-align: center;">{{
+  <span class="post-date" style="text-align: center;margin-bottom:5px;">{{
     page.date | date_to_string
   }}</span>    
-  <div class="container text-center" style="margin-bottom:20px;margin-top:-5px;">
+  <div class="container text-center" style="margin-bottom:-10px;margin-top:-5px;">
     {% for item in page.categories %}
 
       <span class="text-center tag">#{{ item }}</span>
     {% endfor %}
   </div>
-  <div id="social"><div class="sharethis-inline-share-buttons"></div></div>
   <hr />
   {{ content }}
   <hr />

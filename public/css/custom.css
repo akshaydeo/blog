@@ -19,6 +19,10 @@
   height: 100%;
 }
 
+.post-title {
+  color: #3d608d;
+}
+
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -88,4 +92,9 @@
   cursor: pointer;
   line-height: 50px;
 }
+
+h1,h2 {
+  color: #3d608d;
+}
+
 

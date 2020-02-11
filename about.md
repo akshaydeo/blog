@@ -5,11 +5,8 @@ title: About
 
 <div class="container" style="padding:0;">
     <div class="row">
-        <div class="col-sm-12 col-md-4" style="margin-bottom:10px;">
-            <img src="/public/images/akshay.jpg" class="img-fluid" width="100%"/>
-        </div>
-        <div class="col-sm-12 col-md-8">
-            👋, I am Akshay Deo, a Computer Engineer from Pune 🇮🇳.<br/>Co-founder of 3 startups out of which
+        <div class="col-12">
+            👋, I am Akshay Deo, a Computer Engineer from Pune 🇮🇳. Co-founder of 3 startups out of which
             <ul>
             <li>1 failed 😞</li> 
             <li>1 we couldn't launch 😐</li> 
