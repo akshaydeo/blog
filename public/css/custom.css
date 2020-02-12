@@ -49,6 +49,7 @@
 
 .topbar-nav-item.active {
   font-weight: bold;
+  color: #000;
 }
 
 .footer {
