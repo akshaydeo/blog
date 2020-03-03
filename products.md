@@ -1,11 +1,12 @@
 ---
 layout: page
-title: Products
+title: 👨‍🔬 Products
 ---
 
 Some of the ideas that I am working/worked on. Most of them did not make a mark, but I am proud of each and every product that I have worked on 😇.
 
-# [Viwr](https://viwr.app)
+# [Viwr](https://viwr.app) (2019-20)
+Conclusion: Failed 💔
 
 <iframe style="border: none;" src="https://cards.producthunt.com/cards/posts/168574?v=1" width="100%" height="405" frameborder="0" scrolling="no" allowfullscreen></iframe>
 
@@ -17,9 +18,9 @@ Viwr helps to create different analysis reports like [this](https://reports.viwr
 
 <hr/>
 
-# Droidcast
+# Droidcast (2019)
 
-### Result: Failed 💔
+Conclusion: Failed 💔
 
 <iframe style="border: none;" src="https://cards.producthunt.com/cards/posts/130337?v=1" width="100%" height="405" frameborder="0" scrolling="no" allowfullscreen></iframe>
 
@@ -39,9 +40,9 @@ Simplest screen sharing app for Android.
 
 <hr/>
 
-# GroupUp
+# GroupUp (2014)
 
-### Result: Failed 💔
+Conclusion: Failed 💔
 
 GroupUp was a reverse GroupOn for purchasing goods in a group. People create/join group for buying a product, and start sharing them across social network, so as to grow that group and get a GROUP DISCOUNT.
 
@@ -57,9 +58,9 @@ We are doing this, thinking What if we attach a bulk purchase to these discounts
 
 <hr/>
 
-# Keen
+# Keen (2014-2015)
 
-### Result: Never Launched 💔
+Conclusion: Never Launched 💔
 
 <img width="100%" style="max-width:300px;margin:auto;" src="/public/images/keen_logo.png"/>
 
@@ -74,9 +75,9 @@ We are doing this, thinking What if we attach a bulk purchase to these discounts
 
 <hr/>
 
-# Distribit
+# Distribit (2013-2014)
 
-### Result: Never came out of beta 💔
+Conclusion : Never came out of beta 💔
 
 <img width="100%" style="max-width:700px;margin:auto;" src="/public/images/distribit_error_tracker.png"/>
 
@@ -91,9 +92,9 @@ When [Fabric Beta](http://fabric.io/) was not around, Distribit was the system I
 
 <hr/>
 
-# Project Zero
+# Project Zero (2014-2015)
 
-### Result: Never Launched 💔
+Conclusion: Failed 💔
 
 This was the first IOT project that I had thought of. But it never came out from the Spec stage. Here is the [spec](https://docs.google.com/document/d/e/2PACX-1vQo8AjU5Grd5lA2BJEa94SWami9UdWqs9G8eHa2mOUf8EnvJwKQofJWxC3G9vQVGTb4ozuo6CxuSsQi/pub) if anyone still wants to read it :)
 

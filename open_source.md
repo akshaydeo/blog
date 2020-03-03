@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Open Source
+title: 👨‍💻 Open Source
 ---
 
 **<a href="https://github.com/betacraft/yaag" target="_blank">YAAG (Yet Another API doc Generator) for Golang</a>**

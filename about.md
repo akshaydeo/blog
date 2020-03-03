@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: 👋 About
 ---
 
 <div class="container" style="padding:0;">
