@@ -5,6 +5,8 @@ title: 👨‍🔬 Products
 
 Some of the ideas that I am working/worked on. Most of them did not make a mark, but I am proud of each and every product that I have worked on 😇.
 
+<hr/>
+
 # [Viwr](https://viwr.app) (2019-20)
 Conclusion: Failed 💔
 
@@ -37,6 +39,30 @@ Simplest screen sharing app for Android.
 <iframe style="display:block;margin:auto;" width="600" height="320" src="https://www.youtube.com/embed/tMOnE-rL12E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br/>
 </div>
+
+<hr/>
+
+# [Twist](https://web.archive.org/web/20151030065825/http://www.gettwist.tv/) (2015-2016)
+Conclusion: Never launched 💔
+
+<div class="col-sm-12 col-md-6 offset-md-3" style="margin-top:10px;margin-bottom:10px;">
+<iframe style="display:block;margin:auto;min-height:250px;padding:5px;" width="100%" src="https://www.youtube.com/embed/yuCPw8l_kts" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+This was a hardware product. The vision for the product was, to convert the most powerful computer in everyones' pocket i.e. **smart phones into a remote control for the TV**. 
+We took this idea a little further, by converting phones into a game controller as well 🤩.
+
+<hr/>
+
+# AppSurfer (2011-2014)
+Conclusion: Failed 💔
+
+AppSurfer was the biggest and most ambitious project I have worked on, which went on to become a real VC funded company. 
+We had build AppSurfer (I and 3 other co-founders) with the intention of bringing Android in the cloud. Got a lot of recognition and love from tech community.
+
+Throughout the life of the product, we tried 4 different use-cases, none of which worked. Eventually every bit was built by Google and we decided to shut it down.
+
+More details: [AppSurfer bids adieu](https://blog.appsurfer.com/post/145253504285/appsurfer-bids-adieu)
 
 <hr/>
 
