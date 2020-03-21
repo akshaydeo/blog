@@ -1,31 +1,24 @@
 <div class="topbar">
-  <link
-    href="https://fonts.googleapis.com/css?family=Pacifico"
-    rel="stylesheet"
-  />  
-  <div class="container" style="display: flex;justify-content: center;">
-      <!-- <img src="/public/images/icon.png" height="100px"/> -->
+    <link
+            href="https://fonts.googleapis.com/css?family=Pacifico"
+            rel="stylesheet"
+    />
+    <div class="container" style="display: flex;justify-content: center;">
+        <!-- <img src="/public/images/icon.png" height="100px"/> -->
     </div>
-  <div class="container" style="display: flex;justify-content: center;">          
-    <a href="/"><p style="font-family: 'Pacifico', cursive;color:#000;font-size:42px;">
-        Akshay Deo
-      </p></a>        
-  </div>    
-  <nav class="" style="margin-bottom: 20px;text-align: center;">
-        <a
-          class="topbar-nav-item{% if page.url == site.baseurl %} active{% endif %}"
-          href="/"
-          >🏡 Home</a>
+    <div class="container" style="display: flex;justify-content: center;">
+        <a href="/"><p style="font-family: 'Pacifico', cursive;color:#000;font-size:42px;">
+            Akshay Deo
+        </p></a>
+    </div>
+    <nav class="" style="margin-bottom: 20px;text-align: center;">
+        <a class="topbar-nav-item{% if page.url == site.baseurl %} active{% endif %}"href="/">🏡 Home</a>
         {% comment %} The code below dynamically generates a sidebar nav of
         pages with `layout: page` in the front-matter. See readme for usage. {%
         endcomment %} {% assign pages_list = site.pages %} {% for node in
         pages_list %} {% if node.title != null %} {% if node.layout == "page" %}
-        <a
-          class="topbar-nav-item{% if page.url == node.url %} active{% endif %}"
-          href="{{ node.url }}"
-          >{{ node.title }}</a
-        >
+        <a class="topbar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
         {% endif %} {% endif %} {% endfor %}
-      </nav>
+    </nav>
 </div>
-<hr style="margin-top:0px;margin-bottom:0px;"/>
+<hr style="margin-top:0;margin-bottom:0;"/>
