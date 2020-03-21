@@ -12,8 +12,11 @@
         <!--            Akshay Deo-->
         <!--        </p></a>-->
     </div>
+    {% assign current = page.url | downcase | split: '/' %}
     <nav class="" style="margin-bottom: 20px;text-align: center;">
         <a class="topbar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="/">🏡 Home</a>
+        <a class="topbar-nav-item {% if current[1] == 'writing' %} active {% endif %}" href="/writing">✍️
+            Writing</a>
         {% comment %} The code below dynamically generates a sidebar nav of
         pages with `layout: page` in the front-matter. See readme for usage. {%
         endcomment %} {% assign pages_list = site.pages %} {% for node in
@@ -23,4 +26,4 @@
         {% endif %} {% endif %} {% endfor %}
     </nav>
 </div>
-<hr style="margin-top:0;margin-bottom:0;"/>
+<hr style="margin: 0 5rem;"/>

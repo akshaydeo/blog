@@ -5,4 +5,7 @@ group :jekyll_plugins do
   gem 'jekyll-paginate'
   gem 'jekyll-gist'
   gem 'octopress-image-tag'
+  gem 'jemoji'
+  gem 'jekyll-seo-tag'
+  gem 'jekyll-admin', group: :jekyll_plugins
 end

@@ -3,59 +3,135 @@ layout: default
 title: 🏡 Home
 ---
 
-<div class="container">
-    <div class="row">
-        <div class="posts">
-            {% for post in paginator.posts %}
-            <div class="post">
-                <h1 class="post-title">
-                    <a href="{{ post.url }}">
-                        {{ post.title }}
-                    </a>
-                </h1>
-                <div class="row" style="margin-top: 0rem;">
-                    <div class="col-12">
-                        {% for item in post.categories %}
-                        <span class="text-center tag">#{{ item }}</span>
-                        {% endfor %}
-                    </div>
-                    <div class="col-12" style="margin-top:1rem;">
-        <span class="post-date">
-          {{ post.date | date_to_string }}
-        </span>
-                    </div>
-                </div>
-                <div class="row">
-                    <!-- <div class="d-flex col-md-3 col-sm-12 align-items-center" style="padding-bottom:10px;">
-                      <img class="rounded align-self-center" style="margin:auto;" src="{{ post.image }}" />
-                    </div> -->
-                    <div class="col-sm-12">{{ post.excerpt }}</div>
-                </div>
-                <hr/>
-            </div>
-            {% endfor %}
+
+<div class="container" style="padding:0;">
+    {% include notice.html %}
+    <div class="row" style="margin-top:30px;">
+        <div class="col-12">
+            👋, I am Akshay Deo, a Computer Engineer from Pune 🇮🇳. Co-founder of 3 startups out of which
+            <ul>
+                <li>1 failed 😞</li>
+                <li>1 we couldn't launch 😐</li>
+                <li>1 got acqui-hired 🙌</li>
+            </ul>
+        </div>
+        <div class="col-12">
+            I have been fascinated by 💻 since childhood. Seeing my father work on a 286 was awe-inspiring 😲 for me
+            and
+            has continued to be since. Later this transpired into a life-long hobby/profession for me 💼.
+            <br/><br/>
+            I wrote my first computer program when I was 14, using VB Script 6.0 and MS Access DB, for my father's
+            construction company. Since then have been keen on learning programming languages.
+            <br/><br/>
         </div>
     </div>
 </div>
+I currently work as a Staff Engineer at <a style="font-weight:bold;"
+                                           href="https://slack.com">Slack</a>. Before Slack, have worked as a Senior Technical Lead / Engineering Manager (TLM) at
+<a style="font-weight:bold;" href="https://media.net">Media.Net</a> on Mobile Ad products.
+<br/>
+<a href="https://yourstory.com/2015/12/techie-tuesdays-akshay-deo" target="_blank"><img class="rounded mx-auto d-block"
+                                                                                        style="margin-top:20px;"
+                                                                                        src="/public/images/yourstory.svg"
+                                                                                        height="80px"/></a>
 
-<div class="pagination">
-    {% if paginator.next_page %}
-    <a
-            class="pagination-item older"
-            href="{{ site.baseurl }}page{{ paginator.next_page }}"
-    >Older</a
-    >
-    {% else %}
-    <span class="pagination-item older">Older</span>
-    {% endif %} {% if paginator.previous_page %} {% if paginator.page == 2 %}
-    <a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a>
-    {% else %}
-    <a
-            class="pagination-item newer"
-            href="{{ site.baseurl }}page{{ paginator.previous_page }}"
-    >Newer</a
-    >
-    {% endif %} {% else %}
-    <span class="pagination-item newer">Newer</span>
-    {% endif %}
+<h2>College</h2>
+
+I have completed my computer engineering from [PICT](https://en.wikipedia.org/wiki/Pune_Institute_of_Computer_Technology). As a final year project, we built world's first Remote Desktop Client (RDP) for Android device, called Omnidesk. We had released this app in two versions, the free version with limited functionality which got around 50-100k downloads and the paid one costing between 2.5$-5$ which got around 10-50k downloads in 2009.
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-md-6">
+            <div class="">
+                <iframe style="display:block;margin:auto;min-height:250px;padding:5px;" width="100%"
+                        src="https://www.youtube.com/embed/TnFzN63JRUE" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6">
+            <div class="">
+                <iframe style="display:block;margin:auto;min-height:250px;padding:5px;" width="100%"
+                        src="https://www.youtube.com/embed/j5iVAvu9V-g" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
 </div>
+<br/>
+
+Btw I am also the proud owner of the world's first Android phone i.e. HTC G1 which is demoed in the first video 😌.
+
+<h2>Startup life</h2>
+
+At the age of 23 (2012), I founded a company called RainingClouds along with 3 other co-founders. We built a product, AppSurfer, which in brief, runs Android on the cloud and can stream on any platform. We got a lot of buzz 🗞 on [TechCrunch](https://techcrunch.com/2012/10/11/appsurfer-takes-android-apps-to-the-browser-lets-you-embed-them-anywhere/), again on [TechCrunch](https://techcrunch.com/2013/03/21/try-before-you-buy-app-demo-platform-appsurfer-lets-you-test-apps-on-facebook-debuts-an-android-app-of-its-own/), [TheNextWeb](https://thenextweb.com/apps/2012/11/27/try-before-you-buy-appsurfer-lets-d/#.tnw_lJ48mLih) and [VentureBeat](https://venturebeat.com/2013/01/21/appsurfer-adds-tablet-apps-to-web-based-try-before-you-buy-android-app-demos/) to name a few.
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-md-6">
+            <div class="">
+                <iframe style="display:block;margin:auto;min-height:250px;padding:5px;" width="100%"
+                        src="https://www.youtube.com/embed/JqryuQDXge8" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6">
+            <div class="">
+                <iframe style="display:block;margin:auto;min-height:250px;padding:5px;" width="100%"
+                        src="https://www.youtube.com/embed/BYfpWyvj-r0" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+<br/>
+
+We successfully raised 1 crore INR (~200K 💰) as seed funding from One97 Mobility fund run by [Vijay Shekhar Sharma](https://en.wikipedia.org/wiki/Vijay_Shekhar_Sharma) (PayTM founder).
+
+For the next couple of years, we tried multiple use cases around this tech but sooner or later the economics of running the business and revenue did not match to convert this into a profitable business 😞. Eventually, most of the products we had built were built by [Google](https://google.com). We have detailed out these product comparisons [here](https://blog.appsurfer.com/post/145253504285/appsurfer-bids-adieu).
+
+<h2>Back to consultancy</h2>
+
+When we were almost out of 💵, I went back to consulting to support the development of AppSurfer. During that time I worked with one of the best Fintech startups in India, [Simpl](https://getsimpl.com). I built the first version of Simpl's Android App, SDK and realtime authentication microservice in Golang.
+
+<h2>Twist, a better stick than Amazon FireStick 😱</h2>
+
+After AppSurfer, we briefly worked on a hardware product called [Twist](https://web.archive.org/web/20151030065825/http://www.gettwist.tv/). The vision for the product was, to convert the most powerful computer in everyones' pocket i.e. **smart phones into a remote control for the TV**. We took this idea a little further, by converting phones into a game controller as well 🤩.
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-md-6">
+            <iframe style="display:block;margin:auto;min-height:250px;padding:5px;" width="100%"
+                    src="https://www.youtube.com/embed/yuCPw8l_kts" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+        </div>
+        <div class="col-sm-12 col-md-6">
+            <iframe width="100%" style="display:block;margin:auto;min-height:250px;padding:5px;"
+                    src="https://www.youtube.com/embed/rRIiOL4-Fho" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+        </div>
+    </div>
+    <br/>
+</div>
+
+But we were on a very thin runway, and couldn't launch it into the market 💔.
+
+<h2>Joining forces with Media.Net</h2>
+
+When Google announced Instant Apps for Android, we decided to shut down AppSurfer with a detailed [blog post](https://blog.appsurfer.com/post/145253504285/appsurfer-bids-adieu). [Vaibhav Arya](https://www.linkedin.com/in/vaibhavarya/), then CTO and now CEO of Media.net, read this blog post and offered us to join forces with Media.Net. I worked with Media.Net for 3 years as a TLM.
+
+<hr/>
+<!-- Calendly link widget begin -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+<div class="col-12 text-center">
+    <a class="schedule"
+       onclick="Calendly.initPopupWidget({url: 'https://calendly.com/akshay-deo/hello'});return false;">👋 Schedule time
+        with Me</a>
+</div>
+<!-- Calendly link widget end -->

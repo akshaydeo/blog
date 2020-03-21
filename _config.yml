@@ -3,17 +3,32 @@ permalink: /blog/:year/:month/:day/:title/
 #relative_permalinks: true
 
 # Setup
-title:            akshay deo
-tagline:          ''
-description:      ''
+title:            'Akshay Deo'
+tagline:          'Product Development from Engineering Perspective'
+description:      '👋 I am Akshay Deo, a computer engineering from Pune. Welcome to my personal website.'
 url:              https://www.akshaydeo.com
 baseurl:          /
+
+twitter:
+  username: akshay_deo
+  card: summary
+
+social:
+  name: Aksahy Deo
+  links:
+    - https://twitter.com/akshay_deo
+    - https://www.linkedin.com/in/akshaymdeo/
+    - https://github.com/akshaydeo
 
 author:
   name:           'Akshay Deo'
   url:            https://twitter.com/akshay_deo
+  twitter:        akshay_deo
+  card: summary
 
 paginate:         10
+paginate_path:    writing/page:num
+
 
 # Custom vars
 version:          2.1.0
@@ -28,6 +43,5 @@ disqus_show_comment_count: false
 # Google Analytics
 google_analytics_tracking_id: UA-56560447-1
 
-# gems
-gems:
-  - jemoji
+plugins_dir:
+  - jekyll-seo-tag
