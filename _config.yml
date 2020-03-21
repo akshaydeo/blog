@@ -7,7 +7,7 @@ title:            'Akshay Deo'
 tagline:          'Product Development from Engineering Perspective'
 description:      '👋 I am Akshay Deo, a computer engineering from Pune. Welcome to my personal website.'
 url:              https://www.akshaydeo.com
-baseurl:          /
+baseurl:          ''
 
 twitter:
   username: akshay_deo
