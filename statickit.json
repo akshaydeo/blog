@@ -1,0 +1,14 @@
+{
+  "forms": {
+    "contact": {
+      "name": "Subscribe",
+      "fields": {
+        "email": {
+          "type": "email",
+          "required": true
+        }
+      },
+      "allowExtraFields": false
+    }
+  }
+}
