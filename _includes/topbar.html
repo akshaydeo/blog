@@ -14,7 +14,7 @@
     </div>
     {% assign current = page.url | downcase | split: '/' %}
     <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNavAltMarkup">
-        <a class="topbar-nav-item{% if current | size == 1 %} active{% endif %}" href="/">🏡 Home</a>
+        <a class="topbar-nav-item{% if current[1] == undefined %} active{% endif %}" href="/">🏡 Home</a>
         <a class="topbar-nav-item {% if current[1] == 'writing' or current[1] == 'blog' %} active {% endif %}"
            href="/writing">✍️
             Writing</a>

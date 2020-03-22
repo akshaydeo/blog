@@ -1,102 +1,107 @@
 .video-container {
-  position: relative;
-  padding-bottom: 30%;
-  margin: auto;
-  padding-top: 30px;
-  height: 0;
-  width: 60%;
-  overflow: hidden;
+    position: relative;
+    padding-bottom: 30%;
+    margin: auto;
+    padding-top: 30px;
+    height: 0;
+    width: 60%;
+    overflow: hidden;
 }
 
 .video-container iframe,
 .video-container object,
 .video-container embed {
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .post-title {
-  color: #000;
+    color: #000;
 }
 
 .container {
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 50rem;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 50rem;
 }
 
 .content {
 
-  padding-top: 40px;
-  padding-bottom: 20px;
+    padding-top: 40px;
+    padding-bottom: 20px;
 }
 
 .topbar {
-  padding-top: 30px;
-  text-align: center;
-  padding-bottom: 10px;  
+    padding-top: 30px;
+    text-align: center;
+    padding-bottom: 10px;
 }
 
 .topbar-nav-item {
-  padding-left: 10px;
-  padding-right: 10px;
-  color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: black;
 }
 
 .topbar-nav-item.active {
-  font-weight: bold;
-  color: #000;
+    font-weight: bold;
+    color: #000;
 }
 
 .footer {
-  padding: 10px;
-  text-align: center;
-  color: darkgray;
-  font-size: 16px;
+    padding: 10px;
+    text-align: center;
+    color: darkgray;
+    font-size: 16px;
 }
 
 .top-black-bar {
-  width: 100vw;
-  height: 10px;
-  background-color: #000;
+    width: 100vw;
+    height: 10px;
+    background-color: #000;
 }
 
 .tag {
-  border: 1px solid #e6e6e6;
-  padding-left: 8px;
-  padding-right: 8px;
-  padding-top: 3px;
-  padding-bottom: 3px;
-  border-radius: 10px;
-  color: #999b9e;
-  font-size: 16px;
-  line-height: 35px;
+    border: 1px solid #e6e6e6;
+    padding: 3px 8px;
+    border-radius: 10px;
+    color: #999b9e;
+    font-size: 16px;
+    line-height: 35px;
 }
 
 .schedule {
-  border: 1px solid #e6e6e6;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 6px;
-  padding-bottom: 6px;
-  border-radius: 10px;
-  color: #999b9e;
-  font-size: 20px;
-  cursor: pointer;
-  line-height: 50px;
+    border: 1px solid #e6e6e6;
+    padding: 6px 10px;
+    border-radius: 10px;
+    color: #999b9e;
+    font-size: 20px;
+    cursor: pointer;
+    line-height: 50px;
 }
 
-h1,h2 {
-  color: #000;
+h1, h2 {
+    color: #000;
 }
 
-.pagination{
-  margin-top:10px;
-  margin-bottom: 10px;
+.pagination {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
+.link {
+    margin: 10px;
+}
+
+.notice {
+    background: rgba(255, 215, 178, 0.47);
+    border-color: navajowhite;
+    margin: 0 2rem;
+    padding: 20px;
+    border-radius: 5px;
+}
 
