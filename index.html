@@ -31,10 +31,39 @@ I currently work as a Staff Engineer at <a style="font-weight:bold;"
                                            href="https://slack.com">Slack</a>. Before Slack, have worked as a Senior Technical Lead / Engineering Manager (TLM) at
 <a style="font-weight:bold;" href="https://media.net" target="_blank">Media.Net</a> on Mobile Ad products.
 <br/>
-<a href="https://yourstory.com/2015/12/techie-tuesdays-akshay-deo" target="_blank"><img class="rounded mx-auto d-block"
-                                                                                        style="margin-top:20px;"
-                                                                                        src="/public/images/yourstory.svg"
-                                                                                        height="80px"/></a>
+<div class="card mb-2" style="margin-top:20px;cursor: pointer;" id="yourstory">
+    <div class="row no-gutters">
+        <div class="col-md-4 media d-flex justify-content-center align-middle" style="min-height: 100px;">
+            <img src="/public/images/yourstory.svg" height="80" class="align-self-center img-fluid"
+                 alt="Yourstory Logo">
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title">Solapur boy Akshay Deo wants to build a world-class ‘true tech product’ out of
+                    India</h5>
+                <p class="card-text">Internet speed is commonly expressed as Mbits/second. It only takes a split second
+                    to have information travel thousands of kilometers. But, in some parts of the world it often takes
+                    years for technology to reach. However, for people with passion and a genuine desire to learn,
+                    nothing can be a barrier. Akshay Deo is one such person...
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="application/javascript">
+    $('#yourstory').click(function () {
+        try {
+            if (window.track) {
+                gtag("event ", "yourstory", {
+                    'event_category': 'home',
+                });
+            }
+        } catch (ignored) {
+            console.error('Error while tracking event', ignored);
+        }
+        window.open('https://yourstory.com/2015/12/techie-tuesdays-akshay-deo', '_blank');
+    });
+</script>
 
 <h2>College</h2>
 
