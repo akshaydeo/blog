@@ -5,7 +5,12 @@ title: 👨‍🔬 Products
 
 Some of the ideas that I am working/worked on. Most of them did not make a mark, but I am proud of each and every product that I have worked on 😇.
 
+
+{% include notice.html %}
+
 <hr/>
+
+
 
 # [Viwr](https://viwr.app) (2019-20)
 Conclusion: Failed 💔
