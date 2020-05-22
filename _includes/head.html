@@ -34,12 +34,10 @@
         }
 
         let isDevDevice = getCookie("dev-device") === "true";
-        // getting list of proxy
-        console.log(isDevDevice);
         window.track =
             window.location.href.indexOf("who=amd") === -1 &&
             window.location.href.indexOf("localhost") === -1 &&
-            isDevDevice;
+            !isDevDevice;
         if (window.track) {
             window.dataLayer = window.dataLayer || [];
 
