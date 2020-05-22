@@ -5,7 +5,7 @@ permalink: /blog/:year/:month/:day/:title/
 # Setup
 title:            'Akshay Deo'
 tagline:          'Product Development from Engineering Perspective'
-description:      '👋 I am Akshay Deo, a computer engineering from Pune. Welcome to my personal website.'
+description:      '👋 I am Akshay Deo, a computer engineering from Pune. Co-founded 3 Startups, built 20+ Products and currently working with Slack.'
 url:              https://www.akshaydeo.com
 baseurl:          /
 
