@@ -1,6 +1,5 @@
 # Permalinks
 permalink: /blog/:year/:month/:day/:title/
-#relative_permalinks: true
 
 # Setup
 title:            'Akshay Deo'
@@ -41,4 +40,3 @@ google_analytics_tracking_id: UA-56560447-1
 
 plugins_dir:
   - jekyll-seo-tag
-  - jekyll-sitemap
