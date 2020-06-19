@@ -25,7 +25,6 @@ title: 🏡 Home
     </div>
 </div>
 
-
 <div class="row">
     <div class="col-md-2 d-none d-md-block text-center">
         <div style="height: 1rem;margin-top:25px;margin-bottom:0;" class="badge badge-secondary">2019 - 🎁</div>
@@ -56,8 +55,34 @@ title: 🏡 Home
                 </ul>
             </div>
         </div>
+
+        <div class="card mb-2 news"
+             style="margin-top:20px;margin-bottom:20px;cursor: pointer;background-color: #F8F9FA;padding-left:10px;"
+             id="frankaffe">
+            <div class="row no-gutters">
+                <div class="col-md-4 media d-flex justify-content-center align-middle" style="min-height: 100px;">
+                    <img src="/public/images/frankaffe-header-logo.png" class="align-self-center img-fluid mt-lg-0 mt-5"
+                         style="max-height: 150px;"
+                         alt="Frankaffe Logo">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Product failures bring in real insights, like a spear sharpening for
+                            what’s next.
+                            Dare to fail fast to succeed.</h5>
+                        <p class="card-text">Akshay wrote his first code for a construction company at the age of
+                            fourteen; his favourite toy in his childhood had been his father’s precious Intel 286. At
+                            twenty-three, he built a product that raised seed funding and was later acqui-hired by one
+                            of the top five global ad-tech companies; and presently works as a Staff Engineer at Slack.
+                        </p>
+                        <p class="card-text"><small class="text-muted">June 18, 2020</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
+
 <div class="row">
     <div class="col-md-2 d-none d-md-block text-center">
         <div style="height: 1rem;margin-top:25px;margin-bottom:0;" class="badge badge-secondary">🎒 2010</div>
@@ -370,6 +395,18 @@ title: 🏡 Home
             console.error('Error while tracking event', ignored);
         }
         window.open('https://yourstory.com/2015/12/techie-tuesdays-akshay-deo', '_blank');
+    });
+    $('#frankaffe').click(function () {
+        try {
+            if (window.track) {
+                gtag("event ", "frankaffe", {
+                    'event_category': 'home',
+                });
+            }
+        } catch (ignored) {
+            console.error('Error while tracking event', ignored);
+        }
+        window.open('https://frankaffe.org/canvas/akshay-deo?ref=akshaydeo', '_blank');
     });
     $('#techcruncho').click(function () {
         try {
