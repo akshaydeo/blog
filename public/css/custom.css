@@ -87,8 +87,17 @@
     transition: all .2s ease-in-out;
 }
 
-.schedule:hover{
+.schedule:hover {
     transform: scale(1.03);
+}
+
+.dotted-hr {
+    border: none;
+    border-top: 1px dotted #AFAFAF;
+    color: #fff;
+    background-color: #fff;
+    height: 1px;
+    width: 100%;
 }
 
 
@@ -106,7 +115,7 @@ h1, h2 {
 }
 
 .notice {
-    background:#F9F5F1;
+    background: #F9F5F1;
     margin: 0 2rem;
     padding: 20px;
     border-radius: 5px;
