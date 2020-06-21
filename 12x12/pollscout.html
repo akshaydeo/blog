@@ -4,8 +4,7 @@ title: PollScout
 group: 12x12
 ---
 
-
-<h2><a class="text-center" style="font-size:16px;margin-right: 5px;" href="/12x12">👈 Back</a><code>May 2020</code> PollScout</h2>
+<h2>PollScout</h2>
 <!--<img src="/public/images/pollscout.png"/>-->
 <div class="container text-center">
     <iframe style="border: none;" src="https://cards.producthunt.com/cards/posts/198077?v=1" width="100%" height="405"
@@ -18,8 +17,10 @@ group: 12x12
 <p>Hence I thought of building PollScout app to help me and (hopefully) everyone to bookmark interesting polls and make
     them discoverable.</p>
 <p>For tracking a poll, just reply to any Poll tweet with <code>@pollscout track #hashtag1 #hashtag2</code></p>
-<script>
-    $("#back").click(() => {
-        window.open("/12x12","_parent");
-    });
-</script>
+
+<div>
+    <section>
+        <h1>Comments</h1>
+        <div id="disqus_thread" aria-live="polite">{% include disqus.html %}</div>
+    </section>
+</div>
