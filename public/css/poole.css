@@ -42,6 +42,20 @@
     src: url(../fonts/AvenirLTStd-Medium.otf);
 }
 
+@font-face {
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: normal;
+    src: url(../fonts/Raleway-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: bold;
+    src: url(../fonts/Raleway-Bold.ttf);
+}
+
 /*
  * Body resets
  *
@@ -61,13 +75,13 @@ body {
 }
 
 html {
-    font-family: "Avenir", Helvetica, Arial, sans-serif;
+    font-family: "Oxygen", Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
 }
 
 body {
-    font-family: "Avenir", Helvetica, Arial, sans-serif;
+    font-family: "Oxygen", Helvetica, Arial, sans-serif;
     color: #515151;
     background-color: #fff;
 }
@@ -85,7 +99,7 @@ body {
 
 
 h1 {
-    font-family: "Avenir", Helvetica, Arial, sans-serif;
+    font-family: "Oxygen", Helvetica, Arial, sans-serif;
 }
 
 /* No `:visited` state is required by default (browsers will use `a`) */
