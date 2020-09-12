@@ -3,25 +3,30 @@ layout: default
 ---
 
 <div class="post">
-    <h1 class="post-title" style="text-align: center;">{{ page.title }}</h1>
-    <span class="post-date" style="text-align: center;margin-bottom:5px;">{{
-    page.date | date_to_string
-  }}</span>
-    <div class="container text-center" style="margin-bottom:-10px;margin-top:-5px;">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <div class="" style="margin-bottom: 10px; margin-top: 5px">
         {% for item in page.categories %}
-
         <span class="text-center tag">#{{ item }}</span>
         {% endfor %}
     </div>
-    <hr/>    
-    {{ content }}
-    {% include followIt.html %}    
-    <hr/>    
+    <hr
+        style="
+            background-image: linear-gradient(to right, #eeeeee, white);
+            margin-top: 4px;
+            margin-bottom: 4px;
+            border: 0;
+            height: 1px;
+        "
+    />    
+    <span class="post-date" style="margin-bottom: 5px; margin-top: 10px; font-size: 14px"
+        >{{ page.date | date_to_string }}</span
+    >    
+    <div style="margin-top: 30px">{{ content }} {% include followIt.html %}</div>
+    <hr />
     <div id="social">
         <div class="sharethis-inline-share-buttons"></div>
     </div>
-    {% include 12x12.html %}
-    <hr/>
+    <hr />
 </div>
 <div>
     <section>
