@@ -1,13 +1,15 @@
 ---
 title: While adding splash screen for your Android application
+date: 2013-01-14 00:00:00 Z
+permalink: "/while-adding-splash-screen-for-your-android-application/"
+categories:
+- Android
 author: Deo Akshay
 layout: post
-permalink: /while-adding-splash-screen-for-your-android-application/
 dsq_thread_id:
-  - 2678628029
-categories:
-  - Android
+- 2678628029
 ---
+
 Right now I am working on Android application for [AppSurfer][1]. And while designing a prototype for the application, I had to integrate it with a splash screen. Segmentation is a well known issue for Android developers, and hence we have to be careful about the design components. They should not break on devices which are very large or very small. So I did a search and found following set of dimensions that should be used for splash screen which accommodates almost all screen sizes.
 
 1. LDPI  

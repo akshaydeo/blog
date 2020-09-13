@@ -1,9 +1,15 @@
 ---
+title: Securing Electron app source code
+date: 2019-10-28 13:00:46 Z
+categories:
+- Electron
+- Obfuscation
+- Craco
+- NodeJS
+- Terser
+- Webpack
 layout: post
-title: "Securing Electron app source code"
-date: 2019-10-28 18:30:46 +0530
 comments: true
-categories: [Electron, Obfuscation, Craco, NodeJS, Terser, Webpack]
 ---
 
 [Electron](https://electronjs.org) is one of the best ways for building cross-platform desktop apps. When I was evaluating a toolkit for building [Viwr](https://viwr.app), Electron was a clear winner over nw.js and Qt-based on the community, resources and available libraries.

@@ -1,15 +1,17 @@
 ---
 title: Switching branch with repo for Android Source code
+date: 2012-05-29 00:00:00 Z
+permalink: "/switching-branch-with-repo-for-android-source-code/"
+categories:
+- Android
+- Android source code
 author: Deo Akshay
 layout: post
 comments: true
-permalink: /switching-branch-with-repo-for-android-source-code/
 dsq_thread_id:
-  - 2678420378
-categories:
-  - Android
-  - Android source code
+- 2678420378
 ---
+
 I find working with repo as difficult as working with Android source code. We faced a lot of trouble while working with different versions of Android Source code. So I googled for repo command help but didnt find much help. So I experimented a bit and found a good way of switching branch.</br></br>
 
   1. git reset command for removing changes that you have made 

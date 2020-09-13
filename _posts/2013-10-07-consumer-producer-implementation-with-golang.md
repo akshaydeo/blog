@@ -1,16 +1,18 @@
 ---
 title: Consumer Producer implementation with golang
+date: 2013-10-07 00:00:00 Z
+permalink: "/consumer-producer-implementation-with-golang/"
+categories:
+- go
 author: Deo Akshay
 layout: post
 comments: true
-permalink: /consumer-producer-implementation-with-golang/
 post_to_facebook_timeline:
-  - 1
+- 1
 dsq_thread_id:
-  - 1840577645
-categories:
-  - go
+- 1840577645
 ---
+
 Today I invested my whole day in evaluating GoLang for one of our component implementations. Since the first document, I got impressed by it'&#8217;'s construct. Till I reached the ultimate problem solution for our case, I fell in love with this new language. It gives you the power of OS level constructs keeping a lot of overheads hidden from you. I was playing with a lot of simple problems while reading the documentation and here I am sharing one of those implementation and will discuss how simple it is to implement pretty complex problems with [GoLang][1].
 
 **Classic Consumer-Producer problem**  

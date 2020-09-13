@@ -1,9 +1,13 @@
 ---
+title: How did I improve latency by 700% using sync.Pool
+date: 2017-12-23 13:25:46 Z
+categories:
+- Golang
+- sync.Pool
+- Concurrency
+- Performance
 layout: post
-title: "How did I improve latency by 700% using sync.Pool"
-date: 2017-12-23 18:55:46 +0530
 comments: true
-categories: Golang sync.Pool Concurrency Performance
 image: https://raw.githubusercontent.com/akshaydeo/blog/master/public/images/stats_1.png
 ---
 

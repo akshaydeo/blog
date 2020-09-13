@@ -1,9 +1,8 @@
 ---
+title: Docker + Golang web apps using Godep on AWS with Elastic Beanstalk using CodeShip
+date: 2015-02-05 11:59:29 Z
 layout: post
-title: "Docker + Golang web apps using Godep on AWS with Elastic Beanstalk using CodeShip"
-date: 2015-02-05 17:29:29 +0530
 comments: true
-categories:
 image: https://blog.golang.org/go-brand/Go-BB_cover.jpg
 ---
 

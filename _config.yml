@@ -1,43 +1,39 @@
-# Permalinks
-permalink: /blog/:year/:month/:day/:title/
-
-# Setup
-title:            'Akshay Deo'
-tagline:          'Product Development from Engineering Perspective'
-description:      '👋 I am Akshay Deo, a computer engineering from Pune. Co-founded 3 Startups, built 20+ Products and currently working with Slack.'
-url:              https://www.akshaydeo.com      
-
+---
+title: Akshay Deo
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+permalink: "/blog/:year/:month/:day/:title/"
+tagline: Product Development from Engineering Perspective
+description: "\U0001F44B I am Akshay Deo, a computer engineering from Pune. Co-founded
+  3 Startups, built 20+ Products and currently working with Slack."
+url: https://www.akshaydeo.com
 twitter:
   username: akshay_deo
   card: summary
-
 social:
   name: Aksahy Deo
   links:
-    - https://twitter.com/akshay_deo
-    - https://www.linkedin.com/in/akshaymdeo/
-    - https://github.com/akshaydeo
-
+  - https://twitter.com/akshay_deo
+  - https://www.linkedin.com/in/akshaymdeo/
+  - https://github.com/akshaydeo
 author:
-  name:           'Akshay Deo'
-  url:            https://twitter.com/akshay_deo
-  twitter:        akshay_deo
+  name: Akshay Deo
+  url: https://twitter.com/akshay_deo
+  twitter: akshay_deo
   card: summary
-
-paginate:         10
-paginate_path:    writing/page:num
-
+paginate: 10
+paginate_path: writing/page:num
 disqus_short_name: akshaydeo
 disqus_show_comment_count: false
-
-# Custom vars
-version:          2.1.0
-
+version: 2.1.0
 github:
-  repo:           https://github.com/akshaydeo
-
-# Google Analytics
+  repo: https://github.com/akshaydeo
 google_analytics_tracking_id: UA-56560447-1
-
 plugins_dir:
-  - jekyll-seo-tag
+- jekyll-seo-tag

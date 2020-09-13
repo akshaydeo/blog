@@ -1,17 +1,19 @@
 ---
 title: Be careful while using Executors.newCachedThreadPool()
+date: 2013-10-07 00:00:00 Z
+permalink: "/be-careful-while-using-executors-newcachedthreadpool/"
+categories:
+- Executors
+- Java
 author: Deo Akshay
 layout: post
-permalink: /be-careful-while-using-executors-newcachedthreadpool/
 post_to_facebook_timeline:
-  - 0
+- 0
 dsq_thread_id:
-  - 1831980417
-categories:
-  - Executors
-  - Java
+- 1831980417
 comments: true
 ---
+
 I am currently writing a scalable backend server for <a href="http://appsurfer.com" title="AppSurfer" target="_blank">AppSurfer</a>, which does routing work for different components associated with a session. Recently I went into a trouble with the new version of the server. Even for a single connection CPU load was almost 100%. I was clueless about the issue and started digging into it. 
 
 **My setup**

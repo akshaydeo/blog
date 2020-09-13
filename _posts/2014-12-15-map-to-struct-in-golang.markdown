@@ -1,13 +1,13 @@
 ---
+title: map to struct in Golang
+date: 2014-12-15 17:26:15 Z
+categories:
+- golang
+- json
+- json parsing
+- json to struct
 layout: post
-title: "map to struct in Golang"
-date: 2014-12-15 22:56:15 +0530
 comments: true
-categories: 
-  - golang 
-  - json
-  - json parsing
-  - json to struct 
 image: https://blog.golang.org/go-brand/Go-BB_cover.jpg
 ---
 
