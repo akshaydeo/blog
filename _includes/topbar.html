@@ -23,15 +23,12 @@
                 Akshay Deo
             </p>
         </div>
-    </div>
-    <div class="container-fluid d-flex d-md-none m-2" style="justify-content: center">
-        <img src="/public/images/head.png" style="height: 4rem" />
-    </div>
+    </div>    
     {% assign current = page.url | downcase | split: '/' %}
     <div
-        class="collapse navbar-collapse d-flex justify-content-center mb-md-0 mb-3"
+        class="collapse navbar-collapse d-flex justify-content-center"
         id="navbarNavAltMarkup"
-        style="margin: 0; padding-top: 5px; left: 4rem"
+        style="margin: 0;"
     >
         <a class="topbar-nav-item{% if current[1] == undefined %} active{% endif %}" href="/">🏡 Home</a>
         <a
