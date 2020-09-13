@@ -12,8 +12,7 @@
             border-bottom-left-radius: 4px;
             border-bottom-right-radius: 4px;
             height: 4rem;
-            border-bottom: 3px solid #6b6b6b;
-            box-shadow: 3px 3px 60px -10px rgba(0, 0, 0, 0.71);
+            box-shadow: 3px 3px #6b6b6b, 3px 0px #6b6b6b, 5px 5px #8b8b8b, 5px 0px #8b8b8b;
             align-items: center;
             justify-content: center;
         "
@@ -23,12 +22,12 @@
                 Akshay Deo
             </p>
         </div>
-    </div>    
+    </div>
     {% assign current = page.url | downcase | split: '/' %}
     <div
-        class="collapse navbar-collapse d-flex justify-content-center"
+        class="collapse navbar-collapse d-flex justify-content-center pt-2 pt-md-1"
         id="navbarNavAltMarkup"
-        style="margin: 0;"
+        style="margin: 0"
     >
         <a class="topbar-nav-item{% if current[1] == undefined %} active{% endif %}" href="/">🏡 Home</a>
         <a

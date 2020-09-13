@@ -1,3 +1,11 @@
+---
+layout: post
+title: "Battery consumption analysis of an Android app"
+date: 2020-04-19 18:30:46 +0530
+comments: true
+categories: [Android, Battery, Resources, Android App Analysis, Performance Report]
+---
+
 # Building a basic chat app using Google Sheet and Glide
 
 Recently, I have started working on an app which flows out a daily workout and lists out a global leaderboard sorted using their total time.
