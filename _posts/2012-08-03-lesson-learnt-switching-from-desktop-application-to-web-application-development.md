@@ -1,28 +1,31 @@
 ---
 title: 'Lesson learnt : Switching from Desktop Application to Web Application development'
+date: 2012-08-03 00:00:00 Z
+permalink: "/lesson-learnt-switching-from-desktop-application-to-web-application-development/"
+categories:
+- Uncategorized
 author: Deo Akshay
 layout: post
 comments: true
-permalink: /lesson-learnt-switching-from-desktop-application-to-web-application-development/
 fb_social_plugin_settings_box_recommendations_bar:
-  - default
+- default
 fb_mentioned_pages:
-  - 'a:0:{}'
+- a:0:{}
 fb_mentioned_pages_message:
-  - 
+- 
 fb_mentioned_friends:
-  - 'a:0:{}'
+- a:0:{}
 fb_mentioned_friends_message:
-  - 
+- 
 fb_author_post_id:
-  - 4047879927263
+- 4047879927263
 fb_status_messages:
-  - 'a:1:{i:0;a:2:{s:7:"message";s:100:"Posted to <a href="http://www.facebook.com/4047879927263" target="_blank">your Facebook Timeline</a>";s:5:"error";s:0:"";}}'
+- a:1:{i:0;a:2:{s:7:"message";s:100:"Posted to <a href="http://www.facebook.com/4047879927263"
+  target="_blank">your Facebook Timeline</a>";s:5:"error";s:0:"";}}
 dsq_thread_id:
-  - 1810775467
-categories:
-  - Uncategorized
+- 1810775467
 ---
+
 Just to give an introduction, I work on core technology of [AppSurfer][1]. Part of which is done in Django. Before starting my own venture I was a part of a MNC where I used to work on desktop applications written in C#.net. So before starting my first major web application, I was never part of any web application. And hence I struggled a lot to decide architecture of my web application. I am going to discuss one aspect of web application here, Database transactions during request processing.
 
 **The problem**  

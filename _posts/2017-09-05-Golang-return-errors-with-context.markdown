@@ -1,10 +1,13 @@
 ---
+title: 'Golang: Returning errors with context'
+date: 2017-09-05 06:25:46 Z
+categories:
+- Golang
+- Notes
+- Errors
 layout: post
-title: "Golang: Returning errors with context"
-date: 2017-09-5 11:55:46 +0530
 comments: true
 image: https://blog.golang.org/go-brand/Go-BB_cover.jpg
-categories: Golang Notes Errors
 ---
 
 Usually in Golang, it is recommended that, while propagating errors outside, just return the error do not log it. [This](https://dave.cheney.net/2015/11/05/lets-talk-about-logging) blog by Dave Cheney talks in length about how shall we handle logging and errors. But while returning/propagating errors, somtimes it becomes necessary to add the context of the error along with the actual error.

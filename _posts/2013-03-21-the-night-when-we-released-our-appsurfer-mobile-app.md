@@ -1,13 +1,15 @@
 ---
-title: 'The night when we released our AppSurfer mobile app&#8230;'
+title: The night when we released our AppSurfer mobile app&#8230;
+date: 2013-03-21 00:00:00 Z
+permalink: "/the-night-when-we-released-our-appsurfer-mobile-app/"
+categories:
+- Uncategorized
 author: Deo Akshay
 layout: post
-permalink: /the-night-when-we-released-our-appsurfer-mobile-app/
 dsq_thread_id:
-  - 1818779330
-categories:
-  - Uncategorized
+- 1818779330
 ---
+
 Its one of the biggest day for us, as a company, as entrepreneurs, as technology lovers!! We released out the first version of mobile app <a href="https://play.google.com/store/apps/details?id=main.java.com.appsurfer" title="AppSurfer" target="_blank">AppSurfer</a> on 21st early morning (like 1.30 am early :P). We were happy, and equally nervous. And at the same time Google play was giving us a bit of hard time :D. We were kind of polling onto our expected web page on Google Play and it was returning 404 :-/. We were kind of sleepy, exhausted and equally excited to see our product page on Google play. We were too bored to click refresh again and again. And then the programmer within us resulted into this script 
 
 {% highlight python %}

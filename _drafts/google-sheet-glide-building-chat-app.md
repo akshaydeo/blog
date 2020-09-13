@@ -1,9 +1,14 @@
 ---
+title: Battery consumption analysis of an Android app
+date: 2020-04-19 13:00:46 Z
+categories:
+- Android
+- Battery
+- Resources
+- Android App Analysis
+- Performance Report
 layout: post
-title: "Battery consumption analysis of an Android app"
-date: 2020-04-19 18:30:46 +0530
 comments: true
-categories: [Android, Battery, Resources, Android App Analysis, Performance Report]
 ---
 
 # Building a basic chat app using Google Sheet and Glide

@@ -1,22 +1,24 @@
 ---
 title: AppSurfer for better Android Ecosystem :)
+date: 2012-02-17 00:00:00 Z
+permalink: "/appsurfer-for-better-android-ecosystem-2/"
+categories:
+- Android
 author: Deo Akshay
 layout: post
-permalink: /appsurfer-for-better-android-ecosystem-2/
 blogger_blog:
-  - akshay-deo.blogspot.com
+- akshay-deo.blogspot.com
 blogger_author:
-  - Akshay Deohttp://www.blogger.com/profile/15508864230337580443noreply@blogger.com
+- Akshay Deohttp://www.blogger.com/profile/15508864230337580443noreply@blogger.com
 blogger_permalink:
-  - /2012/02/droidcloud-for-better-android-ecosystem.html
+- "/2012/02/droidcloud-for-better-android-ecosystem.html"
 fb_social_plugin_settings_box_recommendations_bar:
-  - default
+- default
 dsq_thread_id:
-  - 1810775461
-categories:
-  - Android
+- 1810775461
 comments: true
 ---
+
 <div style="text-align: left;" dir="ltr">
   <div style="text-align: left;">
     <a href="http://appsurfer.com" target="_blank">AppSurfer</a> has recently launched its private beta, to the early ones who showed their interest in testing this product. The beta comes with a lot of interesting features for Android developers and marketers. As we are in private beta phase it is not possible for us to open up our product for all Android developers, so sharing this post with all of you :). Do comment if you feel something is missing or some feature you would like to see in this product.Lets start with the crunch of this post :).<br /> This is one of the Android App we are using for our beta testing, developed by one of my friend and co-founder of this venture.<br /> (Note: for Indian viewers it will be a bit slower as we are still in process of adding more servers. Right now network lag is causing whatever delay that you experience :( )

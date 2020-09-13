@@ -1,14 +1,16 @@
 ---
 title: Adding your application as default app in Android build
+date: 2012-05-12 00:00:00 Z
+permalink: "/adding-your-application-as-default-app-in-android-build/"
+categories:
+- Android
+- Android source code
 author: Deo Akshay
 layout: post
-permalink: /adding-your-application-as-default-app-in-android-build/
 dsq_thread_id:
-  - 3183294632
-categories:
-  - Android
-  - Android source code
+- 3183294632
 ---
+
 I have been working on Android source code for past few weeks. I was never a systems&#8217; guy or a C programmer for that matter except whatever was required for college assignments. So I had to struggle a lot to get more and more information about changing Android source code the way I want, and sadly very limited information is available over internet about changing Android source code (If I am wrong, I would really appreciate your help links as comment :) ).
 
 Ok so in this post I would discuss how to add your Android application as default application in Android build. Whenever you are customizing ROM mostly you want some of the application to be installed in /system/app folder i.e. as default application so that no one could uninstall unless they have root access.

@@ -1,6 +1,6 @@
 ---
+title: "\U0001F468‍\U0001F52C Products"
 layout: page
-title: 👨‍🔬 Products
 ---
 
 Some of the ideas that I am working/worked on. Most of them did not make a mark, but I am proud of each and every product that I have worked on 😇.

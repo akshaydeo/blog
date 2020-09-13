@@ -1,13 +1,15 @@
 ---
 title: Basecamp vs JIRA
+date: 2012-05-25 00:00:00 Z
+permalink: "/basecamp-vs-jira/"
+categories:
+- Tools
 author: Deo Akshay
 layout: post
-permalink: /basecamp-vs-jira/
 dsq_thread_id:
-  - 1872879232
-categories:
-  - Tools
+- 1872879232
 ---
+
 Being part of a start-up, I continuously look out for different products that are available to set up an end-to-end workflow in the company. Issue management and content management are one of the core parts of this workflow. If you google about &#8220;issue tracking&#8221;, &#8220;project management&#8221;, &#8220;content management&#8221; or similar search terms, you will be presented with a bunch of solutions. I am going to put my views on two of those solutions that we have used in [RainingClouds][1], [Basecamp][2] and [JIRA][3], and why I feel JIRA is much better than Basecamp, specifically for the software industry.
 
 We started with Basecamp for [AppSurfer][4]. Initially it felt good. Minimal design, minimal clicks for surfing and easy to understand product. Single view for looking at all the issues/tasks of a project. We were part of private beta of new Basecamp. They made it more intuitive with good quality icons and visuals. But it still remains a generic task management system (which is their aim as far as I know). So it is not bad in that perspective. But as a software company Basecamp fails in some of the aspects :

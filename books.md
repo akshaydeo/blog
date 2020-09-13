@@ -1,6 +1,6 @@
 ---
+title: "\U0001F4DA Books"
 layout: page
-title: 📚 Books
 ---
 
 <style type="text/css" media="screen">

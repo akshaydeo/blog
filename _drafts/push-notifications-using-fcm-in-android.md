@@ -1,9 +1,15 @@
 ---
+title: Integrating Push notifications inside your Android app using FCM in 5 simple
+  steps
+date: 2019-09-21 13:00:46 Z
+categories:
+- Android
+- FCM
+- Firebase
+- Push Notifications
+- Kotlin
 layout: post
-title: "Integrating Push notifications inside your Android app using FCM in 5 simple steps"
-date: 2019-09-21 18:30:46 +0530
 comments: true
-categories: [Android, FCM, Firebase, Push Notifications, Kotlin]
 ---
 
 Push notifications is the inherent part of any Android app. I assume that everybody understands what are [Push Notifications](https://www.airship.com/resources/explainer/push-notifications-explained/?utm_source=googleplus_sumo_share&utm_medium=website&utm_campaign=ua_web) and [How FCM Works](https://firebase.google.com/docs/cloud-messaging). Lets start 👨‍💻.

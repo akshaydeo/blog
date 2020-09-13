@@ -1,9 +1,14 @@
 ---
+title: Shipping your Android SDK anytime on live devices
+date: 2016-12-21 06:25:46 Z
+categories:
+- Android
+- SDK
+- Dex
+- Classloader
+- Dexloader
 layout: post
-title: "Shipping your Android SDK anytime on live devices"
-date: 2016-12-21 11:55:46 +0530
 comments: true
-categories: Android SDK Dex Classloader Dexloader
 image: https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/APK_format_icon.png/480px-APK_format_icon.png
 ---
 

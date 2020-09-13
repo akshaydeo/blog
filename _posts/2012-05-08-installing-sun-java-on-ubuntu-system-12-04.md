@@ -1,21 +1,23 @@
 ---
 title: Installing sun-java on Ubuntu system (12.04)
+date: 2012-05-08 00:00:00 Z
+permalink: "/installing-sun-java-on-ubuntu-system-12-04/"
+categories:
+- Ubuntu
+tags:
+- java
+- sun-jdk
+- sun-jre
+- ubuntu
+- ubuntu-12.04
 author: Deo Akshay
 layout: post
-permalink: /installing-sun-java-on-ubuntu-system-12-04/
 fb_social_plugin_settings_box_recommendations_bar:
-  - default
+- default
 dsq_thread_id:
-  - 1845474012
-categories:
-  - Ubuntu
-tags:
-  - java
-  - sun-jdk
-  - sun-jre
-  - ubuntu
-  - ubuntu-12.04
+- 1845474012
 ---
+
 I work on Andorid source code which specifically needs sun-jdk-6 for building the source code. Whenever I start with fresh copy of Ubuntu, I start facing this problem of installing sun-jdk-6.
 
 After a lot of failed attempts I found this solution (It works well with my env : Ubuntu 12.04 64bit desktop)
