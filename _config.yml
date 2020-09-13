@@ -5,8 +5,7 @@ permalink: /blog/:year/:month/:day/:title/
 title:            'Akshay Deo'
 tagline:          'Product Development from Engineering Perspective'
 description:      '👋 I am Akshay Deo, a computer engineering from Pune. Co-founded 3 Startups, built 20+ Products and currently working with Slack.'
-url:              https://www.akshaydeo.com
-baseurl:          /
+url:              https://www.akshaydeo.com      
 
 twitter:
   username: akshay_deo
