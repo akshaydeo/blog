@@ -18,7 +18,7 @@ layout: default
             height: 1px;
         "
     />
-    <span class="post-date" style="margin-bottom:5px;margin-top: 12px; font-size: 15px"><span style="padding-right:5px;border-right: 2px solid #eeeeee;">{{ page.date | date_to_string }}</span>  {{ content | reading_time | pluralize: "minute" }} read</span>
+    <span class="post-date" style="margin-bottom:5px;margin-top: 12px; font-size: 15px">{{ page.date | date_to_string }}</span>
     <div style="margin-top: 30px">{{ content }} {% include followIt.html %}</div>
     <hr />
     <div id="social">
