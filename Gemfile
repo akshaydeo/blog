@@ -9,4 +9,6 @@ group :jekyll_plugins do
   gem 'jekyll-seo-tag'
   gem 'jekyll-admin', group: :jekyll_plugins
   gem 'jekyll-sitemap'
+  gem 'liquid_reading_time'  
+  gem 'liquid_pluralize'
 end

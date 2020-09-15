@@ -35,5 +35,9 @@ version: 2.1.0
 github:
   repo: https://github.com/akshaydeo
 google_analytics_tracking_id: UA-56560447-1
-plugins_dir:
-- jekyll-seo-tag
+plugins_dir: ./_plugins
+plugins:
+  - jekyll-seo-tag
+  - liquid_reading_time
+  - liquid_pluralize
+  - jekyll-sitemap  

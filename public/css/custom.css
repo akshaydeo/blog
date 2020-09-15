@@ -20,6 +20,7 @@
 }
 
 .post-title {
+    margin-bottom:1px;
     color: #000;
 }
 
@@ -46,7 +47,7 @@
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
 }
 
 .topbar-nav-item {
@@ -58,8 +59,8 @@
 .topbar-nav-item.active {
     color: #000;
     border-radius: 5px;
-    padding-top:3px;
-    background-color: #FEF6D0;    
+    padding-top: 3px;
+    background-color: #fef6d0;
 }
 
 .footer {
@@ -78,7 +79,11 @@
 
 .tag {
     border: 1px solid #e6e6e6;
-    padding: 8px;
+    margin-top: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     border-radius: 10px;
     color: #999b9e;
     font-size: 14px;
