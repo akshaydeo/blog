@@ -14,5 +14,4 @@ group :jekyll_plugins do
   gem 'liquid_reading_time'  
   gem 'liquid_pluralize'
   gem 'jekyll-feed'
-  gem 'jekyll-paginate-v2'
 end
