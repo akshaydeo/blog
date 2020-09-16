@@ -63,9 +63,7 @@
 
 .topbar-nav-item.active {
     color: #000;
-    border-radius: 5px;
-    padding-top: 3px;
-    background-color: #fef6d0;
+    font-weight: bold;
 }
 
 .footer {
