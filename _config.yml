@@ -2,14 +2,14 @@
 title: Akshay Deo
 timezone: UTC
 collections:
+  em_posts:
+    title: EM
+    output: true
   posts:
     title: Posts
     output: true
   uploads:
     title: Uploads
-    output: true
-  em_posts:
-    title: EM
     output: true
 permalink: "/blog/:year/:month/:day/:title/"
 tagline: Product Development from Engineering Perspective
@@ -40,11 +40,11 @@ github:
 google_analytics_tracking_id: UA-56560447-1
 plugins_dir: "./_plugins"
 plugins:
-  - jekyll-seo-tag
-  - jekyll-paginate
-  - jekyll-gist
-  - liquid_reading_time
-  - liquid_pluralize
-  - jekyll-sitemap
-  - github-pages
-  - jekyll-feed 
+- jekyll-seo-tag
+- jekyll-paginate
+- jekyll-gist
+- liquid_reading_time
+- liquid_pluralize
+- jekyll-sitemap
+- github-pages
+- jekyll-feed

@@ -1,5 +1,5 @@
 ---
-title: "🧑‍💻 Engineering Management"
+title: "\U0001F9D1‍\U0001F4BB Engineering Management"
 layout: default
 group: em
 ---
