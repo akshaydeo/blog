@@ -4,7 +4,7 @@ layout: default
 group: em
 ---
 
-<h1>Engineering Management Blog</h1>
+<h1>Engineering Management</h1>
 <hr
         style="
             background-image: linear-gradient(to right, #eeeeee, white);
@@ -15,7 +15,7 @@ group: em
         "
     />
 
-[Engineering Management](https://en.wikipedia.org/wiki/Engineering_management#:~:text=Engineering%20management%20is%20a%20career,of%20complex%20engineering%20driven%20enterprises.) is a tough job; the more so because most of the EMs get trained on the job. Let it be external or internal hires; most of the first EMs learn things on the job. In my first stint, which was my startup, I sucked big time. I was a lousy manager, a horrible team member, and an ineffective CTO.
+[Engineering Management](https://en.wikipedia.org/wiki/Engineering_management#:~:text=Engineering%20management%20is%20a%20career,of%20complex%20engineering%20driven%20enterprises.) is a tough job; the more so because of no formal training for most of us. Let it be external or internal hires; most of the first time EMs learn things on the job. In my first stint, which was my startup, I sucked big time. I was a lousy manager, a horrible team member, and an ineffective CTO.
 
 When I moved back to an IC role, I realized that
 It's not just the EM, but his team, product, and customers suffer because of his mistakes. Some great engineering managers like [Will Larson](https://lethain.com/?ref=akshaydeo.com), [Michael Lopp](https://randsinrepose.com/?ref=akshaydeo.com) are quite vocal about the common errors and possible ways to improve our management styles. When it comes to books, [An Elegant Puzzle](https://www.amazon.in/gp/product/B07QYCHJ7V/ref=as_li_tl?ie=UTF8&camp=3638&creative=24630&creativeASIN=B07QYCHJ7V&linkCode=as2&tag=akshaydeosite-21&linkId=24c51d569eade267f4f6efb3f47f6bd6), [Managing Humans](https://www.amazon.in/gp/product/B089648S3Z/ref=as_li_tl?ie=UTF8&camp=3638&creative=24630&creativeASIN=B089648S3Z&linkCode=as2&tag=akshaydeosite-21&linkId=904e42522d7f353c6f5fd81e3bd68009), [The first 90 Days](https://www.amazon.in/gp/product/B00B6U63ZE/ref=as_li_tl?ie=UTF8&camp=3638&creative=24630&creativeASIN=B00B6U63ZE&linkCode=as2&tag=akshaydeosite-21&linkId=c8bbcd207fdb961f0a121b7ee1107c9f) are a few of the fantastic books that could help us become a better Engineering manager.
@@ -53,6 +53,9 @@ When I was preparing for my Engineering Manager role at [Postman](https://www.ak
 
 Then I used a few apps like [Friday](https://www.friday.app/), [Know your team](https://knowyourteam.com/) which provide out of the box implementations for some processes like 1-1's, Standups, Weekly checks. The core issue with using these tools is asking teams to switch contexts. I think tools like [Slack](https://slack.com) (and [Teams](https://www.microsoft.com/en-in/microsoft-365/microsoft-teams/group-chat-software) 🙄) are the best places to integrate engineering management flows, no redirections, no third party UX!
 
+<div class="alert alert-light" style="border:1px solid #E4E7E7;border-left:5px solid #E4E7E7;font-size:15px;" role="alert"> I am not discrediting any of these tools mentioned in the above paragraph. It's just that I found it challenging to integrate these tools with Slack without making my team switching the context for engineering management workflows.
+</div>
+
 Hence **Signals**; a blog/notes series, and a rock-solid implementation of these engineering management processes with least friction and maximum visibility. **Signals** is going to be an iterative process. At a particular stage, I plan to make these tools open source, so everyone can contribute and elevate the quality of the product.
 
 <div class="container">
@@ -74,6 +77,9 @@ Hence **Signals**; a blog/notes series, and a rock-solid implementation of these
         </div>
     </div>
 </div>
+
+
+
 
 <hr/>
 

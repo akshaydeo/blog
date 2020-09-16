@@ -9,9 +9,10 @@ group :jekyll_plugins do
   gem 'octopress-image-tag'
   gem 'jemoji'
   gem 'jekyll-seo-tag'
-  gem 'jekyll-admin', group: :jekyll_plugins
+  gem 'jekyll-admin'
   gem 'jekyll-sitemap'
   gem 'liquid_reading_time'  
   gem 'liquid_pluralize'
   gem 'jekyll-feed'
+  gem 'jekyll-paginate-v2'
 end
