@@ -14,12 +14,13 @@ collections:
 feed:
   collections:
     em_posts:
-      title: "Engineering Management Blog"
-      description: Open source implementation of engineering management processes for happy, healthy and productive teams!      
+      title: Engineering Management Blog
+      description: Open source implementation of engineering management processes
+        for happy, healthy and productive teams!
       path: "/em.xml"
       categories:
-        - engineering management
-        - technology
+      - engineering management
+      - technology
 permalink: "/blog/:year/:month/:day/:title/"
 tagline: Product Development from Engineering Perspective
 description: "\U0001F44B I am Akshay Deo, a computer engineering from Pune. Co-founded
