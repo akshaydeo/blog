@@ -1,16 +1,14 @@
 ---
 title: Principles
 date: 2020-09-15 13:00:46 Z
-version: 1
-coming_soon: true
 categories:
 - Postman
 - Engineering Management
+version: 1
+coming_soon: true
 layout: signals
 comments: true
 ---
-
-
 
 ## 🖖 Consistency
 - Everything that we as managers do has to be consistent.
