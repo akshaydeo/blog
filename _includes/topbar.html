@@ -35,11 +35,11 @@
             href="/writing"
             >✍️ Writing</a
         >
-        <!-- <a
-            class="topbar-nav-item {% if current[1] == 'em' or current[1] == 'em' %} active {% endif %}"
+        <a
+            class="topbar-nav-item {% if current[1] == 'em' or current[1] == 'em_posts' %} active {% endif %}"
             href="/em"
-            >🚨 Signals</a
-        > -->
+            >🚨 EM</a
+        >
         <a class="topbar-nav-item {% if current[1] == '12x12' %} active {% endif %}" href="/12x12">🚀 12x12</a>
         {% comment %} The code below dynamically generates a sidebar nav of pages with `layout: page` in the
         front-matter. See readme for usage. {% endcomment %} {% assign pages_list = site.pages %} {% for node in

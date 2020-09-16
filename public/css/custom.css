@@ -35,8 +35,9 @@
     padding-bottom: 20px;
 }
 
-.highlight {
-    background: url("/public/images/texture-blue-1.svg");
+.highlight {    
+    background-size: auto;    
+    background-image: url("/public/images/texture-blue-1.svg");
     background-repeat: no-repeat;
 }
 
