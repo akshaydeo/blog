@@ -15,17 +15,15 @@ feed:
   collections:
     em_posts:
       title: Engineering Management Blog
-      description:
-        Open source implementation of engineering management processes
+      description: Open source implementation of engineering management processes
         for happy, healthy and productive teams!
       path: "/em.xml"
       categories:
-        - engineering management
-        - technology
+      - engineering management
+      - technology
 permalink: "/blog/:year/:month/:day/:title/"
 tagline: Product Development from Engineering Perspective
-description:
-  "\U0001F44B I am Akshay Deo, a computer engineering from Pune. Co-founded
+description: "\U0001F44B I am Akshay Deo, a computer engineering from Pune. Co-founded
   3 Startups, built 20+ Products and currently working with Slack."
 url: https://www.akshaydeo.com
 twitter:
@@ -34,20 +32,20 @@ twitter:
 social:
   name: Aksahy Deo
   links:
-    - https://twitter.com/akshay_deo
-    - https://www.linkedin.com/in/akshaymdeo/
-    - https://github.com/akshaydeo
+  - https://twitter.com/akshay_deo
+  - https://www.linkedin.com/in/akshaymdeo/
+  - https://github.com/akshaydeo
 author:
   name: Akshay Deo
   url: https://twitter.com/akshay_deo
   twitter: akshay_deo
   card: summary
 pagination:
-  enabled: true  
-  collection: "posts"
+  enabled: true
+  collection: posts
   per_page: 10
   permalink: writing/page:num
-  sort_field: 'date'
+  sort_field: date
   sort_reverse: true
 disqus_short_name: akshaydeo
 disqus_show_comment_count: false
@@ -57,11 +55,11 @@ github:
 google_analytics_tracking_id: UA-56560447-1
 plugins_dir: "./_plugins"
 plugins:
-  - jekyll-seo-tag
-  - jekyll-paginate
-  - jekyll-gist
-  - liquid_reading_time
-  - liquid_pluralize
-  - jekyll-sitemap
-  - github-pages
-  - jekyll-feed
+- jekyll-seo-tag
+- jekyll-paginate
+- jekyll-gist
+- liquid_reading_time
+- liquid_pluralize
+- jekyll-sitemap
+- github-pages
+- jekyll-feed
