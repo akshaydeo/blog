@@ -2,8 +2,8 @@
 title: Principles
 date: 2020-09-15 13:00:46 Z
 categories:
-    - Postman
-    - Engineering Management
+- Postman
+- Engineering Management
 version: 1
 layout: signals
 comments: true
