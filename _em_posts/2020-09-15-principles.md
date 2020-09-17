@@ -34,7 +34,7 @@ Some of these principles are for Engineering Managers, and some are for Engineer
 
 -   Change is the only constant 😌. And every process needs changes and iterations to make it perfect.
 -   Keep these processes open for iterations. Do not lock on something unless you can prove it works. Also, do not engage the entire team from the inception of the processes.
--   Have strong opinions loosely held! You will find many counter-arguments for this philosophy, but this is highly important to keep your approach iterative.
+-   Have [strong opinions loosely held!](https://medium.com/@ameet/strong-opinions-weakly-held-a-framework-for-thinking-6530d417e364) You will find many counter-arguments for this philosophy, but this is highly important to keep your approach iterative.
 -   Don't add exceptions, count the exceptions, and update the process if an exception repeatedly occurs over a considerable amount of time.
 
 ## 🤖 Automated
