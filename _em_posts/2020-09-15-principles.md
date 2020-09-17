@@ -19,17 +19,6 @@ Some of these principles are for Engineering Managers, and some are for Engineer
     Any strategy/policy becomes effective when applied for sufficiently long periods.
 -   So pick the tools you are comfortable with, and implement if you pledge to use them consistently.
 
-<div class="info-box" style="margin-left:20px;margin-top:0px;" role="alert">
-<h3 class="title">🤔 Things to consider when selecting engineering management tools </h3>
-<hr style="margin-top:10px;margin-bottom:10px"/>
-<div class="content">
-	<span>✅ Pick one central tool like Slack or Teams, where most of the team is already present.</span><br/>
-	<span>✅ Bring tools that connect with these central tools, so that teams don’t have to switch the context.</span><br/>
-	<span>✅ Tools should give insights to speed up the decision making process for the team.</span><br/>
-	<span>✅ And one important thing: These tools are vital to your job, not to the team. So make sure you don’t expect teams to make massive time and effort investments just to make your job easier.</span>
-</div>
-</div>
-
 ## ♻️ Iterative
 
 -   Change is the only constant 😌. And every process needs changes and iterations to make it perfect.
@@ -94,3 +83,14 @@ Some of these principles are for Engineering Managers, and some are for Engineer
 - Some members, specifically junior members of the team, may not feel comfortable voicing their opinions. Make sure senior members of your team are standing up for junior members.
 - Force team leads/project leads to create private channels, which are not accessible to the managers/leadership where every person in the group can voice all of their problems.
 - Never attribute issues to specific people. If there is a problem, there is a problem 😁. And its EMs job to look into it constructively.
+
+<div class="info-box" style="margin-top:0px;" role="alert">
+<h3 class="title">🤔 Things to consider when selecting engineering management tools </h3>
+<hr style="margin-top:10px;margin-bottom:10px"/>
+<div class="content">
+	<span>✅ Pick one central tool like Slack or Teams, where most of the team is already present.</span><br/>
+	<span>✅ Bring tools that connect with these central tools, so that teams don’t have to switch the context.</span><br/>
+	<span>✅ Tools should give insights to speed up the decision making process for the team.</span><br/>
+	<span>✅ And one important thing: These tools are vital to your job, not to the team. So make sure you don’t expect teams to make massive time and effort investments just to make your job easier.</span>
+</div>
+</div>
