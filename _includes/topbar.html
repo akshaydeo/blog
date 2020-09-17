@@ -1,5 +1,6 @@
-<div class="topbar">
+<div class="topbar d-md-flex justify-content-md-center flex-md-items-center align-items-md-center">
     <link href="https://fonts.googleapis.com/css2?family=VT323" rel="stylesheet" />
+    {% assign current = page.url | downcase | split: '/' %}
     <div
         class="d-md-flex d-none"
         style="
@@ -23,30 +24,74 @@
             </p>
         </div>
     </div>
-    {% assign current = page.url | downcase | split: '/' %}
-    <div
-        class="collapse navbar-collapse d-flex justify-content-center p-2 p-md-1"
-        id="navbarNavAltMarkup"
-        style="margin: 0"
+    <nav class="navbar d-flex navbar-expand-lg">        
+        <button
+            class="navbar-toggler"
+            style="margin-left: auto;outline: none;"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+        <div
+        class="d-flex d-md-none"
+        style="
+            z-index: 1;
+            position: absolute;
+            padding: 15px;
+            top:0;
+            left:calc(50% - 70px);
+            background: #000;
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+            height: 4rem;
+            box-shadow: 3px 3px #6b6b6b, 3px 0px #6b6b6b, 6px 6px #aaaaaa, 6px 0px #aaaaaa;
+            align-items: center;
+            justify-content: center;
+        "
     >
-        <a class="topbar-nav-item{% if current[1] == undefined %} active{% endif %}" href="/">🏡 Home</a>
-        <a
-            class="topbar-nav-item {% if current[1] == 'writing' or current[1] == 'blog' %} active {% endif %}"
-            href="/writing"
-            >✍️ Writing</a
-        >
-        <a
-            class="topbar-nav-item {% if current[1] == 'em' or current[1] == 'em_posts' %} active {% endif %}"
-            href="/em"
-            >🚨 Signals</a
-        >
-        <a class="topbar-nav-item {% if current[1] == '12x12' %} active {% endif %}" href="/12x12">🚀 12x12</a>
-        {% comment %} The code below dynamically generates a sidebar nav of pages with `layout: page` in the
-        front-matter. See readme for usage. {% endcomment %} {% assign pages_list = site.pages %} {% for node in
-        pages_list %} {% if node.title != null %} {% if node.layout == "page" %}
-        <a class="topbar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}"
-            >{{ node.title }}</a
-        >
-        {% endif %} {% endif %} {% endfor %}
-    </div>
+        <div class="height:100%;">
+            <p class="text-center" style="margin: 0; font-family: 'VT323', cursive; color: #fff; font-size: 1.8rem">
+                akshay deo
+            </p>
+        </div>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav" style="margin: 0">
+            <ul class="navbar-nav mt-1">
+                <li class="nav-item">
+                    <a class="topbar-nav-item{% if current[1] == undefined %} active{% endif %}" href="/">🏡 Home</a>
+                </li>
+                <li class="nav-item">
+                    <a
+                        class="topbar-nav-item {% if current[1] == 'writing' or current[1] == 'blog' %} active {% endif %}"
+                        href="/writing"
+                        >✍️ Writing</a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a
+                        class="topbar-nav-item {% if current[1] == 'em' or current[1] == 'em_posts' %} active {% endif %}"
+                        href="/em"
+                        >🚨 Signals</a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a class="topbar-nav-item {% if current[1] == '12x12' %} active {% endif %}" href="/12x12"
+                        >🚀 12x12</a
+                    >
+                </li>
+                {% comment %} The code below dynamically generates a sidebar nav of pages with `layout: page` in the
+                front-matter. See readme for usage. {% endcomment %} {% assign pages_list = site.pages %} {% for node in
+                pages_list %} {% if node.title != null %} {% if node.layout == "page" %}
+                <li class="nav-item">
+                    <a class="topbar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}"
+                        >{{ node.title }}</a
+                    >
+                </li>
+                {% endif %} {% endif %} {% endfor %}
+            </ul>
+        </div>
+    </nav>
 </div>
