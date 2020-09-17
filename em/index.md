@@ -53,10 +53,11 @@ When I was preparing for my Engineering Manager role at [Postman](https://www.ak
 
 Then I evaluated apps like [Friday](https://www.friday.app/), [Know your team](https://knowyourteam.com/), which implement processes like 1-1's, Standups, Weekly checks. These apps provide limited integrations with Slack but not adequate to allow teams to interact with them from Slack itself. Asking to switch context is a big issue. I think tools like [Slack](https://slack.com) (and [Teams](https://www.microsoft.com/en-in/microsoft-365/microsoft-teams/group-chat-software) 🙄) are the best places to integrate engineering management flows, no redirections, no third party UX, no context switches!
 
-<div class="alert alert-light" style="border:1px solid #E4E7E7;border-left:5px solid #E4E7E7;font-size:15px;" role="alert"> I am not disregarding the usefulness of any of these tools mentioned in the above paragraph. It's just that I found it challenging to integrate these tools with Slack without making my team switching the context for engineering management workflows.
-</div>
+> I am not disregarding the usefulness of any of these tools mentioned in the above paragraph. It's just that I found it challenging to integrate these tools with Slack without making my team switching the context for engineering management workflows.
 
 Hence **Signals**; a blog/notes series, and a rock-solid implementation of these engineering management processes with least friction and maximum visibility. **Signals** is going to be an iterative process. At a particular stage, I plan to make these tools open source, so everyone can contribute and elevate the quality of the product.
+
+> This is not an expert blog series or silver bullet for all the engineering managers. But this is my attempt to discuss and improve my engineering management processes in the open. ✌️
 
 <div class="container">
     <div class="row">
