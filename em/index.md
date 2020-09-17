@@ -59,6 +59,11 @@ Hence **Signals**; a blog/notes series, and a rock-solid implementation of these
 
 > This is not an expert blog series or silver bullet for all the engineering managers. But this is my attempt to discuss and improve my engineering management processes in the open. ✌️
 
+<hr/>
+<div class="container text-center">
+<h1>Index</h1>
+</div>
+
 <div class="container">
     <div class="row">
         <div class="posts">
@@ -69,18 +74,25 @@ Hence **Signals**; a blog/notes series, and a rock-solid implementation of these
                         <span style="cursor: pointer;">{{ post.title }}</span>
                         <span class="highlight-two" style="font-size:18px;">writing</span>  
                     {% else %}
-                        <a href="{{ post.url }}">{{ post.title }}</a>
+                        <a href="{{ post.url }}">{{ post.title }}</a>                        
                     {% endif %} 
                 </h1>                
                 
+                <span class="post-date" style="margin-bottom: 5px; margin-top: 0px; font-size: 15px">
+                    <span style="border-right: 2px solid #e4e7e7; padding-right: 5px; margin-right: 5px">                    
+                        Version: {{ post.version }}
+                    </span>
+                    {% if post.coming_soon == true %}
+                        Releasing on: {{ post.updated_on | date_to_string }}
+                    {% else %}
+                        Last updated: {{ post.updated_on | date_to_string }}
+                    {% endif %}                    
+                </span>                
             </div>
             {% endfor %}
         </div>
     </div>
 </div>
-
-
-
 
 <hr/>
 

@@ -1,6 +1,7 @@
 ---
 title: Principles
-date: 2020-09-15 13:00:46 Z
+date: 2020-09-16 19:00:46 Z
+updated_on: 2020-09-17 13:00:46 Z
 categories:
 - Postman
 - Engineering Management
