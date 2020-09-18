@@ -1,5 +1,5 @@
 ---
-title: 🙏 Principles
+title: "\U0001F64F Principles"
 date: 2020-09-16 19:00:46 Z
 categories:
 - Postman
