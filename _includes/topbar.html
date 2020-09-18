@@ -1,5 +1,4 @@
-<div class="topbar d-md-flex justify-content-md-center flex-md-items-center align-items-md-center">
-    <link href="https://fonts.googleapis.com/css2?family=VT323" rel="stylesheet" />
+<div class="topbar d-md-flex justify-content-md-center flex-md-items-center align-items-md-center">    
     {% assign current = page.url | downcase | split: '/' %}
     <div
         class="d-md-flex d-none"
@@ -10,6 +9,7 @@
             top: 0;
             padding: 15px;
             background: #000;
+            cursor: pointer;
             border-bottom-left-radius: 4px;
             border-bottom-right-radius: 4px;
             height: 4rem;
@@ -44,6 +44,7 @@
             top:0;
             left:calc(50% - 70px);
             background: #000;
+            cursor: pointer;            
             border-bottom-left-radius: 4px;
             border-bottom-right-radius: 4px;
             height: 4rem;
@@ -53,13 +54,13 @@
         "
     >
         <div class="height:100%;">
-            <p class="text-center" style="margin: 0; font-family: 'VT323', cursive; color: #fff; font-size: 1.8rem">
+            <p class="text-center" style="margin: 0; font-family: 'VT323', cursive; color: #fff; font-size: 1.8rem;">
                 akshay deo
             </p>
         </div>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav" style="margin: 0">
-            <ul class="navbar-nav mt-1">
+            <ul class="navbar-nav d-flex flex-justify-center align-items-center flex-md-justify-around  mt-5 mt-md-1 pt-3 pt-md-0">
                 <li class="nav-item">
                     <a class="topbar-nav-item{% if current[1] == undefined %} active{% endif %}" href="/">🏡 Home</a>
                 </li>

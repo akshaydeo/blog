@@ -1,5 +1,5 @@
 ---
-title: Principles
+title: 🙏 Principles
 date: 2020-09-16 19:00:46 Z
 updated_on: 2020-09-17 13:00:46 Z
 categories:
@@ -14,20 +14,20 @@ These are essential principles for being a better engineering manager and settin
 
 Some of these principles are for Engineering Managers, and some are for Engineering Management processes/tools. But all of these principles are worth going through for an EM.
 
-## 🖖 Consistency
+## 🖖 Consistency is the key
 
 -   Everything that we, as managers, do has to be consistent.
     Any strategy/policy becomes effective when applied for sufficiently long periods.
 -   So pick the tools you are comfortable with, and implement if you pledge to use them consistently.
 
-## ♻️ Iterative
+## ♻️ Iterative processes
 
 -   Change is the only constant 😌. And every process needs changes and iterations to make it perfect.
 -   Keep these processes open for iterations. Do not lock on something unless you can prove it works. Also, do not engage the entire team from the inception of the processes.
 -   Have [strong opinions loosely held!](https://medium.com/@ameet/strong-opinions-weakly-held-a-framework-for-thinking-6530d417e364) You will find many counter-arguments for this philosophy, but this is highly important to keep your approach iterative.
 -   Don't add exceptions, count the exceptions, and update the process if an exception repeatedly occurs over a considerable amount of time.
 
-## 🤖 Automated
+## 🤖 Automated flows
 
 - Engineers hate redundancy. And they should!
 - Ensure that the processes will leverage advanced APIs, ML, and NLP systems to remove the friction.
@@ -61,7 +61,7 @@ Some of these principles are for Engineering Managers, and some are for Engineer
   - 💰 Rewards are in terms insightful information, higher visibility, automated sync-ups, less distraction for team members.
   - 👩‍💻 Investment is pushing information into these system to keep on getting rewards.
 
-## 🥊 Actionable
+## 🥊 Actionable feedbacks
 - The outcome of each engineering management process should be actionable with little or no manual efforts.
   - For the standup flow mentioned above, each standup message processing should give information about
     - 🏃‍♂️Progress of the project
