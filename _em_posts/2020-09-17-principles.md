@@ -12,20 +12,78 @@ comments: true
 
 These are essential principles for being a better engineering manager and setting up better engineering management processes. Most of these principles are from the books that I have mentioned in the introductory post. I deserve very little credit for this.
 
-Some of these principles are for Engineering Managers, and some are for Engineering Management processes/tools. But all of these principles are worth going through for an EM.
-
 ## 🖖 Consistency is the key
 
--   Everything that we, as managers, do has to be consistent.
-    Any strategy/policy becomes effective when applied for sufficiently long periods.
--   So pick the tools you are comfortable with, and implement if you pledge to use them consistently.
+- Everything that we, as managers, do has to be consistent.
+- Any strategy/policy becomes effective when applied for sufficiently long periods.
+- So pick the tools you are comfortable with, and implement if you pledge to use them consistently.
 
-## ♻️ Iterative processes
+
+## ♻️ Be iterative when it comes to processes
 
 -   Change is the only constant 😌. And every process needs changes and iterations to make it perfect.
 -   Keep these processes open for iterations. Do not lock on something unless you can prove it works. Also, do not engage the entire team from the inception of the processes.
 -   Have [strong opinions loosely held!](https://medium.com/@ameet/strong-opinions-weakly-held-a-framework-for-thinking-6530d417e364) You will find many counter-arguments for this philosophy, but this is highly important to keep your approach iterative.
 -   Don't add exceptions, count the exceptions, and update the process if an exception repeatedly occurs over a considerable amount of time.
+
+## 🥊 Actionable feedbacks
+
+- The outcome of each engineering management process should be actionable with little or no manual efforts.
+  - For the standup flow mentioned above, each standup message processing should give information about
+    - 🏃‍♂️Progress of the project
+    - 🛑Blockers that an EM needs to look into on high priority.
+- Each actionable output should be converted into a metric and tracked throughout the lifetime of the action.
+  - Based on the overall progress and blockers list, the system should give an overall health score based on some pre-defined weighting formula.
+- If it’s too low, the project needs some special attention. 🥋
+
+## ⭕️ Always complete the loop
+
+- Most of the processes adopted by teams do not complete the loop. So no one can learn from these processes and keep on repeating almost the same mistakes in different forms.
+- Completing the loop is the job of an engineering manager. And one of the trickiest and tedious one.
+- For standups, making sure all the blockers are solved, digging deeper if the health score is low are the examples of completing the loop.
+
+## 📣 Precisely over-communicate
+
+- Firmly establish the directions of the culture code/expectations from the team members. And keep on repeating it, even if you think you have done it well in the first go.
+- Sometimes these conversations become unpleasant, repetitive, and impertinent. But its all worth it.
+- Aligning everyone from the team towards the common goal with consistent practices and culture code is the recipe for successful execution.
+
+## 🤗 Open up communication channels
+
+- Some members, specifically junior members of the team, may not feel comfortable voicing their opinions. Make sure senior members of your team are standing up for junior members.
+- Force team leads/project leads to create private channels, which are not accessible to the managers/leadership where every person in the group can voice all of their problems.
+- Never attribute issues to specific people. If there is a problem, there is a problem 😁. And its EMs job to look into it constructively.
+
+## 😇 Trust in your teams capabilities
+<div class="container">
+<div class="row">
+<div class="col-lg-5 col-12">
+<img class="img-thumbnail rounded d-block mx-auto" src="/public/images/productivity.jpeg"  style="max-height:200px"/>
+</div>
+<div class="col-lg-7 col-12">
+<ul>
+
+<li> More you spend time with the team, you start understanding the strengths and weaknesses your team posses. But take a cons  iderable amount of time to build your first capability matrix, ideally 2+ months.</li>
+
+<li>Once you know these capabilities, start doubling down on strengths. Start removing yourself from the decisions which involve these strengths.</li>
+
+<li>And then start focussing on weaknesses. I will speak about it in detail in another post, but the most effective way of fixing this is, bringing the complementing talent in the team. Either from another team or by hiring from outside. </li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div class="container">
+  <div class="row">
+  <div class="col-12 text-center">
+      <figure class="figure">
+        <img src="/public/images/capability_matrix.png" class="figure-img img-fluid rounded" alt="..." style="max-height:200px">
+        <figcaption class="figure-caption">A traditional Capability matrix for your team.</figcaption>
+      </figure>
+    </div>
+  </div>
+</div>
 
 ## 🤖 Automated flows
 
@@ -59,31 +117,7 @@ Some of these principles are for Engineering Managers, and some are for Engineer
     - Worst case, send an email 😃(I ❤️Slack)
   - 🥊 Action happens out of Intention. But this intention comes with timely triggers.
   - 💰 Rewards are in terms insightful information, higher visibility, automated sync-ups, less distraction for team members.
-  - 👩‍💻 Investment is pushing information into these system to keep on getting rewards.
-
-## 🥊 Actionable feedbacks
-- The outcome of each engineering management process should be actionable with little or no manual efforts.
-  - For the standup flow mentioned above, each standup message processing should give information about
-    - 🏃‍♂️Progress of the project
-    - 🛑Blockers that an EM needs to look into on high priority.
-- Each actionable output should be converted into a metric and tracked throughout the lifetime of the action.
-  - Based on the overall progress and blockers list, the system should give an overall health score based on some pre-defined weighting formula.
-- If it’s too low, the project needs some special attention. 🥋
-
-## ⭕️ Complete the loop
-- Most of the processes adopted by teams do not complete the loop. So no one can learn from these processes and keep on repeating almost the same mistakes in different forms.
-- Completing the loop is the job of an engineering manager. And one of the trickiest and tedious one.
-- For standups, making sure all the blockers are solved, digging deeper if the health score is low are the examples of completing the loop.
-
-## 📣 Precisely over-communicate
-- Firmly establish the directions of the culture code/expectations from the team members. And keep on repeating it, even if you think you have done it well in the first go.
-- Sometimes these conversations become unpleasant, repetitive, and impertinent. But its all worth it.
-- Aligning everyone from the team towards the common goal with consistent practices and culture code is the recipe for successful execution.
-
-## 🤗 Complaint friendly environment
-- Some members, specifically junior members of the team, may not feel comfortable voicing their opinions. Make sure senior members of your team are standing up for junior members.
-- Force team leads/project leads to create private channels, which are not accessible to the managers/leadership where every person in the group can voice all of their problems.
-- Never attribute issues to specific people. If there is a problem, there is a problem 😁. And its EMs job to look into it constructively.
+  - 👩‍💻 Investment is pushing information into these systems to keep on getting rewards.
 
 <div class="info-box" style="margin-top:0px;" role="alert">
 <h3 class="title">🤔 Things to consider when selecting engineering management tools </h3>
