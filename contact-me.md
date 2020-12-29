@@ -1,5 +1,5 @@
 ---
-title: "📨 Contact Me"
+title: "\U0001F4E8 Contact Me"
 layout: page
 ---
 
