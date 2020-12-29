@@ -1,24 +1,14 @@
-<div class="container">
-    <div class="row">
-        <div class="col-8 offset-2 alert alert-secondary text-center">
-            <form id="contact-form" class="form-inline">
-                <div class="form-group mx-sm-3 mb-2">
-                    <label for="email">Email</label>
-                    <input class="form-control" id="email" type="email" name="email" value="" required/>
-                </div>
-                <button class="btn btn-primary mb-2" type="submit">Submit</button>
-            </form>
-        </div>
-    </div>
+<style>
+  iframe {
+    height: 1200px;
+    width: 100%;
+    box-sizing: unset;
+    border: none;
+  }
+</style>
+
+<div class="d-flex flex-items-center">
+  <iframe
+    src="https://us7.list-manage.com/contact-form?u=7e88e9b548e1ca5fa9c940c0a&form_id=d8be3cabeec7a2a6398805bcf54601b5"
+  />
 </div>
-<script>
-    window.sk = window.sk || function () {
-        (sk.q = sk.q || []).push(arguments)
-    };
-    sk('form', 'init', {
-        site: 'c38e12d16079',   // found under the Settings tab
-        form: 'contact',  // the key used in statickit.json
-        element: '#contact-form'       // a selector pointing to the `<form>` element
-    });
-</script>
-<script defer src="https://js.statickit.com/statickit.js"></script>
