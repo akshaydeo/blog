@@ -41,6 +41,13 @@
         </li>
         <li class="nav-item">
           <a
+            class="topbar-nav-item {% if current[1] == 'aboutMe' %} active {% endif %}"
+            href="/aboutMe"
+            >📇 About Me</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
             class="topbar-nav-item {% if current[1] == 'writing' or current[1] == 'blog' %} active {% endif %}"
             href="/writing"
             >✍️ Writing</a
