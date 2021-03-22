@@ -3,47 +3,56 @@ layout: default
 ---
 
 <div class="post">
-    <h1 class="post-title" style="margin-bottom: 1px">{{ page.title }}</h1>
-    <span><a href="/em">Engineering Management Blog</a></span>
-    <hr
-        style="
-            background-image: linear-gradient(to right, #eeeeee, white);
-            margin-top: 4px;
-            margin-bottom: 4px;
-            border: 0;
-            height: 1px;
-        "
-    />
-    <span class="post-date" style="margin-bottom: 5px; margin-top: 12px; font-size: 15px"
-        ><span style="border-right: 2px solid #e4e7e7; padding-right: 5px; margin-right: 5px">
-            Version: {{ page.version }}</span
-        >Last updated: {{ page.date | date_to_string }}</span
+  <h1 class="post-title" style="margin-bottom: 1px">{{ page.title }}</h1>
+  <span><a href="/em">Engineering Management Blog</a></span>
+  <hr
+    style="
+      background-image: linear-gradient(to right, #eeeeee, white);
+      margin-top: 4px;
+      margin-bottom: 4px;
+      border: 0;
+      height: 1px;
+    "
+  />
+  <span
+    class="post-date"
+    style="margin-bottom: 5px; margin-top: 12px; font-size: 15px"
+    ><span
+      style="
+        border-right: 2px solid #e4e7e7;
+        padding-right: 5px;
+        margin-right: 5px;
+      "
     >
-    <div style="margin-top: 30px">{{ content }} {% include followIt.html %}</div>
-    <hr />
-    <div id="social">
-        <div class="sharethis-inline-share-buttons"></div>
-    </div>
-    <hr />
+      Version: {{ page.version }}</span
+    >Last updated: {{ page.date | date_to_string }}</span
+  >
+  <div style="margin-top: 30px">{{ content }} {% include followIt.html %}</div>
+  <hr />
+  <div class="container">{% include notice.html %}</div>
+  <div id="social">
+    <div class="sharethis-inline-share-buttons"></div>
+  </div>
+  <hr />
 </div>
 <div>
-    <section>
-        <h1>Comments</h1>
-        <div id="disqus_thread" aria-live="polite">{% include disqus.html %}</div>
-    </section>
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite">{% include disqus.html %}</div>
+  </section>
 </div>
 <div class="related">
-    <h2>Related Posts</h2>
-    <ul class="related-posts">
-        {% for post in site.related_posts limit:3 %}
-        <li>
-            <h3>
-                <a href="{{ post.url }}">
-                    {{ post.title }}
-                    <small>{{ post.date | date_to_string }}</small>
-                </a>
-            </h3>
-        </li>
-        {% endfor %}
-    </ul>
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    {% for post in site.related_posts limit:3 %}
+    <li>
+      <h3>
+        <a href="{{ post.url }}">
+          {{ post.title }}
+          <small>{{ post.date | date_to_string }}</small>
+        </a>
+      </h3>
+    </li>
+    {% endfor %}
+  </ul>
 </div>

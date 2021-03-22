@@ -95,5 +95,6 @@ Hence **Signals**; a blog/notes series, and a rock-solid implementation of these
 </div>
 
 <hr/>
+<div class="container">{% include notice.html %}</div>
 
 {% include em_follow.html %}

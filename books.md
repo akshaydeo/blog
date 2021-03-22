@@ -34,7 +34,7 @@ img{
     height:100%;
 }
 
-h3,h2{display:none;}
+h3{display:none;}
 
 </style>
 
