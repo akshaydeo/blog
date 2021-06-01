@@ -1,16 +1,16 @@
 ---
 title: Be careful while using Executors.newCachedThreadPool()
 date: 2013-10-07 00:00:00 Z
-permalink: '/be-careful-while-using-executors-newcachedthreadpool/'
+permalink: "/be-careful-while-using-executors-newcachedthreadpool/"
 tags:
-  - Executors
-  - Java
+- Executors
+- Java
 author: Deo Akshay
 layout: post
 post_to_facebook_timeline:
-  - 0
+- 0
 dsq_thread_id:
-  - 1831980417
+- 1831980417
 comments: true
 ---
 

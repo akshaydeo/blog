@@ -2,12 +2,12 @@
 title: Securing Electron app source code
 date: 2019-10-28 13:00:46 Z
 tags:
-  - Electron
-  - Obfuscation
-  - Craco
-  - NodeJS
-  - Terser
-  - Webpack
+- Electron
+- Obfuscation
+- Craco
+- NodeJS
+- Terser
+- Webpack
 layout: post
 comments: true
 ---

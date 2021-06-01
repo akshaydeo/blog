@@ -1,24 +1,24 @@
 ---
 title: Switching to Postgresql from MySql
 date: 2012-06-26 00:00:00 Z
-permalink: '/switching-to-postgresql-from-mysql/'
+permalink: "/switching-to-postgresql-from-mysql/"
 tags:
-  - Uncategorized
+- Uncategorized
 author: Deo Akshay
 layout: post
 fb_mentioned_pages:
-  - a:0:{}
+- a:0:{}
 fb_mentioned_pages_message:
-  -
+- 
 fb_mentioned_friends:
-  - a:0:{}
+- a:0:{}
 fb_mentioned_friends_message:
-  -
+- 
 fb_author_post_id:
-  - 3887160149369
+- 3887160149369
 fb_status_messages:
-  - a:1:{i:0;a:2:{s:7:"message";s:100:"Posted to <a href="http://www.facebook.com/3887160149369"
-    target="_blank">your Facebook Timeline</a>";s:5:"error";s:0:"";}}
+- a:1:{i:0;a:2:{s:7:"message";s:100:"Posted to <a href="http://www.facebook.com/3887160149369"
+  target="_blank">your Facebook Timeline</a>";s:5:"error";s:0:"";}}
 ---
 
 I have been using MySQL database as back end since my first Django web application. But as my applications started getting more and more complex, MySQL started giving me a lot of issues. One of the biggest issue was while performing south migrations. Usually migrations used to affect/break relationships and Django ORM used to return None objects. But a lot of times these migrations used to run correctly on my test PostgreSQL db. So finally I decided to switch onto PostgreSQL db.

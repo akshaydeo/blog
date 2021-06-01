@@ -1,15 +1,15 @@
 ---
 title: Building Android source code on Ubuntu 10.04+
 date: 2012-05-17 00:00:00 Z
-permalink: '/building-android-4-0-3-ics-on-ubuntu-10-04-plus/'
+permalink: "/building-android-4-0-3-ics-on-ubuntu-10-04-plus/"
 tags:
-  - Android
-  - Android source code
+- Android
+- Android source code
 author: Deo Akshay
 layout: post
 comments: true
 dsq_thread_id:
-  - 1810775465
+- 1810775465
 ---
 
 Fortunately or unfortunately I faced a lot of problems while building Android 4.0.3 on Ubuntu 12.04 LTS. I searched a bit about the same, because Android officially supports two platforms for building source code : Linux and Mac. But the thing is that Google supports LTS versions and since last LTS version of Ubuntu i.e. 10.04 a lot of changes has been made which leads to build failures.

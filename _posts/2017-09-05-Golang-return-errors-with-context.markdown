@@ -2,9 +2,9 @@
 title: 'Golang: Returning errors with context'
 date: 2017-09-05 06:25:46 Z
 tags:
-  - Golang
-  - Notes
-  - Errors
+- Golang
+- Notes
+- Errors
 layout: post
 comments: true
 image: https://blog.golang.org/go-brand/Go-BB_cover.jpg

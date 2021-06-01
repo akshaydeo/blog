@@ -2,8 +2,8 @@
 title: "\U0001F64F Principles"
 date: 2020-09-16 19:00:46 Z
 tags:
-  - Postman
-  - Engineering Management
+- Postman
+- Engineering Management
 updated_on: 2020-09-17 13:00:46 Z
 version: 1
 layout: signals
