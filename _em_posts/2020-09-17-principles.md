@@ -1,9 +1,9 @@
 ---
 title: "\U0001F64F Principles"
 date: 2020-09-16 19:00:46 Z
-categories:
-- Postman
-- Engineering Management
+tags:
+  - Postman
+  - Engineering Management
 updated_on: 2020-09-17 13:00:46 Z
 version: 1
 layout: signals
@@ -18,13 +18,12 @@ These are essential principles for being a better engineering manager and settin
 - Any strategy/policy becomes effective when applied for sufficiently long periods.
 - So pick the tools you are comfortable with, and implement if you pledge to use them consistently.
 
-
 ## ♻️ Be iterative when it comes to processes
 
--   Change is the only constant 😌. And every process needs changes and iterations to make it perfect.
--   Keep these processes open for iterations. Do not lock on something unless you can prove it works. Also, do not engage the entire team from the inception of the processes.
--   Have [strong opinions loosely held!](https://medium.com/@ameet/strong-opinions-weakly-held-a-framework-for-thinking-6530d417e364) You will find many counter-arguments for this philosophy, but this is highly important to keep your approach iterative.
--   Don't add exceptions, count the exceptions, and update the process if an exception repeatedly occurs over a considerable amount of time.
+- Change is the only constant 😌. And every process needs changes and iterations to make it perfect.
+- Keep these processes open for iterations. Do not lock on something unless you can prove it works. Also, do not engage the entire team from the inception of the processes.
+- Have [strong opinions loosely held!](https://medium.com/@ameet/strong-opinions-weakly-held-a-framework-for-thinking-6530d417e364) You will find many counter-arguments for this philosophy, but this is highly important to keep your approach iterative.
+- Don't add exceptions, count the exceptions, and update the process if an exception repeatedly occurs over a considerable amount of time.
 
 ## 🥊 Actionable feedbacks
 
@@ -55,6 +54,7 @@ These are essential principles for being a better engineering manager and settin
 - Never attribute issues to specific people. If there is a problem, there is a problem 😁. And its EMs job to look into it constructively.
 
 ## 😇 Trust in your teams capabilities
+
 <div class="container">
 <div class="row">
 <div class="col-lg-5 col-12">
@@ -72,7 +72,6 @@ These are essential principles for being a better engineering manager and settin
 </div>
 </div>
 </div>
-
 
 <div class="container">
   <div class="row">
@@ -102,14 +101,14 @@ These are essential principles for being a better engineering manager and settin
 </div>
 </div>
 
--   Engineering managers keep on losing track as this information is not easily queryable.
+- Engineering managers keep on losing track as this information is not easily queryable.
 <div class="info-box" style="margin-left:20px;margin-top:0px;" role="alert">
 <h3 class="title">🤔 How can we improve this?</h3>
 <hr style="margin-top:10px;margin-bottom:10px"/>
 <div class="content">
 <span>✅ Parse these standup messages and automatically updated on a dashboard complemented with advanced filtering would be a big help..</span>
 </div>
-</div>    
+</div>
 - Hence results in repeated information pulling, more status sync-up meetings, which wastes everyone’s time.
 - Robust and habit forming management flows are built with **Trigger ➡️ Action ➡️ Variable Rewards ➡️ Investment**.
   - 📣 Timely triggers are crucial for an automated system.

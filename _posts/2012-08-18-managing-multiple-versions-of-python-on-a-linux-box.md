@@ -1,28 +1,28 @@
 ---
 title: Managing multiple versions of python on a Linux box
 date: 2012-08-18 00:00:00 Z
-permalink: "/managing-multiple-versions-of-python-on-a-linux-box/"
-categories:
-- Tools
+permalink: '/managing-multiple-versions-of-python-on-a-linux-box/'
+tags:
+  - Tools
 author: Deo Akshay
 layout: post
 fb_social_plugin_settings_box_recommendations_bar:
-- default
+  - default
 fb_mentioned_pages:
-- a:0:{}
+  - a:0:{}
 fb_mentioned_pages_message:
-- 
+  -
 fb_mentioned_friends:
-- a:0:{}
+  - a:0:{}
 fb_mentioned_friends_message:
-- 
+  -
 fb_author_post_id:
-- 4113032476036
+  - 4113032476036
 fb_status_messages:
-- a:1:{i:0;a:2:{s:7:"message";s:100:"Posted to <a href="http://www.facebook.com/4113032476036"
-  target="_blank">your Facebook Timeline</a>";s:5:"error";s:0:"";}}
+  - a:1:{i:0;a:2:{s:7:"message";s:100:"Posted to <a href="http://www.facebook.com/4113032476036"
+    target="_blank">your Facebook Timeline</a>";s:5:"error";s:0:"";}}
 dsq_thread_id:
-- 2279648384
+  - 2279648384
 ---
 
 Hello coders, if you are working on Python or any of your development tool is based on Python then you must have faced a problem in using multiple versions of Python. For an instance I develop web applications using Django which has kind of beta support for Python3 so I have to be on Python27 and same for repo from Google which does not run on Python3. But Python3 is required in some cases for example I am running arch Linux which demands for Python3 for some of its components. I came across an amazing tool named pythonbrew.
@@ -83,7 +83,7 @@ Python 2.7 (r27:82500, Aug 18 2012, 12:32:52)
 Type "help", "copyright", "credits" or "license" for more information.
 >>> 
 [akshay@amd_dev ~/Downloads/pythonbrew]$ clear
-</pre></p> 
+</pre></p>
 
 Hope this will help some of you :)  
 Happy coding !!

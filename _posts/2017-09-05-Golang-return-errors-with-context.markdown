@@ -1,10 +1,10 @@
 ---
 title: 'Golang: Returning errors with context'
 date: 2017-09-05 06:25:46 Z
-categories:
-- Golang
-- Notes
-- Errors
+tags:
+  - Golang
+  - Notes
+  - Errors
 layout: post
 comments: true
 image: https://blog.golang.org/go-brand/Go-BB_cover.jpg
@@ -18,12 +18,12 @@ Consider your web app is talking to another gRPC server for getting location inf
 
 {% highlight golang %}
 func GetLocationFor(u *User) (*Location,error){
-  respMsg, err := grpcClient.GetLocationFor(u.name)
-  if err != nil{
-    // here we directly send the error 
-    return nil, err 
-  }
-  // process the respMsg and move on
+respMsg, err := grpcClient.GetLocationFor(u.name)
+if err != nil{
+// here we directly send the error
+return nil, err
+}
+// process the respMsg and move on
 }
 {% endhighlight %}
 
@@ -33,22 +33,22 @@ Consider following supporting method for creating error objects
 
 {% highlight golang %}
 func New(args ...interface{}) error {
-	var err error
-	var rawData []interface{}
-	for _, arg := range args {
-		switch arg.(type) {
-		case error:
-			err = arg.(error)
-			log.Println("error", err)
-			continue
-		default:
-			rawData = append(rawData, arg)
-		}
-	}
-	if err == nil {
-		err = errors.New(fmt.Sprintf("%v", rawData))
-	}
-	return errors.New(fmt.Sprintf("%v [error => %s]", rawData, err.Error()))
+var err error
+var rawData []interface{}
+for \_, arg := range args {
+switch arg.(type) {
+case error:
+err = arg.(error)
+log.Println("error", err)
+continue
+default:
+rawData = append(rawData, arg)
+}
+}
+if err == nil {
+err = errors.New(fmt.Sprintf("%v", rawData))
+}
+return errors.New(fmt.Sprintf("%v [error => %s]", rawData, err.Error()))
 }
 {% endhighlight %}
 
@@ -58,12 +58,12 @@ And use it as
 import github.com/akshaydeo/errors
 
 func GetLocationFor(u *User) (*Location,error){
-  respMsg, err := grpcClient.GetLocationFor(u.name)
-  if err != nil{
-    // here we directly send the error 
-    return nil, errors.New("while getting location from grpc client in GetLocationFor", err)
-  }
-  // process the respMsg and move on
+respMsg, err := grpcClient.GetLocationFor(u.name)
+if err != nil{
+// here we directly send the error
+return nil, errors.New("while getting location from grpc client in GetLocationFor", err)
+}
+// process the respMsg and move on
 }
 {% endhighlight %}
 

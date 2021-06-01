@@ -1,21 +1,21 @@
 ---
 title: AppSurfer for better Android Ecosystem :)
 date: 2012-02-17 00:00:00 Z
-permalink: "/appsurfer-for-better-android-ecosystem-2/"
-categories:
-- Android
+permalink: '/appsurfer-for-better-android-ecosystem-2/'
+tags:
+  - Android
 author: Deo Akshay
 layout: post
 blogger_blog:
-- akshay-deo.blogspot.com
+  - akshay-deo.blogspot.com
 blogger_author:
-- Akshay Deohttp://www.blogger.com/profile/15508864230337580443noreply@blogger.com
+  - Akshay Deohttp://www.blogger.com/profile/15508864230337580443noreply@blogger.com
 blogger_permalink:
-- "/2012/02/droidcloud-for-better-android-ecosystem.html"
+  - '/2012/02/droidcloud-for-better-android-ecosystem.html'
 fb_social_plugin_settings_box_recommendations_bar:
-- default
+  - default
 dsq_thread_id:
-- 1810775461
+  - 1810775461
 comments: true
 ---
 

@@ -1,13 +1,14 @@
 ---
-title: Integrating Push notifications inside your Android app using FCM in 5 simple
+title:
+  Integrating Push notifications inside your Android app using FCM in 5 simple
   steps
 date: 2019-09-21 13:00:46 Z
-categories:
-- Android
-- FCM
-- Firebase
-- Push Notifications
-- Kotlin
+tags:
+  - Android
+  - FCM
+  - Firebase
+  - Push Notifications
+  - Kotlin
 layout: post
 comments: true
 ---
@@ -132,4 +133,3 @@ class FCMHandler : FirebaseMessagingService() {
 - Know more about it here [Viwr](https://www.viwr.app)
 
 ### How it works?
-

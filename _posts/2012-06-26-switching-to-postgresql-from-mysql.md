@@ -1,24 +1,24 @@
 ---
 title: Switching to Postgresql from MySql
 date: 2012-06-26 00:00:00 Z
-permalink: "/switching-to-postgresql-from-mysql/"
-categories:
-- Uncategorized
+permalink: '/switching-to-postgresql-from-mysql/'
+tags:
+  - Uncategorized
 author: Deo Akshay
 layout: post
 fb_mentioned_pages:
-- a:0:{}
+  - a:0:{}
 fb_mentioned_pages_message:
-- 
+  -
 fb_mentioned_friends:
-- a:0:{}
+  - a:0:{}
 fb_mentioned_friends_message:
-- 
+  -
 fb_author_post_id:
-- 3887160149369
+  - 3887160149369
 fb_status_messages:
-- a:1:{i:0;a:2:{s:7:"message";s:100:"Posted to <a href="http://www.facebook.com/3887160149369"
-  target="_blank">your Facebook Timeline</a>";s:5:"error";s:0:"";}}
+  - a:1:{i:0;a:2:{s:7:"message";s:100:"Posted to <a href="http://www.facebook.com/3887160149369"
+    target="_blank">your Facebook Timeline</a>";s:5:"error";s:0:"";}}
 ---
 
 I have been using MySQL database as back end since my first Django web application. But as my applications started getting more and more complex, MySQL started giving me a lot of issues. One of the biggest issue was while performing south migrations. Usually migrations used to affect/break relationships and Django ORM used to return None objects. But a lot of times these migrations used to run correctly on my test PostgreSQL db. So finally I decided to switch onto PostgreSQL db.
@@ -29,11 +29,11 @@ But initially I faced a lot of problems while setting up PostgreSQL on my Ubuntu
 
 PostgreSQL server
 
-<pre>sudo apt-get install postgresql</pre></p> 
+<pre>sudo apt-get install postgresql</pre></p>
 
 Pgadmin tool for managing databases
 
-<pre>sudo apt-get install pgadmin</pre></p> 
+<pre>sudo apt-get install pgadmin</pre></p>
 
 **Add password for default superuser postgres**
 
@@ -42,7 +42,7 @@ The default superuser, called ‘postgres’, does not have a password by defaul
 <pre>sudo su postgres -c psql template1
 postgres=# ALTER USER postgres with PASSWORD '&lt;your password>';
 postgres=# q
-</pre></p> 
+</pre></p>
 
 **Crate a user and database under that user**
 
@@ -54,7 +54,7 @@ Create user
 Create database
 
 <pre>sudo -u postgres createdb -O &lt;usename> &lt;database name>
-</pre></p> 
+</pre></p>
 
 These are the basic things one should know who wants to switch their Django apps from MySql to PostgreSQL. Hope this post will help you. Do correct me if I made some wrong comments here in this post :).  
 Happy coding m/

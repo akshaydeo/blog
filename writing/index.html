@@ -1,53 +1,46 @@
 ---
-title: "✍️ Writing"
+title: '✍️ Writing'
 layout: default
 group: blog
 pagination:
   enabled: true
 ---
 
-<div class="container">
-    <div class="row">
-        <div class="posts">
-            {% for post in paginator.posts %}
-            <div class="post">
-                <h1 class="post-title">
-                    <a href="{{ post.url }}"> {{ post.title }} </a>
-                </h1>
-                <div class="row" style="margin-top: 0rem">
-                    <div class="col-12">
-                        {% for item in post.categories %}
-                        <span class="text-center tag badge badge-pill badge-light">#{{ item }}</span>
-                        {% endfor %}
-                    </div>
-                    <div class="col-12" style="margin-top: 1rem">
-                        <span class="post-date" style="font-size: 15px"> {{ post.date | date_to_string }} </span>
-                    </div>                       
-                </div>                                          
-                <div class="row">
-                    
-                    <!-- <div class="d-flex col-md-3 col-sm-12 align-items-center" style="padding-bottom:10px;">
-                      <img class="rounded align-self-center" style="margin:auto;" src="{{ post.image }}" />
-                    </div> -->
-                    <div class="col-sm-12">{{ post.excerpt }}</div>
-                </div>
-                <hr />
-            </div>
-            {% endfor %}
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-8">
+      <h3>Posts</h3>
+      <div class="posts">
+        {% for post in site.posts %}
+        <div class="">
+          <span class="" style="font-size: 14px">
+            [{{ post.date | date_to_string }}]
+            <a href="{{ post.url }}" style="font-size: 18px">
+              {{ post.title }}
+            </a></span
+          >
         </div>
+        {% endfor %}
+      </div>
     </div>
-</div>
+    <div class="col-4">
+      <h3>Tags</h3>
+      <p>
+        {% assign all_tags = '' | split: ',' %} {% for post in site.posts %} {%
+        for tags in post.tags %} {% for tag in tags %} {% assign all_tags =
+        all_tags | push: tag %} {% endfor %} {% endfor %} {% endfor %} {% assign
+        all_tags = all_tags | sort %} {% assign all_tags = all_tags | uniq %}
 
-<div class="pagination">
-    {% if paginator.next_page %}
-    <a class="pagination-item older" href="/writing/page{{ paginator.next_page }}">Older</a>
-    {% else %}
-    <span class="pagination-item older">Older</span>
-    {% endif %} {% if paginator.previous_page %} {% if paginator.page == 2 %}
-    <a class="pagination-item newer" href="/writing">Newer</a>
-    {% else %}
-    <a class="pagination-item newer" href="/writing/page{{ paginator.previous_page }}">Newer</a>
-    {% endif %} {% else %}
-    <span class="pagination-item newer">Newer</span>
-    {% endif %}
+        <span class="tag-list">
+          {% for tag in all_tags %}
+          <span
+            ><a href="{{ site.tag_dir | prepend: '/' }}/{{ tag | uri_escape }}"
+              >{{ tag }}</a
+            >,
+          </span>
+          {% endfor %}
+        </span>
+      </p>
+    </div>
+  </div>
 </div>

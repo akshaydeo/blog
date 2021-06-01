@@ -1,13 +1,13 @@
 ---
 title: Securing Electron app source code
 date: 2019-10-28 13:00:46 Z
-categories:
-- Electron
-- Obfuscation
-- Craco
-- NodeJS
-- Terser
-- Webpack
+tags:
+  - Electron
+  - Obfuscation
+  - Craco
+  - NodeJS
+  - Terser
+  - Webpack
 layout: post
 comments: true
 ---
@@ -96,6 +96,7 @@ module.exports = {
 ```
 
 This script
+
 - Adds a worker-loader for the renderer thread flow.
 - Sets up the target as electron-renderer.
 - Enables <code>fs</code> in renderer-thread land.
@@ -112,35 +113,36 @@ const fs = require("fs");
 let node_modules = {};
 
 fs.readdirSync("node_modules")
-  .filter(function(x) {
-    return [".bin"].indexOf(x) === -1;
-  })
-  .forEach(function(mod) {
-    node_modules[mod] = "commonjs " + mod;
-  });
+.filter(function(x) {
+return [".bin"].indexOf(x) === -1;
+})
+.forEach(function(mod) {
+node_modules[mod] = "commonjs " + mod;
+});
 
 module.exports = {
-  mode: "production",
-  entry: "./src/electrons/main.js",
-  output: {
-    pathinfo: true,
-    path: path.resolve(__dirname, "build"),
-    filename: "electrons.raw.js",
-    globalObject: "this"
-  },
-  externals: node_modules,
-  node: {
-    __filename: false,
-    __dirname: false
-  },
-  stats: "errors-only",
-  target: "node"
+mode: "production",
+entry: "./src/electrons/main.js",
+output: {
+pathinfo: true,
+path: path.resolve(**dirname, "build"),
+filename: "electrons.raw.js",
+globalObject: "this"
+},
+externals: node_modules,
+node: {
+**filename: false,
+\_\_dirname: false
+},
+stats: "errors-only",
+target: "node"
 };
-```
+
+````
 
 This script
 - Combines all the electron main thread code (all the BrowserWindows), and merge them into one single file called <code>electrons.raw.js</code>.
-- The obfuscation part for renderer thread is handled by <code>react-scripts</code>. 
+- The obfuscation part for renderer thread is handled by <code>react-scripts</code>.
 
 #### 3. Terser
 
@@ -148,9 +150,10 @@ A JavaScript parser and mangler/compressor toolkit for ES6+.
 
 ```console
 terser --compress --drop_console=true --mangle -- build/electrons.raw.js > build/electrons.js
-```
+````
 
 This command
+
 - Obfuscated and mangles the single merged file we have created using webpack. The final output looks something like
 
 ```javascript
@@ -192,4 +195,5 @@ if [[ $resp -ne 0 ]]; then
     exit -1
 fi
 ```
-🙇‍♂️ Thanks 
+
+🙇‍♂️ Thanks

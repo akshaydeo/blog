@@ -1,12 +1,12 @@
 ---
 title: Battery consumption analysis of an Android app
 date: 2019-10-30 13:00:46 Z
-categories:
-- Android
-- Battery
-- Resources
-- Android App Analysis
-- Performance Report
+tags:
+  - Android
+  - Battery
+  - Resources
+  - Android App Analysis
+  - Performance Report
 layout: post
 comments: true
 ---

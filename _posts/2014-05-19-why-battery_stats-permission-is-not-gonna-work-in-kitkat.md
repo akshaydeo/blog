@@ -1,23 +1,23 @@
 ---
 title: Why BATTERY_STATS permission is not gonna work in KITKAT
 date: 2014-05-19 00:00:00 Z
-permalink: "/why-battery_stats-permission-is-not-gonna-work-in-kitkat/"
-categories:
-- Android
-- Android source code
+permalink: '/why-battery_stats-permission-is-not-gonna-work-in-kitkat/'
+tags:
+  - Android
+  - Android source code
 author: Deo Akshay
 layout: post
 post_to_facebook_timeline:
-- 1
+  - 1
 dsq_thread_id:
-- 2839537827
+  - 2839537827
 ---
 
-I am working on an internal project which requires battery stats. A quick search would guide you to use android.permission.BATTERY_STATS, and you would be able to access battery stats directly. But you would notice that this code wont work in KITKAT. 
+I am working on an internal project which requires battery stats. A quick search would guide you to use android.permission.BATTERY_STATS, and you would be able to access battery stats directly. But you would notice that this code wont work in KITKAT.
 
 Why ?
 
-If you are coding in Android you must be familiar with the concept of permission group. Every of the android.permission.* is associated with a permissions group. And each of these permission groups have a protection level associated with them. There are six types of the protection levels.
+If you are coding in Android you must be familiar with the concept of permission group. Every of the android.permission.\* is associated with a permissions group. And each of these permission groups have a protection level associated with them. There are six types of the protection levels.
 
 <table>
   <colgroup align="left"> </colgroup> <colgroup align="left"> </colgroup> <colgroup align="left"> </colgroup> <tr>

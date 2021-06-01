@@ -1,11 +1,11 @@
 ---
 title: How did I improve latency by 700% using sync.Pool
 date: 2017-12-23 13:25:46 Z
-categories:
-- Golang
-- sync.Pool
-- Concurrency
-- Performance
+tags:
+  - Golang
+  - sync.Pool
+  - Concurrency
+  - Performance
 layout: post
 comments: true
 image: https://raw.githubusercontent.com/akshaydeo/blog/master/public/images/stats_1.png
@@ -33,7 +33,7 @@ import (
 // Pool for our struct A
 var pool *sync.Pool
 
-// A dummy struct with a member 
+// A dummy struct with a member
 type A struct {
 	Name string
 }
@@ -63,17 +63,19 @@ func main() {
 ```
 
 ## Benchmarks
+
 I picked one of the most commonly used API from our web-service which
 
- - Performs 4 cache queries
- - Sends 5 separate events onto Kafka
- - Calls 2 separate micro-services synchronously
+- Performs 4 cache queries
+- Sends 5 separate events onto Kafka
+- Calls 2 separate micro-services synchronously
 
 I ran a load test of 10-rps on my local machine for 10 seconds first on pooled-flow and then on non-pooled flow.
 
 > These latencies are higher because this service was running in Pune (India) office and communicating with other microservices running in Oregon (United States) :).
 
 ### For pooled version
+
 ```
 Requests      [total, rate]            100, 10.10
 Duration      [total, attack, wait]    10.189033566s, 9.899999979s, 289.033587ms
@@ -86,6 +88,7 @@ Error Set:
 ```
 
 ### For non-pooled version
+
 ```
 Requests      [total, rate]            100, 10.10
 Duration      [total, attack, wait]    13.28824244s, 9.899999931s, 3.388242509s
@@ -101,7 +104,6 @@ Status Codes  [code:count]             200:100
 - **We get almost 700x performance boost. (95th percentile)**
 - For most of the objects, the ratio of allocation to reuse was almost 10-15 times. Which means the object was allocated probably 5 times and being used almost 50-70 times, during the course of this benchmark.
 
-
 ### Here are some of the outcomes of one of our services
 
 - Almost 78% of the objects were reused in course of a load test
@@ -110,7 +112,7 @@ Status Codes  [code:count]             200:100
 ![img4](https://raw.githubusercontent.com/akshaydeo/blog/master/public/images/stats_1.png)
 ![img5](https://raw.githubusercontent.com/akshaydeo/blog/master/public/images/stats_2.png)
 
-----
+---
 
 # Precautions to be taken while using sync.Pool
 
@@ -120,10 +122,9 @@ This is a pickle, once you put back the object, it's ready for reuse. So before 
 
 Example code - [play.golang.org](https://play.golang.org/p/64SoX7W-x1H)
 
-
 ### Let's consider this flow in a more practical use case
 
-Here is the typical flow for a Web-Service API. 
+Here is the typical flow for a Web-Service API.
 
 > Let's assume that our controller is using pooled struct to read body of the incoming request.
 
@@ -139,6 +140,7 @@ Refer the following diagram showing the flow:
 **The issue here is**, what if Async Call 1 takes more time and before it completes it's functionality, your controller has written the response, and object is put back into the pool!
 
 ### Solution
+
 The only solution to it is manual reference counting for the pooled objects. When I started googling about the solution, I came across a nicely written blog here[4].
 
 Basic flow for Reference Counting will be:
@@ -168,10 +170,12 @@ type ReferenceCountable interface {
 	DecrementReferenceCount()
 }
 ```
+
 - IncrementReferenceCount to increase the reference count of the current object
 - DecrementReferenceCount to decrease the reference count of the current object
 
-----
+---
+
 We will write a struct that implements this interface, which can be embedded in our own structs.
 
 ```go
@@ -213,40 +217,44 @@ func (r *ReferenceCounter) SetInstance(i interface{}) {
 	r.instance = i
 }
 ```
+
 - Reference counter specifically does the job of thread safe reference counting
 - Along with that, it puts back the instance associated with the counter into the pool as soon as the reference count becomes zero
 - Reset function ideally resets all the members of the instance of an object.
 - This is necessary in most of the practical use cases
-	- Consider the following struct 
-	
-	```go
-	type A struct{
-		First string `json:"f"`
-		Second string `json:"s"`
-		Third int `json:"t"`
-	}
-	```
-	- Suppose that while using for the first time we got a JSON like following
-	
-	```json
-	{
-		"f" : "one",
-		"t" : 1,
-	}
-	```
-	- We do the processing and put back the object inside the pool.
-	- Now we got the second request with following JSON 
-	
-	```json
-	{
-		"s" : "second",
-	}
-	```
-	- Technically the resulting struct should have First as "", Third as 0. But as we are using pooled objects, First will be "one" and Third will be 1.
-	- Hence we use a `Reset` function that reset all the members of the object before puting it back in the pool.
- 
 
-----
+  - Consider the following struct
+
+  ```go
+  type A struct{
+  	First string `json:"f"`
+  	Second string `json:"s"`
+  	Third int `json:"t"`
+  }
+  ```
+
+  - Suppose that while using for the first time we got a JSON like following
+
+  ```json
+  {
+    "f": "one",
+    "t": 1
+  }
+  ```
+
+  - We do the processing and put back the object inside the pool.
+  - Now we got the second request with following JSON
+
+  ```json
+  {
+    "s": "second"
+  }
+  ```
+
+  - Technically the resulting struct should have First as "", Third as 0. But as we are using pooled objects, First will be "one" and Third will be 1.
+  - Hence we use a `Reset` function that reset all the members of the object before puting it back in the pool.
+
+---
 
 And finally the pool, Reference coutable pool
 
@@ -293,9 +301,10 @@ func (p *referenceCountedPool) Stats() map[string]interface{} {
 	return map[string]interface{}{"allocated": p.allocated, "referenced": p.referenced, "returned": p.returned}
 }
 ```
+
 - `ReferenceCountedPool` expects a factory method that returns `ReferenceCoutable` instance i.e. an object implementing `ReferenceCountable`. Here in this example we will be embedding `ReferenceCounter` which will suffice this condition.
 
-----
+---
 
 Now start using the ReferenceCoutedPool as following:
 
@@ -339,7 +348,6 @@ func NewEvent(name, log string, timestamp time.Time) *Event {
 }
 ```
 
-
 And finally the Event pool
 
 ```go
@@ -359,12 +367,13 @@ func AcquireEvent() *Event {
 
 Basic usage:
 
-```go 
+```go
 e := models.NewEvent("test", "this is a test log", time.Now())
 defer e.DecrementReferenceCount()
 ```
 
 ## Conclusion
+
 This entire method seems a bit of an overhead, and requires a lot more precision while coding. You miss Reference counting at one place and it could result in a lot of unwanted results. But this works like a charm (see the benchmarks) once you get it right.
 
 Let me know your opinions, doubts, arguments here or at akshaymdeo[at]gmail.com. Happy coding \m/
@@ -375,4 +384,3 @@ Let me know your opinions, doubts, arguments here or at akshaymdeo[at]gmail.com.
 - [2] https://github.com/valyala/fasthttp
 - [3] https://github.com/rs/zerolog
 - [4] http://www.hydrogen18.com/blog/reference-counted-pool-golang.html
-
