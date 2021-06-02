@@ -2,10 +2,10 @@
 title: map to struct in Golang
 date: 2014-12-15 17:26:15 Z
 tags:
-  - golang
-  - json
-  - json parsing
-  - json to struct
+- golang
+- json
+- json parsing
+- json to struct
 layout: post
 comments: true
 image: https://blog.golang.org/go-brand/Go-BB_cover.jpg

@@ -5,9 +5,6 @@ permalink: "/writing-android-app-with-kotlin/"
 tags:
 - Android
 - Kotlin
-tags:
-- Android
-- Kotlin
 author: Deo Akshay
 layout: post
 post_to_facebook_timeline:

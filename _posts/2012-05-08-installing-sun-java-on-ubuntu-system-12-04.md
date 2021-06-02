@@ -3,8 +3,6 @@ title: Installing sun-java on Ubuntu system (12.04)
 date: 2012-05-08 00:00:00 Z
 permalink: "/installing-sun-java-on-ubuntu-system-12-04/"
 tags:
-- Ubuntu
-tags:
 - java
 - sun-jdk
 - sun-jre

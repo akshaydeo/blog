@@ -1,15 +1,15 @@
 ---
 title: Switching branch with repo for Android Source code
 date: 2012-05-29 00:00:00 Z
-permalink: '/switching-branch-with-repo-for-android-source-code/'
+permalink: "/switching-branch-with-repo-for-android-source-code/"
 tags:
-  - Android
-  - Android source code
+- Android
+- Android source code
 author: Deo Akshay
 layout: post
 comments: true
 dsq_thread_id:
-  - 2678420378
+- 2678420378
 ---
 
 I find working with repo as difficult as working with Android source code. We faced a lot of trouble while working with different versions of Android Source code. So I googled for repo command help but didnt find much help. So I experimented a bit and found a good way of switching branch.</br></br>

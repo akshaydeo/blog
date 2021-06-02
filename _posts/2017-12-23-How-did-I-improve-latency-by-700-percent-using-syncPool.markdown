@@ -2,10 +2,10 @@
 title: How did I improve latency by 700% using sync.Pool
 date: 2017-12-23 13:25:46 Z
 tags:
-  - Golang
-  - sync.Pool
-  - Concurrency
-  - Performance
+- Golang
+- sync.Pool
+- Concurrency
+- Performance
 layout: post
 comments: true
 image: https://raw.githubusercontent.com/akshaydeo/blog/master/public/images/stats_1.png

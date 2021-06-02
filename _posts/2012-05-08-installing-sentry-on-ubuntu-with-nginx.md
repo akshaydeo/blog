@@ -1,14 +1,14 @@
 ---
 title: Installing Sentry on ubuntu with nginx
 date: 2012-05-08 00:00:00 Z
-permalink: '/installing-sentry-on-ubuntu-with-nginx/'
+permalink: "/installing-sentry-on-ubuntu-with-nginx/"
 tags:
-  - Django
-  - Web Apps
+- Django
+- Web Apps
 author: Deo Akshay
 layout: post
 dsq_thread_id:
-  - 1840972547
+- 1840972547
 ---
 
 For the past few weeks I am finalizing my web tech-stack for [Appsurfer][1]. My current stack is Ubuntu, Django, Nginx, Gunicorn,Fabric and Sentry. Till now I was using my own custom logging framework for logging and error tracking in web app. But as my app started growing it became really difficult to hit on some issues quickly, and it was not affordable to invest time in building a full fledged logging system and error tracking system.

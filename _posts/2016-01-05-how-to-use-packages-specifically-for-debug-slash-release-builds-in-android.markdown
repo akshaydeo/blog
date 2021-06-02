@@ -2,14 +2,14 @@
 title: How to use packages specifically for Debug/Release builds in Android
 date: 2016-01-05 07:09:06 Z
 tags:
-  - Android
-  - Gradle
-  - Android Studio
-  - Build
-  - Android build flavors
+- Android
+- Gradle
+- Android Studio
+- Build
+- Android build flavors
 layout: post
 comments: true
-image: '/public/images/2.png'
+image: "/public/images/2.png"
 ---
 
 ## Preface
