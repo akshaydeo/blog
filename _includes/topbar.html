@@ -9,34 +9,33 @@
   style="flex-direction: column"
 >
   {% assign current = page.url | downcase | split: '/' %}
-  <div class="d-flex" style="align-items: center; justify-content: center">
-    <div class="height:100%;">
-      <p
-        class="text-center"
-        style="
-          margin: 0;
-          font-family: 'VT323', cursive;
-          color: #000;
-          font-size: 36px;
-          margin-top: 20px;
-        "
-      >
-        akshay deo
-      </p>
-    </div>
-  </div>
 </div>
 <div
-  class="d-flex"
+  class="d-flex container"
   style="align-items: center; justify-content: center; padding-top: 0px"
 >
-  <nav class="navbar d-flex navbar-expand">
+  <div class="float-left d-none d-md-block" style="height: 100%">
+    <p
+      class="text-center"
+      style="
+        margin: 0;
+        padding-left: 20px;
+        padding-right: 10px;
+        font-family: 'VT323', cursive;
+        color: #000;
+        font-size: 36px;
+      "
+    >
+      akshay deo
+    </p>
+  </div>
+  <nav class="navbar d-flex navbar-expand" style="margin-left: auto">
     <div
       class="collapse navbar-collapse"
       id="navbarNav"
-      style="margin: 0; font-size: 17px"
+      style="margin: 0; padding-top: 8px; font-size: 17px"
     >
-      <ul class="navbar-nav d-flex" style="text-align: center">
+      <ul class="navbar-nav" style="">
         <li class="nav-item">
           <a
             class="
@@ -119,6 +118,29 @@
             >📡 Signals</a
           >
         </li>
+        <li class="nav-item">
+          <a
+            class="
+              topbar-nav-item
+              {%
+              if
+              current[1]
+              ==
+              'em'
+              or
+              current[1]
+              ==
+              'em_posts'
+              %}
+              active
+              {%
+              endif
+              %}
+            "
+            href="/products"
+            >📦 Products</a
+          >
+        </li>
         {% comment %} The code below dynamically generates a sidebar nav of
         pages with `layout: page` in the front-matter. See readme for usage. {%
         endcomment %} {% assign pages_list = site.pages %} {% for node in
@@ -145,3 +167,4 @@
     </div>
   </nav>
 </div>
+<hr style="margin: 0; padding-bottom: 10px" />
