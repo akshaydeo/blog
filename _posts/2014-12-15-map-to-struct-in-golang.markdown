@@ -2,10 +2,10 @@
 title: map to struct in Golang
 date: 2014-12-15 17:26:15 Z
 tags:
-- golang
-- json
-- json parsing
-- json to struct
+  - golang
+  - json
+  - json parsing
+  - json to struct
 layout: post
 comments: true
 image: https://blog.golang.org/go-brand/Go-BB_cover.jpg
@@ -39,26 +39,28 @@ A bit of googling landed me onto [http://github.com/ottemo/mapstructure](http://
 Suppose that _body_ has the entire JSON. It has some fields along with _User_ struct with _user_ as key.
 
 - First we will convert the JSON into a map[string]interface{}
-  {% highlight go %}
+
+```go
   var data map[string]interface{}
   err = json.Unmarshal(body, &data)
   if err != nil {
-  return nil, err
+    return nil, err
   }
-  {% endhighlight %}
+```
 
 - Okay so data contains our JSON, now as we have a custom fields _time.Time_ we will have to write our own decoder, which means create on AdvancedDecodeHook func and pass it to the DecoderConfig
 
-{% highlight go %}
-func myDecoder(val \*reflect.Value, data interface{}) (interface{}, error) {
-if val.Type().String() == "time.Time" {  
- value, err := time.Parse(time.RFC3339Nano, data.(string))
-val.Set(reflect.ValueOf(value))
-return nil, err
+```go
+func myDecoder(val *reflect.Value, data interface{}) (interface{}, error) {
+  if val.Type().String() == "time.Time" {
+    value, err := time.Parse(time.RFC3339Nano, data.(string))
+    val.Set(reflect.ValueOf(value))
+    return nil, err
+  }
+  return data, nil
 }
-return data, nil
-}
-{% endhighlight %}
+```
+
 So lets understand the structure of this hook -
 You get two parameters:
 
@@ -69,29 +71,30 @@ This function returns an interface and an error. Now this _AdvancedDecodeHook_ w
 
 - And now just write a function to return the decoder with our custom configuration
 
-{% highlight go %}
-func getDecoder(result interface{}) (\*mapstructure.Decoder, error) {
-return mapstructure.NewDecoder(&mapstructure.DecoderConfig{
-AdvancedDecodeHook: myDecoder,
-TagName: "json",
-Result: result,
-WeaklyTypedInput: false})
+```go
+func getDecoder(result interface{}) (*mapstructure.Decoder, error) {
+  return mapstructure.NewDecoder(&mapstructure.DecoderConfig{
+  AdvancedDecodeHook: myDecoder,
+  TagName: "json",
+  Result: result,
+  WeaklyTypedInput: false})
 }
-{% endhighlight %}
+```
+
 The parameter that we pass in is the result type we expect. This has to be the pointer to the struct.
 
 - And finally call it from your routine
 
-{% highlight go %}
+```go
 decoder, err := getDecoder(&user)
 if err != nil {
-return nil, err
+  return nil, err
 }
 err = decoder.Decode(data["user"])
 if err != nil {
-return nil, err
+  return nil, err
 }
-{% endhighlight %}
+```
 
 - And you are done.
 
@@ -99,40 +102,41 @@ return nil, err
 
 So the final code looks like this
 
-{% highlight go %}
+```go
 
-func myDecoder(val \*reflect.Value, data interface{}) (interface{}, error) {
-if val.Type().String() == "time.Time" {  
- value, err := time.Parse(time.RFC3339Nano, data.(string))
-val.Set(reflect.ValueOf(value))
-return nil, err
-}
-return data, nil
-}
-
-func getDecoder(result interface{}) (\*mapstructure.Decoder, error) {
-return mapstructure.NewDecoder(&mapstructure.DecoderConfig{
-AdvancedDecodeHook: myDecoder,
-TagName: "json",
-Result: result,
-WeaklyTypedInput: false})
+func myDecoder(val *reflect.Value, data interface{}) (interface{}, error) {
+  if val.Type().String() == "time.Time" {
+    value, err := time.Parse(time.RFC3339Nano, data.(string))
+    val.Set(reflect.ValueOf(value))
+    return nil, err
+  }
+  return data, nil
 }
 
-func GetUserFromJSON(jsonUser string) (\*User,error){
-var data map[string]interface{}
-err = json.Unmarshal(jsonUser, &data)
-if err != nil {
-return nil, err
+func getDecoder(result interface{}) (*mapstructure.Decoder, error) {
+  return mapstructure.NewDecoder(&mapstructure.DecoderConfig{
+  AdvancedDecodeHook: myDecoder,
+  TagName: "json",
+  Result: result,
+  WeaklyTypedInput: false})
 }
-decoder, err := getDecoder(&user)
-if err != nil {
-return nil, err
+
+func GetUserFromJSON(jsonUser string) (*User,error){
+  var data map[string]interface{}
+  err = json.Unmarshal(jsonUser, &data)
+  if err != nil {
+    return nil, err
+  }
+  decoder, err := getDecoder(&user)
+    if err != nil {
+    return nil, err
+  }
+  err = decoder.Decode(data["user"])
+  if err != nil {
+    return nil, err
+  }
+  return &user,nil
 }
-err = decoder.Decode(data["user"])
-if err != nil {
-return nil, err
-}
-return &user,nil
-}
-{% endhighlight %}
-Thank you guys, keep coding :)
+```
+
+Thank you all, keep coding :)
