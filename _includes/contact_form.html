@@ -1,14 +1,17 @@
-<style>
-  iframe {
-    height: 1200px;
-    width: 100%;
-    box-sizing: unset;
-    border: none;
-  }
-</style>
-
-<div class="d-flex flex-items-center">
-  <iframe
-    src="https://us7.list-manage.com/contact-form?u=7e88e9b548e1ca5fa9c940c0a&form_id=d8be3cabeec7a2a6398805bcf54601b5"
+<form
+  style="border: 1px solid #ccc; padding: 3px; text-align: center"
+  action="https://tinyletter.com/akshaydeo"
+  method="post"
+  target="popupwindow"
+  onsubmit="window.open('https://tinyletter.com/akshaydeo', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"
+>
+  <p><label for="tlemail">Enter your email address</label></p>
+  <p><input type="text" style="width: 140px" name="email" id="tlemail" /></p>
+  <input type="hidden" value="1" name="embed" /><input
+    type="submit"
+    value="Subscribe"
   />
-</div>
+  <p>
+    <a href="https://tinyletter.com" target="_blank">powered by TinyLetter</a>
+  </p>
+</form>
