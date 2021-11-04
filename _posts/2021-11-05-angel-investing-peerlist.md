@@ -1,10 +1,9 @@
 ---
-title: 'Excited to announce our first angel investment 🙌'
+title: "Excited to announce our first angel investment \U0001F64C"
 date: 2021-11-05 08:00:46 Z
-published: true
 tags:
-  - Angel Investing
-  - Peerlist
+- Angel Investing
+- Peerlist
 layout: post
 comments: true
 ---
