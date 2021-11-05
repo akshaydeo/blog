@@ -10,13 +10,14 @@ comments: true
 
 ## 🤔 Why Angel Investing?
 
-A lot of people have asked me this question? Why are you even calling yourself an angel investor? Is it because everyone around you is one? Is it because you have money to invest?
+- Is it because everyone around you is one? 
+- Is it because you have money to invest?
 
-This is a fair question to ask. And I am constantly perplexed with my attempt to answer this question effectively. And there is no one correct answer. There is no right answer. But one thing that I love the most is, solving problems. And in my lifetime, I can solve only a limited number of problems, and this is my attempt to maximize that number 🙂.
+This is a fair question to ask. And I am constantly perplexed with my attempt to answer this question effectively. Of course, there is no correct answer. But one thing that I love the most is, solving problems. And in my lifetime, I can solve only a limited number of problems, and this is my attempt to maximize that number 🙂.
 
 ## 🤲 Ideology
 
-Traditionally angel investing is looked at as a gamble where if the bet works out, one could get returns 50 - 1000x. That's one way to look at it. But with [Sifar Ventures](https://sifar.vc), my goal is to focus more on intangible gains one gets when working with early-stage startups.
+Traditionally angel investing is looked at as a gamble where if the bet works out, one could get returns 50 - 1000x. So that's one way to look at it. But with [Sifar Ventures](https://sifar.vc), my goal is to focus more on intangible gains one gets when working with early-stage startups.
 
 I have been a founder in the past and understand the chaos inside and around the founders. What they look for is de-risking as many things as possible to find the Problem and Product-market fit. When I completed the journey where I owned a failed startup, I realized that I had learned a lot during the process. Not just about the business but the mindset one should have to go through this one-of-a-kind journey in an entrepreneur's career and life.
 
@@ -24,17 +25,19 @@ As I have worked extensively on all the layers of technology, I realized that I 
 
 ## 💥 Hence [Sifar Ventures](https://sifar.vc)
 
-[@Vishwesh Jirgale](https://peerlist.io/vishwesh) and I have been working together for the last 6-7 years. One common theme of all our conversations is ideas 💡. We love tech, startups and we love entrepreneurs. As we talked, we realized that we have a distinct set of capabilities that could help early-stage startups de-risk technology, marketing, hiring, and fundraising. Hence last year, we decided to start Sifar Ventures, an early-stage VC firm focussing on (but not limited to) Indian Startups.
+[@Vishwesh Jirgale](https://peerlist.io/vishwesh) and I have worked together for the last 6-7 years. One common theme of all our conversations is ideas 💡. We love tech, startups and we love entrepreneurs. As we talked, we realized that we have a distinct set of capabilities that could help early-stage startups de-risk technology, marketing, hiring, and fundraising. Hence last year, we decided to start Sifar Ventures, an early-stage VC firm focussing on (but not limited to) Indian Startups.
 
 ## 🖖 We are proud to announce our first investment: [Peerlist](https://peerlist.io?ref=amd)
 
-There are a few problems that I would love to solve right now, and one of those is Professional Networking. LinkedIn is good but is not relevant to the changing dynamics of working anymore. We need a professional network that caters to each individual differently, be it a programmer, designer, or salesperson.
+![image](https://user-images.githubusercontent.com/1050029/140507377-2c98853b-2fcb-44d9-8640-d82381a30d76.png)
+
+There are a few problems that I would love to solve right now, and one of those is Professional Networking. LinkedIn is good but is not relevant to the changing dynamics of working anymore. Instead, we need a professional network that caters to each individual differently, be it a programmer, designer, or salesperson.
 
 The second is the Social aspect of the Professional Network. Is it necessary? And how useful is it? Whatever may be the answers to these questions, what LinkedIn has is not the solution. Instead, it has become another Facebook, with less and less relevance to Professional Networking.
 
 The third and very critical aspect of Professional networks is meaningful connections. By this, what I mean is reaching and connecting to mutually beneficial people. It shouldn't be as hard as it is right now. One can reimagine the whole ecosystem for better, faster, and efficient ways of professionally connecting.
 
-When I was searching for the companies, I came across Peerlist via a tweet from a user. We (Vishwesh and I) quickly got in touch with [@Akash](https://peerlist.io/designerdada) and [@Yogini](https://peerlist.io/yogini). When we spoke to them, we understood the zeal they were building this product. After looking at the roadmap, @Vishwesh and I realized that we significantly align on the problems of the current solutions and probable solutions. We believe that Peerlist could be one of the ways of imagining how future Professional Networks should be. And @Akash and @Yogini, the company's co-founders, have the right skills and approach to solving this problem.
+When I was searching for the companies, I came across Peerlist via a tweet from a user. We (Vishwesh and I) quickly got in touch with [@Akash](https://peerlist.io/designerdada) and [@Yogini](https://peerlist.io/yogini). When we spoke to them, we understood the zeal they were building this product. After looking at the roadmap, @Vishwesh and I realized that we significantly align on the problems of the current solutions and probable solutions. We believe that Peerlist could be one of the ways of imagining how future Professional Networks should be. And [@Akash](https://peerlist.io/designerdada) and [@Yogini](https://peerlist.io/yogini), the company's co-founders, have the right skills and approach to solving this problem.
 
 [Peerlist](https://peerlist.io?ref=amd) is launching the platform soon, but till then, please register for the private beta now 🙂.
 
