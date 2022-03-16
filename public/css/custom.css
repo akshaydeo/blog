@@ -170,3 +170,14 @@ h2 {
     opacity: 0;
   }
 }
+
+.card {
+  border-radius: 6px;
+  background-color: #efedec98;
+  transition: all 0.2s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: #2424243f 1px 1px 10px 2px;
+  transform: scale(1.03);
+}

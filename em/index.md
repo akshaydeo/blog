@@ -23,7 +23,7 @@ It's not just the EM, but his team, product, and customers suffer because of his
 <div class="container">
     <div class="row">
         <div class="col-md-4 col-12" style="margin-bottom:15px;">
-            <div class="col-12">        
+            <div class="col-12">
                 <a target="_blank"  href="https://www.amazon.in/gp/product/B07QYCHJ7V/ref=as_li_tl?ie=UTF8&camp=3638&creative=24630&creativeASIN=B07QYCHJ7V&linkCode=as2&tag=akshaydeosite-21&linkId=24c51d569eade267f4f6efb3f47f6bd6"><img  class="rounded mx-auto d-block" border="0" src="//ws-in.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=IN&ASIN=B07QYCHJ7V&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=akshaydeosite-21" ></a><img src="//ir-in.amazon-adsystem.com/e/ir?t=akshaydeosite-21&l=am2&o=31&a=B07QYCHJ7V" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
             </div>
             <div class="col-12 text-center">
@@ -31,15 +31,15 @@ It's not just the EM, but his team, product, and customers suffer because of his
             </div>
         </div>
         <div class="col-md-4 col-12" style="margin-bottom:15px;">
-            <div class="col-12">        
+            <div class="col-12">
                 <a target="_blank"  href="https://www.amazon.in/gp/product/B089648S3Z/ref=as_li_tl?ie=UTF8&camp=3638&creative=24630&creativeASIN=B089648S3Z&linkCode=as2&tag=akshaydeosite-21&linkId=904e42522d7f353c6f5fd81e3bd68009"><img class="rounded mx-auto d-block" style="width:180px;height:250px;"  border="0" src="//ws-in.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=IN&ASIN=B089648S3Z&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=akshaydeosite-21" ></a><img src="//ir-in.amazon-adsystem.com/e/ir?t=akshaydeosite-21&l=am2&o=31&a=B089648S3Z" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
             </div>
             <div class="col-12 text-center">
                 Managing Humans<br/>by Michael Lopp
             </div>
         </div>
-        <div class="col-md-4 col-12" style="margin-bottom:15px;"> 
-            <div class="col-12">        
+        <div class="col-md-4 col-12" style="margin-bottom:15px;">
+            <div class="col-12">
                 <a target="_blank"  href="https://www.amazon.in/gp/product/B00B6U63ZE/ref=as_li_tl?ie=UTF8&camp=3638&creative=24630&creativeASIN=B00B6U63ZE&linkCode=as2&tag=akshaydeosite-21&linkId=c8bbcd207fdb961f0a121b7ee1107c9f"><img class="rounded mx-auto d-block" border="0" src="//ws-in.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=IN&ASIN=B00B6U63ZE&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=akshaydeosite-21" ></a><img src="//ir-in.amazon-adsystem.com/e/ir?t=akshaydeosite-21&l=am2&o=31&a=B00B6U63ZE" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
             </div>
             <div class="col-12 text-center">
@@ -69,15 +69,15 @@ Hence **Signals**; a blog/notes series, and a rock-solid implementation of these
         <div class="posts">
             {% for post in site.em_posts %}
             <div class="post" style="margin-bottom:4px;">
-                <h1 class="post-title">                    
-                    {% if post.coming_soon == true %} 
+                <h1 class="post-title">
+                    {% if post.coming_soon == true %}
                         <span style="cursor: pointer;">{{ post.title }}</span>
                         <span class="highlight-two" style="font-size:18px;">writing</span>  
                     {% else %}
-                        <a href="{{ post.url }}">{{ post.title }}</a>                        
-                    {% endif %} 
-                </h1>                
-                
+                        <a href="{{ post.url }}">{{ post.title }}</a>
+                    {% endif %}
+                </h1>
+
                 <span class="post-date" style="margin-bottom: 5px; margin-top: 0px; font-size: 15px">
                     <span style="border-right: 2px solid #e4e7e7; padding-right: 5px; margin-right: 5px">                    
                         Version: {{ post.version }}
@@ -94,7 +94,4 @@ Hence **Signals**; a blog/notes series, and a rock-solid implementation of these
     </div>
 </div>
 
-<hr/>
-<div class="container">{% include notice.html %}</div>
-
-{% include em_follow.html %}
+{% include followIt.html %}

@@ -15,6 +15,6 @@ group :jekyll_plugins do
   gem 'liquid_pluralize'
   gem 'jekyll-feed'
   gem 'jekyll-tagging'
-  gem "kramdown", ">= 2.3.1"
-  gem "rack", ">= 2.1.4"
+  gem "kramdown"
+  gem "rack"
 end
