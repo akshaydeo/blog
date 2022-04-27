@@ -31,14 +31,14 @@
   font-family: 'Avenir';
   font-style: normal;
   font-weight: normal;
-  src: url(../fonts/AvenirLTStd-Book.otf);
+  src: url(../fonts/AvenirNextLTPro-Regular.otf);
 }
 
 @font-face {
   font-family: 'Avenir';
   font-style: normal;
   font-weight: bold;
-  src: url(../fonts/AvenirLTStd-Medium.otf);
+  src: url(../fonts/Montserrat-Medium.ttf);
 }
 
 @font-face {
