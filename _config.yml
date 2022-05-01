@@ -5,6 +5,9 @@ collections:
   em_posts:
     title: EM
     output: true
+  weblog:
+    title: Weblog
+    output: true
   posts:
     title: Posts
     output: true
@@ -51,7 +54,7 @@ disqus_short_name: akshaydeo
 disqus_show_comment_count: true
 version: 2.1.0
 github:
-  repo: https://github.com/akshaydeo
+  repo: https://github.com/akshaydeo/blog
 google_analytics_tracking_id: UA-56560447-1
 plugins_dir: "./_plugins"
 plugins:
