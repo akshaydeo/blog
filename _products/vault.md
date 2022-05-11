@@ -2,11 +2,11 @@
 title: Vault
 layout: product
 name: Vault
-image: '/public/images/vault_logo.png'
+image: "/public/images/vault_logo.png"
 active: false
 timeline: Oct 2019 - March 2020
-description: Vault is a complete cross-banking financial app for India 🇮🇳
-link: /products/vault
+description: "Vault is a complete cross-banking financial app for India \U0001F1EE\U0001F1F3"
+link: "/products/vault"
 ---
 
 # Vault - A complete finance app for 🇮🇳
