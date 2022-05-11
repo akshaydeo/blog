@@ -1,21 +1,24 @@
 ---
-title: "📣 Weblog"
+title: '📣 Weblog'
 layout: default
 ---
 
 <div class="container-fluid">
-    <div class="row">
-        <div class="col-12">
-            <div class="posts">
-                {% for post in site.weblog reversed %}
-                <div class="">
-                    <span class="" style="font-size: 14px">
-                        [{{ post.date | date_to_string }}]
-                    </span>
-                    <p style="font-size: 18px; padding-top:-10px;"> {{ post.content  | markdownify }}</p>
-                </div>
-                {% endfor %}
-            </div>
+  <div class="row">
+    <div class="col-12">
+      <div class="posts">
+        {% for post in site.weblog reversed %}
+        <div class="">
+          <span class="" style="font-size: 14px">
+            [{{ post.date | date_to_string }}]
+          </span>
+          <hr class="m-0 p-0 mt-1" />
+          <p style="font-size: 18px; padding-top: -10px">
+            {{ post.content | markdownify }}
+          </p>
         </div>
+        {% endfor %}
+      </div>
     </div>
+  </div>
 </div>

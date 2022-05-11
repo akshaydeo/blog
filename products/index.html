@@ -11,224 +11,36 @@ group: blog
             product that I have worked on 😇.</h2>
     </div>
     <div class="row mt-4">
-        <div class="col-12 col-md-6 col-lg-4 mb-2" style="cursor: pointer;">
-            <div class="card" style="padding: 10px; border-width: 1px; ">
-                <div class="col-12 d-flex justify-content-center">
-                    <img src="/public/images/pollscout_logo.png" width="72px" height="72px" />
+       {% for product in site.products %}
+        <div class="col-4 border border-gray-light d-flex flex-column p-2">            
+            <div class="d-flex flex-row p-1">
+                <div class="d-block" style="min-width: 70px;">
+                    <img src="{{ product.image }}" class="img-fluid" alt="{{ product.title }}" width="64px" height="64px" />
                 </div>
-                <div class="col-12 text-center">
-                    <span
-                        style="font-weight: bold; font-size: 20px;">PollScout</span><br /><code>May 2020 - July 2020</code>
-                </div>
-                <div class="col-12 text-center" style="margin-top: 10px;">
-                    <span>PollScout app is an to help me and (hopefully) everyone to bookmark
-                        interesting polls and make them discoverable.</span>
-                </div>
-                <div class="col-12 text-center" style="margin-top: 10px;">
-                    <div style="
-              width: 100%;
-              height: 1px;
-              background-color: #e0dcd9;
-              margin-bottom: 8px;
-            "></div>
-                    <a class="text-center" style="font-size: 16px;" href="/12x12/pollscout">Read more 👉</a>
-                </div>
+                <div class="d-flex flex-column ml-1">
+                    <span style="font-weight: bold; font-size: 25px; padding-top:1px;">{{ product.name }}</span>                    
+                    {% if product.active == "true" %}
+                        <span style="font-size: 15px;">🟢</span>
+                    {% else %}
+                        <span style="font-size: 15px;">🔴 | {{ product.timeline }}</span>
+                    {% endif %}                    
+                </div>               
             </div>
+            <hr class="m-0 p-0" style="margin-top:-2px;"/>
+            <div class="mt-2">
+                <span>{{ product.description }}</span>
+            </div>     
+            {% if product.link %}   
+                <div class="mt-2">
+                    <a style="font-size:16px;" href="{{ product.link }}">Read the story behind {{ product.name }}</a>
+                </div>      
+            {% endif %}
         </div>
-        <div class="col-12 col-md-6 col-lg-4 mb-2" style="cursor: pointer;">
-            <div class="card" style="padding: 10px; border-width: 1px; ">
-                <div class="col-12 d-flex justify-content-center">
-                    <img src="/public/images/vault_logo.png" width="72px" height="72px" />
-                </div>
-                <div class="col-12 text-center">
-                    <span
-                        style="font-weight: bold; font-size: 20px;">Vault</span><br /><code>Oct 2019 - March 2020</code>
-                </div>
-               
-                <div class="col-12 text-center" style="margin-top: 10px;">
-                    <span>Vault is a complete cross-banking financial app for India 🇮🇳.</span>
-                </div>
-                <div class="col-12 text-center" style="margin-top: 10px;">
-                    <div style="
-              width: 100%;
-              height: 1px;
-              background-color: #e0dcd9;
-              margin-bottom: 8px;
-            "></div>
-                    <a class="text-center" style="font-size: 16px;" href="/products/vault">Read more 👉</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4 mb-2" style="cursor: pointer;">
-            <div class="card" style="padding: 10px; border-width: 1px; ">
-                <div class="col-12 d-flex justify-content-center">
-                    <img src="/public/images/viwr_logo.svg" width="72px" height="72px" />
-                </div>
-                <div class="col-12 text-center">
-                    <span style="font-weight: bold; font-size: 20px;">Viwr</span><br /><code>Aug 2018 - Sept 2019</code>
-                </div>
-               
-                <div class="col-12 text-center" style="margin-top: 10px;">
-                    <span>Performance analysis and diagnostic tool for Android developers and testers, insights into
-                        battery, data, memory ...</span>
-                </div>
-                <div class="col-12 text-center" style="margin-top: 10px;">
-                    <div style="
-              width: 100%;
-              height: 1px;
-              background-color: #e0dcd9;
-              margin-bottom: 8px;
-            "></div>
-                    <a class="text-center" style="font-size: 16px;" href="/products/viwr">Read more 👉</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4 mb-2" style="cursor: pointer;">
-            <div class="card" style="padding: 10px; border-width: 1px; ">
-                <div class="col-12 d-flex justify-content-center">
-                    <img src="/public/images/droidcast-logo.png" width="72px" height="72px" />
-                </div>
-                <div class="col-12 text-center">
-                    <span
-                        style="font-weight: bold; font-size: 20px;">Droidcast</span><br /><code>May 2018 - July 2018</code>
-                </div>
-             
-                <div class="col-12 text-center" style="margin-top: 10px;">
-                    <span>Simplest screen sharing app for Android, One click to start sharing your screen without
-                        USB.</span>
-                </div>
-                <div class="col-12 text-center" style="margin-top: 10px;">
-                    <div style="
-              width: 100%;
-              height: 1px;
-              background-color: #e0dcd9;
-              margin-bottom: 8px;
-            "></div>
-                    <a class="text-center" style="font-size: 16px;" href="/products/droidcast">Read more 👉</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4 mb-2" style="cursor: pointer;">
-            <div class="card" style="padding: 10px; border-width: 1px; ">
-                <div class="col-12 d-flex justify-content-center">
-                    <img src="/public/images/twist-logo.png" width="72px" height="72px" />
-                </div>
-                <div class="col-12 text-center">
-                    <span style="font-weight: bold; font-size: 20px;">Twist</span><br /><code>2014-2016</code>
-                </div>
-            
-                <div class="col-12 text-center" style="margin-top: 10px;">
-                    <span>Amazon firestick with your smartphone as remove/controller.</span>
-                </div>
-                <div class="col-12 text-center" style="margin-top: 10px;">
-                    <div style="
-              width: 100%;
-              height: 1px;
-              background-color: #e0dcd9;
-              margin-bottom: 8px;
-            "></div>
-                    <a class="text-center" style="font-size: 16px;" href="/products/twist">Read more 👉</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4 mb-2" style="cursor: pointer;">
-            <div class="card" style="padding: 10px; border-width: 1px; ">
-                <div class="col-12 d-flex justify-content-center">
-                    <img src="/public/images/appsurfer-logo.jpg" width="72px" height="72px" />
-                </div>
-                <div class="col-12 text-center">
-                    <span style="font-weight: bold; font-size: 20px;">AppSurfer</span><br /><code>2011-2016</code>
-                </div>
-               
-                <div class="col-12 text-center" style="margin-top: 10px;">
-                    <span>First to run Android on EC2 instances back in 2012-2013, and stream it to any platform.</span>
-                </div>
-                <div class="col-12 text-center" style="margin-top: 10px;">
-                    <div style="
-              width: 100%;
-              height: 1px;
-              background-color: #e0dcd9;
-              margin-bottom: 8px;
-            "></div>
-                    <a class="text-center" style="font-size: 16px;" href="/products/appsurfer">Read more 👉</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4 mb-2" style="cursor: pointer;">
-            <div class="card" style="padding: 10px; border-width: 1px; ">
-                <div class="col-12 d-flex justify-content-center">
-                    <img src="/public/images/group-up-logo.png" width="72px" height="72px" />
-                </div>
-                <div class="col-12 text-center">
-                    <span style="font-weight: bold; font-size: 20px;">Groupup</span><br /><code>2014-2015</code>
-                </div>
-              
-                <div class="col-12 text-center" style="margin-top: 10px;">
-                    <span>GroupUp was a reverse GroupOn for purchasing goods in a group. People create/join group for
-                        buying a product.</span>
-                </div>
-                <div class="col-12 text-center" style="margin-top: 10px;">
-                    <div style="
-              width: 100%;
-              height: 1px;
-              background-color: #e0dcd9;
-              margin-bottom: 8px;
-            "></div>
-                    <a class="text-center" style="font-size: 16px;" href="/products/groupup">Read more 👉</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4 mb-2" style="cursor: pointer;">
-            <div class="card" style="padding: 10px; border-width: 1px; ">
-                <div class="col-12 d-flex justify-content-center">
-                    <img src="/public/images/keen_logo.png" width="72px" height="72px" />
-                </div>
-                <div class="col-12 text-center">
-                    <span style="font-weight: bold; font-size: 20px;">Keen</span><br /><code>2013-2014</code>
-                </div>
-              
-                <div class="col-12 text-center" style="margin-top: 10px;">
-                    <span>A live StackOverflow which can start with a chat, call, video call etc. Main objective of the
-                        app is to provide instant help on problems using mobile chat system.</span>
-                </div>
-                <div class="col-12 text-center" style="margin-top: 10px;">
-                    <div style="
-              width: 100%;
-              height: 1px;
-              background-color: #e0dcd9;
-              margin-bottom: 8px;
-            "></div>
-                    <a class="text-center" style="font-size: 16px;" href="/products/keen">Read more 👉</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4 mb-2" style="cursor: pointer;">
-            <div class="card" style="padding: 10px; border-width: 1px; ">
-                <div class="col-12 d-flex justify-content-center">
-                    <img src="/public/images/distribit_logo.png" width="72px" height="72px" />
-                </div>
-                <div class="col-12 text-center">
-                    <span style="font-weight: bold; font-size: 20px;">Distribit</span><br /><code>2014-15</code>
-                </div>
-               
-                <div class="col-12 text-center" style="margin-top: 10px;">
-                    <span>When [Fabric Beta](http://fabric.io/) was not around, Distribit was the system I had built to
-                        share beta / alpha APKs and ipas among registered users.</span>
-                </div>
-                <div class="col-12 text-center" style="margin-top: 10px;">
-                    <div style="
-          width: 100%;
-          height: 1px;
-          background-color: #e0dcd9;
-          margin-bottom: 8px;
-        "></div>
-                    <a class="text-center" style="font-size: 16px;" href="/products/keen">Read more 👉</a>
-                </div>
-            </div>
-        </div>
+       {% endfor %}    
     </div>
 </div>
 
+<div class="mt-4"/>
 <h1 id="open-source">Open Source</h1>
 <hr/>
 
