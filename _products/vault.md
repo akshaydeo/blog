@@ -5,7 +5,7 @@ image: /public/images/vault_logo.png
 active: false
 timeline: Oct 2019 - March 2020
 description: Vault is a complete cross-banking financial app for India 🇮🇳
-link: /products/vault.html
+link: /products/vault
 ---
 
 # Vault - A complete finance app for 🇮🇳
