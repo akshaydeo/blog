@@ -5,9 +5,6 @@ collections:
   em_posts:
     title: EM
     output: true
-  weblog:
-    title: Weblog
-    output: true
   posts:
     title: Posts
     output: true
@@ -16,6 +13,9 @@ collections:
     output: true
   products:
     title: Products
+    output: true
+  weblog:
+    title: Weblog
     output: true
 feed:
   collections:
