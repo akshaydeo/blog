@@ -8,11 +8,11 @@ collections:
   posts:
     title: Posts
     output: true
-  uploads:
-    title: Uploads
-    output: true
   products:
     title: Products
+    output: true
+  uploads:
+    title: Uploads
     output: true
   weblog:
     title: Weblog
@@ -21,18 +21,16 @@ feed:
   collections:
     em_posts:
       title: Engineering Management Blog
-      description:
-        Open source implementation of engineering management processes
+      description: Open source implementation of engineering management processes
         for happy, healthy and productive teams!
-      path: '/em.xml'
+      path: "/em.xml"
       tags:
-        - engineering management
-        - technology
+      - engineering management
+      - technology
 future: true
-permalink: '/blog/:year/:month/:day/:title/'
+permalink: "/blog/:year/:month/:day/:title/"
 tagline: Product Development from Engineering Perspective
-description:
-  "\U0001F44B I am Akshay Deo, a computer engineering from Pune. Co-founded
+description: "\U0001F44B I am Akshay Deo, a computer engineering from Pune. Co-founded
   3 Startups, built 20+ Products and currently working on Postman as Head of Product
   Engineering."
 url: https://www.akshaydeo.com
@@ -42,13 +40,12 @@ tag_page_dir: tag
 twitter:
   username: akshay_deo
   card: summary
-
 social:
   name: Aksahy Deo
   links:
-    - https://twitter.com/akshay_deo
-    - https://www.linkedin.com/in/akshaymdeo/
-    - https://github.com/akshaydeo
+  - https://twitter.com/akshay_deo
+  - https://www.linkedin.com/in/akshaymdeo/
+  - https://github.com/akshaydeo
 author:
   name: Akshay Deo
   url: https://twitter.com/akshay_deo
@@ -62,13 +59,13 @@ version: 2.1.0
 github:
   repo: https://github.com/akshaydeo/blog
 google_analytics_tracking_id: UA-56560447-1
-plugins_dir: './_plugins'
+plugins_dir: "./_plugins"
 plugins:
-  - jekyll-seo-tag
-  - jekyll-paginate
-  - jekyll-gist
-  - liquid_reading_time
-  - liquid_pluralize
-  - jekyll-sitemap
-  - github-pages
-  - jekyll-feed
+- jekyll-seo-tag
+- jekyll-paginate
+- jekyll-gist
+- liquid_reading_time
+- liquid_pluralize
+- jekyll-sitemap
+- github-pages
+- jekyll-feed
