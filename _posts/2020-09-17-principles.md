@@ -6,7 +6,7 @@ tags:
 - Engineering Management
 updated_on: 2020-09-17 13:00:46 Z
 version: 1
-layout: signals
+layout: post
 comments: true
 ---
 
