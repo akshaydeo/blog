@@ -1,5 +1,5 @@
 ---
-title: "How to get better at Engineering Management!"
+title: How to get better at Engineering Management!
 date: 2020-09-16 19:00:46 Z
 tags:
 - Postman
