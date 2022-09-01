@@ -31,7 +31,7 @@
   font-family: 'Avenir';
   font-style: normal;
   font-weight: normal;
-  src: url(../fonts/Satoshi-Regular.otf);
+  src: url(../fonts/AvenirNextLTPro-Regular.otf);
 }
 
 @font-face {
@@ -52,7 +52,7 @@
   font-family: 'Oxygen';
   font-style: normal;
   font-weight: bold;
-  src: url(../fonts/Satoshi-Black.ttf);
+  src: url(../fonts/Raleway-Bold.ttf);
 }
 
 @font-face {
