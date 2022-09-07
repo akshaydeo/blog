@@ -100,7 +100,7 @@ html {
   line-height: 1.5;
 }
 
-.content-ext-link:after {
+.after:content-ext-link:after {
   --tw-content: " ↗";
   content: var(--tw-content)
 }
