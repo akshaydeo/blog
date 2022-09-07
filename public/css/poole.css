@@ -100,6 +100,11 @@ html {
   line-height: 1.5;
 }
 
+.content-ext-link:after {
+  --tw-content: " ↗";
+  content: var(--tw-content)
+}
+
 body {
   overscroll-behavior-y: none;
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
@@ -475,7 +480,8 @@ tbody tr:nth-child(odd) th {
  */
 
 .pagination {
-  overflow: hidden; /* clearfix */
+  overflow: hidden;
+  /* clearfix */
   margin-left: -1rem;
   margin-right: -1rem;
   font-family: 'PT Sans', Helvetica, Arial, sans-serif;
