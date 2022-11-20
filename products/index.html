@@ -11,146 +11,170 @@ group: blog
             product that I have worked on 😇.</h2>
     </div>
     <div class="row mt-4">
-       {% for product in site.products %}
-        <div class="col-4 border border-gray-light d-flex flex-column p-2">            
-            <div class="d-flex flex-row p-1">
-                <div class="d-block" style="min-width: 70px;">
-                    <img src="{{ product.image }}" class="img-fluid" alt="{{ product.title }}" width="64px" height="64px" />
-                </div>
-                <div class="d-flex flex-column ml-1">
-                    <span style="font-weight: bold; font-size: 25px; padding-top:1px;">{{ product.name }}</span>                    
-                    {% if product.active == "true" %}
+        {% for product in site.products %}
+        <div class="col-4 p-1">
+            <div class="border border-gray-light d-flex flex-column m-1 p-2 h-100 rounded-2">
+                <div class="d-flex flex-row p-1">
+                    <div class="d-block" style="min-width: 70px;">
+                        <img src="{{ product.image }}" class="img-fluid" alt="{{ product.title }}" width="64px"
+                            height="64px" />
+                    </div>
+                    <div class="d-flex flex-column ml-1">
+                        <span style="font-weight: bold; font-size: 25px; padding-top:1px;">{{ product.name }}</span>
+                        {% if product.active == "true" %}
                         <span style="font-size: 15px;">🟢</span>
-                    {% else %}
+                        {% else %}
                         <span style="font-size: 15px;">🔴 | {{ product.timeline }}</span>
-                    {% endif %}                    
-                </div>               
-            </div>
-            <hr class="m-0 p-0" style="margin-top:-2px;"/>
-            <div class="mt-2" style="font-size: 15px;">
-                <span>{{ product.description }}</span>
-            </div>     
-            {% if product.link %}   
+                        {% endif %}
+                    </div>
+                </div>
+                <hr class="m-0 p-0" style="margin-top:-2px;" />
+                <div class="mt-2" style="font-size: 15px;">
+                    <span>{{ product.description }}</span>
+                </div>
+                {% if product.link %}
                 <div class="mt-2">
                     <a style="font-size:16px;" href="{{ product.link }}">Read the story behind {{ product.name }}</a>
-                </div>      
-            {% endif %}
+                </div>
+                {% endif %}
+            </div>
         </div>
-       {% endfor %}    
+        {% endfor %}
     </div>
 </div>
 
-<div class="mt-4"/>
+<div class="mt-4" />
 <h1 id="open-source">Open Source</h1>
-<hr/>
+<hr />
 
-<p><strong><a href="https://github.com/betacraft/yaag" target="_blank">YAAG (Yet Another API doc Generator) for Golang</a></strong></p>
+<p><strong><a href="https://github.com/betacraft/yaag" target="_blank">YAAG (Yet Another API doc Generator) for
+            Golang</a></strong></p>
 <ul>
-<li>Golang is awesome for developing web apps. And people have created a bunch of awesome Web-Frameworks, Web helper libraries. If we consider the entire ecosystem of web apps in Golang everything except API documentation seems to be in place. So we have created the first API doc generator for Golang based web apps and calling it Yet another.</li>
+    <li>Golang is awesome for developing web apps. And people have created a bunch of awesome Web-Frameworks, Web helper
+        libraries. If we consider the entire ecosystem of web apps in Golang everything except API documentation seems
+        to be in place. So we have created the first API doc generator for Golang based web apps and calling it Yet
+        another.</li>
 </ul>
 <div class="col-sm-12 col-md-6 offset-md-3" style="margin-top:10px;margin-bottom:10px;">
-<iframe style="display:block;margin:auto;min-height:250px;padding:5px;" width="100%" src="https://www.youtube.com/embed/dQWXxJn6_iE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe style="display:block;margin:auto;min-height:250px;padding:5px;" width="100%"
+        src="https://www.youtube.com/embed/dQWXxJn6_iE" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 
-<hr/>
+<hr />
 
-<p><strong><a href="https://github.com/betacraft/autobindings" target="_blank">Autobinding fieldMap generator</a></strong></p>
+<p><strong><a href="https://github.com/betacraft/autobindings" target="_blank">Autobinding fieldMap
+            generator</a></strong></p>
 <ul>
-<li>FieldMap function generator for <a href="https://github.com/mholt/binding">https://github.com/mholt/binding</a>
-Autobindings is a simple extention to the amazing library Binding. So binding is a reflectionless data binding for Go&#39;s net/http. For that developer has to write a FieldMap function which is used by this library to map the incoming JSON from the request to the struct fields.</li>
+    <li>FieldMap function generator for <a href="https://github.com/mholt/binding">https://github.com/mholt/binding</a>
+        Autobindings is a simple extention to the amazing library Binding. So binding is a reflectionless data binding
+        for Go&#39;s net/http. For that developer has to write a FieldMap function which is used by this library to map
+        the incoming JSON from the request to the struct fields.</li>
 </ul>
-<hr/>
+<hr />
 
 <p><strong><a href="https://github.com/betacraft/scraper" target="_blank">Scraper</a></strong></p>
 <ul>
-<li>Scraper for parsing app information from Google Play Store. </li>
-<li>Supported sites <ul>
-<li>Google Play Store </li>
-<li>AndroidDrawer</li>
+    <li>Scraper for parsing app information from Google Play Store. </li>
+    <li>Supported sites <ul>
+            <li>Google Play Store </li>
+            <li>AndroidDrawer</li>
+        </ul>
+    </li>
 </ul>
-</li>
-</ul>
-<hr/>
+<hr />
 
 <p><strong><a href="https://github.com/betacraft/slack" target="_blank">Slack client for Golang</a></strong></p>
 <ul>
-<li>This library allows you to send data into slack group/channel using a Incoming Webhook url.</li>
+    <li>This library allows you to send data into slack group/channel using a Incoming Webhook url.</li>
 </ul>
-<hr/>
+<hr />
 
 <p><strong><a href="https://github.com/betacraft/circleci" target="_blank">Circle client for Golang</a></strong></p>
 <ul>
-<li>Golang client library to interact with CircleCI 1.0.</li>
+    <li>Golang client library to interact with CircleCI 1.0.</li>
 </ul>
-<hr/>
+<hr />
 
 <p><strong><a href="https://github.com/betacraft/parse-sdk" target="_blank">Parse SDK client in Golang</a></strong></p>
 <ul>
-<li>Currently has only push notifications implemented based on the object Id and one generalized function for the custom query based targetting.</li>
+    <li>Currently has only push notifications implemented based on the object Id and one generalized function for the
+        custom query based targetting.</li>
 </ul>
-<hr/>
+<hr />
 
 <p><strong><a href="https://github.com/RainingClouds/transporter" target="_blank">Transporter</a></strong></p>
 <ul>
-<li>It’s a wrapper for writing socket servers with keeping your business logic separated from the underlying technology for sockets.</li>
-<li>Using this we can create socket servers supporting SocketIO Server, Websocket Server, Netty based Servers, Plain Java socket based server with a single business logic.</li>
-<li>Is part of AppSurfer’s streaming server, where the same logic for streaming is used for websocket clients, socket io clients, socket clients (Android SDK) and http commet clients.</li>
+    <li>It’s a wrapper for writing socket servers with keeping your business logic separated from the underlying
+        technology for sockets.</li>
+    <li>Using this we can create socket servers supporting SocketIO Server, Websocket Server, Netty based Servers, Plain
+        Java socket based server with a single business logic.</li>
+    <li>Is part of AppSurfer’s streaming server, where the same logic for streaming is used for websocket clients,
+        socket io clients, socket clients (Android SDK) and http commet clients.</li>
 </ul>
-<hr/>
+<hr />
 
-<p><strong><a href="https://github.com/RainingClouds/AFNetworkingHelper" target="_blank">AFNetworkingHelper</a></strong></p>
+<p><strong><a href="https://github.com/RainingClouds/AFNetworkingHelper" target="_blank">AFNetworkingHelper</a></strong>
+</p>
 <ul>
-<li>A custom and very handy wrapper over AFNetworking 2.0 library.</li>
-<li>Provides an easier way of using basic HTTP methods in iOS app.</li>
+    <li>A custom and very handy wrapper over AFNetworking 2.0 library.</li>
+    <li>Provides an easier way of using basic HTTP methods in iOS app.</li>
 </ul>
-<hr/>
+<hr />
 
 <p><strong><a href="https://github.com/RainingClouds/droidstalker" target="_blank">DroidStalker</a></strong></p>
 <ul>
-<li>DroidStalker is aimed to be an important tool for Android developer which provides a single dashboard which shows graph about the CPU usage, Memory usage, FPS etc while testing an app.</li>
-<li>The main reason to come up with this is, LittleEyeLabs got acquired by Facebook and they have discontinued the product, but there is a genuine need of such a product.</li>
-<li>Its being developed as an when we do get time in RainingClouds.</li>
+    <li>DroidStalker is aimed to be an important tool for Android developer which provides a single dashboard which
+        shows graph about the CPU usage, Memory usage, FPS etc while testing an app.</li>
+    <li>The main reason to come up with this is, LittleEyeLabs got acquired by Facebook and they have discontinued the
+        product, but there is a genuine need of such a product.</li>
+    <li>Its being developed as an when we do get time in RainingClouds.</li>
 </ul>
-<hr/>
+<hr />
 
 <p><strong><a href="https://github.com/RainingClouds/hatchttp" target="_blank">HatcHttp</a></strong></p>
 <ul>
-<li>A very basic http library targeted for Android</li>
-<li>Focuses on avoiding code redundancy</li>
-<li>Adding up a feature that will allow developers to make http calls using java NIO (still cooking so its not in master branch)</li>
+    <li>A very basic http library targeted for Android</li>
+    <li>Focuses on avoiding code redundancy</li>
+    <li>Adding up a feature that will allow developers to make http calls using java NIO (still cooking so its not in
+        master branch)</li>
 </ul>
-<hr/>
+<hr />
 
 <p><strong><a href="https://github.com/RainingClouds/event_hub" target="_bank">EventHub</a></strong></p>
 <ul>
-<li>This allows different components to communicate with each other asynchronously using messaging Usecases</li>
-<li>To allow a communication between different fragments shown in a tab to communicate with each other without any boilerplate code</li>
-<li>Allow communication between a service running in background and Android app</li>
-<li>This is used in AppSurfer Android app, to update the list of applications on different tabs of the home screen based on the categories selected in the menu bar.</li>
+    <li>This allows different components to communicate with each other asynchronously using messaging Usecases</li>
+    <li>To allow a communication between different fragments shown in a tab to communicate with each other without any
+        boilerplate code</li>
+    <li>Allow communication between a service running in background and Android app</li>
+    <li>This is used in AppSurfer Android app, to update the list of applications on different tabs of the home screen
+        based on the categories selected in the menu bar.</li>
 </ul>
-<hr/>
+<hr />
 
-<p><strong><a href="https://github.com/RainingClouds/android-gcm-helper" target="_blank">AndroidGCMHelper</a></strong></p>
+<p><strong><a href="https://github.com/RainingClouds/android-gcm-helper" target="_blank">AndroidGCMHelper</a></strong>
+</p>
 <ul>
-<li>A library with boilerplate code required for integrating push notifications in an Android app (Google cloud messaging)</li>
-<li>This also contains one demo Android app to test the server side of the code for pushing notifications.</li>
+    <li>A library with boilerplate code required for integrating push notifications in an Android app (Google cloud
+        messaging)</li>
+    <li>This also contains one demo Android app to test the server side of the code for pushing notifications.</li>
 </ul>
-<hr/>
+<hr />
 
 <p><strong><a href="https://lovego.herokuapp.com" target="_blank">LoveGoLang</a></strong></p>
 <ul>
-<li>This is a simple micropost sites where developers can express their love for golang</li>
-<li>Still under development</li>
+    <li>This is a simple micropost sites where developers can express their love for golang</li>
+    <li>Still under development</li>
 </ul>
-<hr/>
+<hr />
 
 <p><strong><a href="https://github.com/akshaydeo/omnidesk" target="_blank">OmniDesk</a></strong></p>
 <ul>
-<li>Was final year project of Computer Engineering</li>
-<li>Written and tested for Android 1.5 and 1.6.</li>
-<li>One of the first few RDP clients for Android written in 2010.</li>
-<li>Uploaded in the Play Store (then called Android Market) in 2011.</li>
-<li>Got 10k-50k downloads.</li>
-<li>Open sourced when we failed to keep it updated</li>
+    <li>Was final year project of Computer Engineering</li>
+    <li>Written and tested for Android 1.5 and 1.6.</li>
+    <li>One of the first few RDP clients for Android written in 2010.</li>
+    <li>Uploaded in the Play Store (then called Android Market) in 2011.</li>
+    <li>Got 10k-50k downloads.</li>
+    <li>Open sourced when we failed to keep it updated</li>
 </ul>
