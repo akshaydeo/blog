@@ -9,13 +9,15 @@ group: blog
     <div class="col-12">
       <div class="posts">
         {% for post in site.posts %}
-        <div class="">
-          <span class="" style="font-size: 14px">
-            [{{ post.date | date_to_string }}]
-            <a href="{{ post.url }}" style="font-size: 18px">
-              {{ post.title }}
-            </a></span
-          >
+        <div style="height:30px;">
+          <div class="d-flex flex-row" style="font-size: 14px">
+            <div style="width:100px;">{{ post.date | date_to_string }}</div>
+            <div style="margin-top:-2px;">
+              <a  href="{{ post.url }}" style="font-size: 18px">
+                {{ post.title }}
+              </a>
+            </div>
+          </div>
         </div>
         {% endfor %}
       </div>

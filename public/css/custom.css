@@ -81,7 +81,8 @@
 
 .topbar-nav-item.active {
   color: #000;
-  font-weight: bold;
+  /* font-weight: bold; */
+  text-decoration: underline;
 }
 
 .footer {

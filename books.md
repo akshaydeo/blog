@@ -1,5 +1,5 @@
 ---
-title: "\U0001F4DA Books"
+title: Books
 layout: page
 ---
 
@@ -11,14 +11,13 @@ layout: page
       flex-wrap: wrap;
       flex-direction: row;
       align-items: center;
-      
-    
+
 }
 
-.gr_grid_book_container {      
-    /* customize book cover container div here */    
+.gr_grid_book_container {
+    /*customize book cover container div here*/
     width: 98px;
-    height: 160px;    
+    height: 160px;
     overflow: hidden;
       margin: 3px !important;
   border: 1px solid darkgray;
@@ -28,7 +27,6 @@ layout: page
 .gr_grid_branding{
     display:none;
 }
-
 
 img{
     height:100%;
@@ -62,7 +60,7 @@ h3{display:none;}
           <a style="text-decoration: none; font-size: 10px;" rel="nofollow" href="https://www.goodreads.com/user_challenges/19935095">view books</a>
         </div>
   </div>
-	<script src="https://www.goodreads.com/user_challenges/widget/11812963-akshay-deo?challenge_id=11621&v=2"></script>
+ <script src="https://www.goodreads.com/user_challenges/widget/11812963-akshay-deo?challenge_id=11621&v=2"></script>
 </div>
 
 <div id="gr_grid_widget_1571478440">

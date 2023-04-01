@@ -12,8 +12,8 @@ group: blog
     </div>
     <div class="row mt-4">
         {% for product in site.products %}
-        <div class="col-4 p-1">
-            <div class="border border-gray-light d-flex flex-column m-1 p-2 h-100 rounded-2">
+        <div class="col-12 col-md-6 col-lg-4  p-1">
+            <div class="border border-gray-light d-flex flex-column m-1 p-2 h-100 news" style="border-radius: 5px;">
                 <div class="d-flex flex-row p-1">
                     <div class="d-block" style="min-width: 70px;">
                         <img src="{{ product.image }}" class="img-fluid" alt="{{ product.title }}" width="64px"
