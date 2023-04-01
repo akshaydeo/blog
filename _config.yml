@@ -5,18 +5,23 @@ collections:
   em_posts:
     title: EM
     output: true
+    sidebar_label: EM
   posts:
     title: Posts
     output: true
+    sidebar_label: Posts
   products:
     title: Products
     output: true
+    sidebar_label: Products
   uploads:
     title: Uploads
     output: true
+    sidebar_label: Uploads
   weblog:
     title: Weblog
     output: true
+    sidebar_label: Weblog
 feed:
   collections:
     em_posts:
@@ -61,11 +66,19 @@ github:
 google_analytics_tracking_id: UA-56560447-1
 plugins_dir: "./_plugins"
 plugins:
-- jekyll-seo-tag
-- jekyll-paginate
-- jekyll-gist
-- liquid_reading_time
-- liquid_pluralize
-- jekyll-sitemap
-- github-pages
-- jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-gist
+  - liquid_reading_time
+  - liquid_pluralize
+  - jekyll-sitemap
+  - github-pages
+  - jekyll-feed
+jekyll_admin:
+  hidden_links:
+    - posts
+    - pages
+    - staticfiles
+    - datafiles
+    - configuration
+  homepage: "pages"
