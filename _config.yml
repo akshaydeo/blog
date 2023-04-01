@@ -66,15 +66,15 @@ github:
 google_analytics_tracking_id: UA-56560447-1
 plugins_dir: "./_plugins"
 plugins:
-  - jekyll-seo-tag
-  - jekyll-paginate
-  - jekyll-gist
-  - liquid_reading_time
-  - liquid_pluralize
-  - jekyll-sitemap
-  - github-pages
-  - jekyll-feed
+- jekyll-seo-tag
+- jekyll-paginate
+- jekyll-gist
+- liquid_reading_time
+- liquid_pluralize
+- jekyll-sitemap
+- github-pages
+- jekyll-feed
 jekyll_admin:
   hidden_links:
-    - datafiles    
-  homepage: "pages"
+  - datafiles
+  homepage: pages
