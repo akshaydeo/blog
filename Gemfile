@@ -16,5 +16,5 @@ group :jekyll_plugins do
   gem 'jekyll-feed'
   gem 'jekyll-tagging'
   gem "kramdown"
-  gem "rack"
+  gem "rack"  
 end
