@@ -2,6 +2,7 @@
 <html lang="en-us">
   <div class="top-black-bar"></div>
   {% include head.html %} {% include topbar.html %}
+  <script>document.getElementById("year").innerHTML = (new Date().getFullYear());</script>
   <body class="layout">
     <div class="content container">{{ content }}</div>
     <div class="footer container" style="padding-bottom: 20px">
@@ -51,7 +52,7 @@
           </div>
         </div>
         <div class="row" style="padding-top: 10px">
-          <div class="col-12 text-center">2012-2021</div>
+          <div class="col-12 text-center">2012-<span id="year"></span></div>
           <div class="col-12 text-center">All Rights Reserved.</div>
         </div>
       </div>
