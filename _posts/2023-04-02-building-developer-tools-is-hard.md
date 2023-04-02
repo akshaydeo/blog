@@ -14,13 +14,13 @@ Selling developer tools to developers is like selling furniture to carpenters. W
 
 It's common for developers to overestimate their abilities and underestimate the complexity of the challenges they face. For example, Abhinav Asthana, the founder of Postman, once remarked that many people believed they could create Postman in a single weekend. However, what they typically have in mind is a simplified version of Postman based on their understanding. However, as they delve deeper into the development process, they discover that the reality is far more intricate than they had initially envisioned, and unexpected complexities inevitably arise.
 
-**Many of your customers are naturally inclined to build solutions themselves, given a choice between build, buy, and borrow.** However, specific problems are better addressed through purchasing or borrowing solutions due to complexity, domain understanding, immediate importance, or the maintenance overhead involved. For instance, databases, caching mechanisms, cloud providers, cloud-hosted open-source solutions, and blog engines are all examples of technologies for which companies (i.e., developers) may prefer to purchase or borrow rather than build from scratch.
+**Many of your customers are naturally inclined to build solutions themselves, given a choice between build, buy, and borrow.** However, specific problems are better addressed through purchasing or borrowing solutions due to complexity, domain understanding, immediate importance, or the maintenance overhead involved. For instance, databases, key-value stores, infrastructure, hosted open-source solutions blog engines are all examples of technologies for which companies (i.e., developers) may prefer to purchase or borrow rather than build from scratch.
 
 As a developer tools company, your top priority is communicating your value proposition in a way that resonates with your target audience. While developers may be impressed by your product's technical prowess, highlighting its tangible benefits and how it can significantly improve their workflow is essential. With that in mind, there's a particular micro-framework that I refer to as a litmus test for developer tools. You can employ this framework to inform various aspects of your product, such as packaging, sales pitch, website design, and product onboarding, among others.
 
 ---
 
-## The number of touchpoints required for adoption/evaluation should be as low as possible, ideally one!
+## The number of touchpoints required for adoption/evaluation should be as low as possible, ideally one
 
 ---
 
