@@ -10,33 +10,35 @@ dsq_thread_id:
 - 1872879232
 ---
 
-Being part of a start-up, I continuously look out for different products that are available to set up an end-to-end workflow in the company. Issue management and content management are one of the core parts of this workflow. If you google about &#8220;issue tracking&#8221;, &#8220;project management&#8221;, &#8220;content management&#8221; or similar search terms, you will be presented with a bunch of solutions. I am going to put my views on two of those solutions that we have used in [RainingClouds][1], [Basecamp][2] and [JIRA][3], and why I feel JIRA is much better than Basecamp, specifically for the software industry.
+As someone working for a startup, I'm constantly on the lookout for products that can help streamline our workflows. Issue management and content management are essential parts of our workflow, so I've spent a lot of time researching different solutions for these areas.
 
-We started with Basecamp for [AppSurfer][4]. Initially it felt good. Minimal design, minimal clicks for surfing and easy to understand product. Single view for looking at all the issues/tasks of a project. We were part of private beta of new Basecamp. They made it more intuitive with good quality icons and visuals. But it still remains a generic task management system (which is their aim as far as I know). So it is not bad in that perspective. But as a software company Basecamp fails in some of the aspects :
+If you search for "issue tracking," "project management," or "content management," you'll find a lot of options out there. In this post, I'll be sharing my thoughts on two of the solutions we've used at RainingClouds: Basecamp and JIRA.
 
-1. We used to report a lot of tasks and issues. Task list feature is fine but its like hell lot of information on single page
-2. Every task goes through stages like : Created | In progress | In Testing | Resolved | Build broken. No such facility is available in Basecamp
-3. Once an issue is closed it becomes part of archive which is difficult to go through.
-4. Source code changes associated with each task is really important concern. I used a third party tool [Zapier][5], but its too inconvenient and inconsistent, As there is no single point where I could manage all these things.
-5. Linking tasks is not possible as far as I understood Basecamp. Most of the times we faced a requirement to attach two issues / link two issues with each other.
-6. Documentation part is also not that good. Very little formatting tools, no feature of supporting code snippets in discussion and no facility to attach a document page (created within Basecamp) with existing tasks. (Thought it could be achieved by copy paste thing but its not expected)
+# Basecamp
 
-After facing these issues, I started searching for a better solution and I came across Atlassian products. I was really impressed by two of their products [JIRA][3] and [Confluence][6]. So I started with their trial account, and bang !!. I am so impressed with them is that, we are almost sure about we are going to continue with them. There are a lot of features which are yet to be discovered but a few most obvious and appealing points are :
+We started using Basecamp for AppSurfer, and at first, it seemed like a good fit. The product had a minimal design, was easy to understand, and required minimal clicks to navigate. The single view for looking at all issues/tasks in a project was also helpful.
+However, as a software company, Basecamp fell short in several areas:
 
-1. They know the target audience hence provide all required features for task management like task workflow, task types, task linking etc.
-2. Customization of issue workflow is amazing. We need In Testing stage of an issue so as to show fix is ready for the issue and is under testing, that we achieved by customizing the workflow.
-3. We have our source code repositories on GitHub. JIRA provides a way to connect to my repositories on GitHub ( and also to BitBucket) and connect each of my code commits with issues. That gives me an issue with all the code changes associated with that issue on a single JIRA issue page. That is awesome for us !!
-4. Confluence, an amazing wiki replacement for us. We used wikimedia for some time but were not too happy with it. Confluence looks amazing and seamlessly integrates with JIRA. So a task has its wiki page associated with it. I love it !!
-5. Sharing of Spaces (that is what they call) is also a nice feature to have. All of the information can not be disclosed to all people. So this provides a nice way of privacy.
-6. They also provide nice analysis of issues, deadlines and combination of information which not much exciting but yes its useful.
+- Task lists could get overwhelming, with a lot of information on a single page.
+- There was no facility for tracking the different stages of a task (e.g., Created, In progress, In testing, Resolved, Build broken).
+- Once an issue was closed, it became part of an archive that was difficult to search through.
+- It was challenging to manage source code changes associated with each task, and we had to use a third-party tool (Zapier) to do so.
+- Linking tasks was not possible, which was often a requirement for us.
+- The documentation features were limited, with very few formatting tools, no support for code snippets in discussions, and no way to attach a document page created within Basecamp to existing tasks.
 
-I am still exploring these two products. But for sure if you are a software firm and confused which tool to use, I would recommend you to go for Atlassian products. At least try their trial period. And 99% of you wont regret it.
+# JIRA
 
-**PS: This post contains my personal opinions and regarding current status of products at the time I was writing it.**
+After experiencing these issues with Basecamp, I started looking for a better solution and came across Atlassian's products. I was particularly impressed by two of their products: JIRA and Confluence. We started a trial account, and we were so impressed that we decided to continue using them.
 
-[1]: http://rainingclouds.com
-[2]: http://basecamp.com
-[3]: http://www.atlassian.com/software/jira/overview
-[4]: http://apsurfer.com
-[5]: http://zapier.com
-[6]: http://www.atlassian.com/software/confluence/overview
+Some of the most appealing features of JIRA include:
+
+- They understand the needs of their target audience and provide all the required features for task management, such as task workflows, task types, and task linking.
+- Customization of the issue workflow is amazing. We were able to create a "In Testing" stage for issues that are ready for testing.
+- JIRA integrates with GitHub and BitBucket, allowing us to connect each code commit with issues. This feature is incredibly useful for tracking code changes associated with an issue on a single page.
+- Confluence is an excellent replacement for wikis. It seamlessly integrates with JIRA, so each task has a wiki page associated with it.
+- The sharing of spaces is a useful privacy feature, allowing us to control who can access certain information.
+- JIRA provides useful analysis of issues, deadlines, and other information.
+
+While I'm still exploring these products, I would highly recommend Atlassian's products for software firms looking for a task management solution. You can try their trial period to see if it's the right fit for your needs.
+
+> Note: The opinions expressed in this post are my own, and based on the current status of the products at the time of writing.
