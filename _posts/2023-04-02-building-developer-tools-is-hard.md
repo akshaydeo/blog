@@ -8,7 +8,7 @@ layout: post
 comments: true
 ---
 
-> While anyone can certainly benefit from this post, its primary focus is on early-stage founders of developer tooling companies. Therefore, it may not be as directly relevant to individuals or companies outside this industry.
+> While anyone can certainly benefit from this post, its primary focus is on early-stage founders of developer tooling companies.
 
 Selling developer tools to developers is like selling furniture to carpenters. While the developers can always build (vs. buy) similar tools themselves, the critical point is whether they can build them as **efficiently**, **effectively**, and with the same level of **quality** as yours, as well as whether creating such tools aligns with their current priorities and goals
 
@@ -16,11 +16,11 @@ It's common for developers to overestimate their abilities and underestimate the
 
 **Many of your customers are naturally inclined to build solutions themselves, given a choice between build, buy, and borrow.** However, specific problems are better addressed through purchasing or borrowing solutions due to complexity, domain understanding, immediate importance, or the maintenance overhead involved. For instance, databases, key-value stores, infrastructure, hosted open-source solutions blog engines are all examples of technologies for which companies (i.e., developers) may prefer to purchase or borrow rather than build from scratch.
 
-As a developer tools company, your top priority is communicating your value proposition in a way that resonates with your target audience. While developers may be impressed by your product's technical prowess, highlighting its tangible benefits and how it can significantly improve their workflow is essential. With that in mind, there's a particular micro-framework that I refer to as a litmus test for developer tools. You can employ this framework to inform various aspects of your product, such as packaging, sales pitch, website design, and product onboarding, among others.
+As true for any company, your top priority is communicating your value proposition in a way that resonates with your target audience. While developers may be impressed by your product's technical prowess, highlighting its tangible benefits and how it can significantly improve their workflow is essential. With that in mind, there's a particular micro-framework that I refer to as a litmus test for developer tools. You can employ this framework to inform various aspects of your product, such as packaging, sales pitch, website design, and product onboarding, among others.
 
 ---
 
-## The number of touchpoints required for adoption/evaluation should be as low as possible, ideally one
+## The number of touchpoints required for adoption/evaluation should be as low as possible, ideally one!
 
 ---
 
