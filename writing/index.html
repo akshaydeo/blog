@@ -18,7 +18,11 @@ group: blog
               {{ post.date | date_to_string }}
             </div>
             <div class="d-flex flex-wrap" style="margin-top:-2px;width:100%">
-              <a href="{{ post.url }}" style="font-size: 18px">
+              <a
+                class="text-truncate"
+                href="{{ post.url }}"
+                style="font-size: 18px"
+              >
                 {{ post.title }}
               </a>
             </div>
