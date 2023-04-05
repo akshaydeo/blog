@@ -8,14 +8,14 @@ layout: post
 comments: true
 ---
 
-## 🤔 Why Angel Investing?
+## Why Angel Investing?
 
 - Is it because everyone around you is one? 
 - Is it because you have money to invest?
 
 This is a fair question to ask. And I am constantly perplexed with my attempt to answer this question effectively. Of course, there is no correct answer. But one thing that I love the most is, solving problems. And in my lifetime, I can solve only a limited number of problems, and this is my attempt to maximize that number 🙂.
 
-## 🤲 Ideology
+## Ideology
 
 Traditionally angel investing is looked at as a gamble where if the bet works out, one could get returns 50 - 1000x. So that's one way to look at it. But with [Sifar Ventures](https://sifar.vc), my goal is to focus more on intangible gains one gets while working with early-stage startups.
 
@@ -23,11 +23,11 @@ I have been a founder in the past and understand the chaos inside and around the
 
 As I have worked extensively on all the layers of technology and products, I realized that I could successfully de-risk the technical and product problems of an early-stage startup. I have taken multiple attempts at helping startups for free, for minimal equity, but none of them worked out as expected. **As they say, giving something for free is the most expensive thing.**
 
-## 💥 Hence [Sifar Ventures](https://sifar.vc)
+## Hence [Sifar Ventures](https://sifar.vc)
 
 [@Vishwesh Jirgale](https://peerlist.io/vishwesh) and I have worked together for 6-7 years. One common theme of our conversations is what problems we face daily and how we could solve them effectively 💡. We love tech, startups and we love entrepreneurs. A year ago, while brainstorming on a few ideas, We realized that we have a distinct set of capabilities to help early-stage startups de-risk technology, marketing, hiring, and fundraising. Hence last year, we decided to start Sifar Ventures, an early-stage VC firm focussing on (but not limited to) Indian Startups.
 
-## 🖖 We are proud to announce our first investment: [Peerlist](https://peerlist.io?ref=amd)
+## We are proud to announce our first investment: [Peerlist](https://peerlist.io?ref=amd)
 
 ![image](https://user-images.githubusercontent.com/1050029/140507377-2c98853b-2fcb-44d9-8640-d82381a30d76.png)
 
