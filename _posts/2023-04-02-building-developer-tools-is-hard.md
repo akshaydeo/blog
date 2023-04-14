@@ -1,10 +1,10 @@
 ---
 title: Building Developer Tools is Hard
 date: 2023-04-02 08:00:46 Z
-updated_at: 2023-04-14 08:00:46 Z
 tags:
 - Developer Tools
 - Entrepreneurship
+updated_at: 2023-04-14 08:00:46 Z
 layout: post
 comments: true
 ---
