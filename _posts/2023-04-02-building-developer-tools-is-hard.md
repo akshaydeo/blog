@@ -1,6 +1,7 @@
 ---
 title: Building Developer Tools is Hard
 date: 2023-04-02 08:00:46 Z
+updated_at: 2023-04-14 08:00:46 Z
 tags:
 - Developer Tools
 - Entrepreneurship
@@ -9,9 +10,6 @@ comments: true
 ---
 
 > While anyone can certainly benefit from this post, its primary focus is on early-stage founders of developer tooling companies.
-
-> Version: 2
-> Last edited on: 14th April 2023
 
 Selling developer tools to developers is like selling paintbrushes to artists. Just as an artist needs quality tools to create their masterpiece, a developer needs quality tools to build their software. Both require specialized tools that are designed to enhance their craft and help them achieve their goals. Just as an artist needs to choose the right brush for a specific stroke, a developer needs to choose the right tool for a specific task. And just as an artist's brush can make the difference between a good painting and a great one, a developer's tool can make the difference between functional software and exceptional software.
 
