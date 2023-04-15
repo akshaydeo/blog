@@ -2,7 +2,6 @@
 <html lang="en-us">
   <div class="top-black-bar"></div>
   {% include head.html %} {% include topbar.html %}
-  <script>document.getElementById("year").innerHTML = (new Date().getFullYear());</script>
   <body class="layout">
     <div class="content container">{{ content }}</div>
     <div class="footer container" style="padding-bottom: 20px">
@@ -57,5 +56,8 @@
         </div>
       </div>
     </div>
+    <script>
+      document.getElementById('year').innerHTML = new Date().getFullYear();
+    </script>
   </body>
 </html>
