@@ -18,3 +18,5 @@ group :jekyll_plugins do
   gem "kramdown"
   gem "rack"  
 end
+
+gem "webrick", "~> 1.8"

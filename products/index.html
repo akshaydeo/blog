@@ -32,9 +32,9 @@ group: blog
                 <div class="mt-2" style="font-size: 15px;">
                     <span>{{ product.description }}</span>
                 </div>
-                {% if product.link %}
-                <div class="mt-2">
-                    <a style="font-size:16px;" href="{{ product.link }}">Read the story behind {{ product.name }}</a>
+                {% if product.link %}                
+                <div class="mt-2 ml-auto">
+                    <a style="font-size:16px;margin-top:-20px;" href="{{ product.link }}">Read More ↗</a>
                 </div>
                 {% endif %}
             </div>
